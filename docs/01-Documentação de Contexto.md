@@ -64,3 +64,66 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 > - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
 > - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
 > - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+
+**(Validar) Descrição dos Perfis de Usuários:**
+
+1. **Profissionais de Tecnologia:**
+   - **Conhecimentos Prévios:** Possuem amplo conhecimento em tecnologias, linguagens de programação, metodologias de desenvolvimento, e outras áreas relacionadas.
+   - **Relação com a Tecnologia:** Utilizam ferramentas e plataformas tecnológicas diariamente em suas atividades profissionais. Estão familiarizados com ambientes de desenvolvimento, sistemas de versionamento e outras práticas da área.
+   - **Hierarquia:** Não possuem relação hierárquica direta na aplicação. São os candidatos em busca de oportunidades de emprego na área de tecnologia.
+   - **Objetivos:** Buscam oportunidades de emprego que correspondam às suas habilidades e interesses. Desejam uma plataforma que destaque suas competências e os conecte a empresas alinhadas com suas aspirações.
+
+2. **Empresas de Tecnologia:**
+   - **Conhecimentos Prévios:** Têm conhecimento sobre as necessidades específicas da empresa, suas demandas técnicas e cultura organizacional.
+   - **Relação com a Tecnologia:** Dependem da tecnologia para operações e inovação. Podem variar desde empresas que desenvolvem produtos tecnológicos até aquelas que necessitam de profissionais de TI para suporte interno.
+   - **Hierarquia:** Os usuários variam de recrutadores e gerentes de contratação a membros da equipe técnica que participam do processo de seleção.
+   - **Objetivos:** Buscam encontrar os candidatos mais adequados para suas vagas. Desejam simplificar e agilizar o processo de recrutamento, economizando tempo e recursos.
+
+**Diagramas de Personas:**
+
+*Diagrama de Persona - Profissional de Tecnologia:*
+
+```
+            +------------------------+
+            | Profissional de        |
+            | Tecnologia             |
+            +------------------------+
+            | Conhecimentos Técnicos |
+            | Experiência Profissional|
+            | Expectativas de Carreira|
+            +------------------------+
+```
+
+*Diagrama de Persona - Empresa de Tecnologia:*
+
+```
+            +-----------------------+
+            | Empresa de            |
+            | Tecnologia            |
+            +-----------------------+
+            | Tipo de Negócio       |
+            | Perfil da Empresa     |
+            | Necessidades de Vagas |
+            +-----------------------+
+```
+
+**Mapa de Stakeholders:**
+
+```
+            +------------------------+
+            |      Stakeholders      |
+            +------------------------+
+            | Profissionais de      |
+            | Tecnologia             |
+            |                        |
+            | Empresas de Tecnologia |
+            |                        |
+            | Desenvolvedores da     |
+            | Plataforma             |
+            |                        |
+            | Administradores da     |
+            | Plataforma             |
+            +------------------------+
+```
+
+O público-alvo da plataforma de vagas de emprego na área de tecnologia inclui profissionais especializados em tecnologia que buscam emprego e empresas que procuram contratar esses profissionais. Os profissionais possuem conhecimentos técnicos aprofundados e utilizam tecnologia em suas atividades diárias, enquanto as empresas variam em termos de foco e tamanho. O objetivo é criar uma plataforma que atenda às necessidades e expectativas desses dois principais grupos de usuários, proporcionando uma experiência eficiente e eficaz no processo de recrutamento e seleção na área de tecnologia.
