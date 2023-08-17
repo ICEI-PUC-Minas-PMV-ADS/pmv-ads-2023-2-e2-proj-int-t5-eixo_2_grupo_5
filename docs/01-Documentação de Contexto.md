@@ -22,11 +22,11 @@ Desenvolver uma plataforma de vagas de emprego especializada na área de tecnolo
 
 (Validar e depois Remover): Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
 
-> - Criar um sistema de cadastro e perfil de candidatos que permita uma apresentação abrangente de suas habilidades e experiências.
-> - Desenvolver um mecanismo de filtragem que facilite a seleção de candidatos com base em critérios específicos, como competências técnicas e nível de experiência.
-> - Implementar uma interface amigável e intuitiva para as empresas anunciarem suas vagas e gerenciarem o processo seletivo de forma eficiente.
-> - Oferecer aos candidatos uma plataforma para explorar oportunidades de emprego, apresentar suas habilidades de maneira eficaz e acompanhar o progresso de suas candidaturas.
-> - Integrar ferramentas de análise e acompanhamento para empresas avaliarem a eficácia da plataforma no processo de recrutamento e seleção.
+- Criar um sistema de cadastro e perfil de candidatos que permita uma apresentação abrangente de suas habilidades e experiências.
+- Desenvolver um mecanismo de filtragem que facilite a seleção de candidatos com base em critérios específicos, como competências técnicas e nível de experiência.
+- Implementar uma interface amigável e intuitiva para as empresas anunciarem suas vagas e gerenciarem o processo seletivo de forma eficiente.
+- Oferecer aos candidatos uma plataforma para explorar oportunidades de emprego, apresentar suas habilidades de maneira eficaz e acompanhar o progresso de suas candidaturas.
+- Integrar ferramentas de análise e acompanhamento para empresas avaliarem a eficácia da plataforma no processo de recrutamento e seleção.
 
  
 > **Links Úteis**:
