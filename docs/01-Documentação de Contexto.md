@@ -14,15 +14,23 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
+**(Validar) Definição do Problema:**
+
+No atual cenário do mercado de trabalho na área de tecnologia, tanto empresas quanto profissionais enfrentam dificuldades significativas no processo de recrutamento e seleção. O rápido avanço tecnológico resultou em uma demanda crescente por especialistas qualificados nesse setor, tornando a competição por talentos mais acirrada do que nunca. As empresas frequentemente lutam para encontrar candidatos que se alinhem perfeitamente às suas necessidades técnicas e culturais, enquanto os profissionais enfrentam o desafio de encontrar oportunidades que correspondam às suas habilidades e aspirações.
+
+As abordagens tradicionais de recrutamento, como anúncios de emprego em plataformas genéricas, são muitas vezes ineficientes e consomem muito tempo. Os currículos e perfis dos candidatos podem não refletir adequadamente suas competências técnicas e soft skills, dificultando a identificação dos melhores candidatos. Além disso, a falta de visibilidade sobre o progresso das candidaturas e a falta de feedback no processo de seleção podem levar a uma experiência insatisfatória para os candidatos.
+
+No contexto desse problema, a proposta de uma plataforma de vagas de emprego especializada na área de tecnologia surge como uma resposta viável. Essa plataforma visa otimizar e simplificar o processo de conexão entre empresas e profissionais de tecnologia, fornecendo ferramentas para que as empresas possam descrever com precisão suas necessidades e que os profissionais possam apresentar suas habilidades de maneira abrangente. A plataforma também busca oferecer recursos de filtragem avançada, permitindo que as empresas identifiquem rapidamente os candidatos mais adequados, enquanto os profissionais podem explorar uma variedade de oportunidades relevantes. Com uma interface intuitiva e mecanismos de análise, a plataforma busca melhorar a eficácia do processo de recrutamento e seleção, beneficiando tanto empresas quanto profissionais da área de tecnologia.
+
 ## Objetivos
 
 Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
 
-(Validar) Desenvolver uma plataforma de vagas de emprego especializada na área de tecnologia que facilite a conexão entre empresas e profissionais, visando agilizar o processo de recrutamento e seleção e contribuir para o avanço da indústria tecnológica.
+**(Validar) Objetivos:** Desenvolver uma plataforma de vagas de emprego especializada na área de tecnologia que facilite a conexão entre empresas e profissionais, visando agilizar o processo de recrutamento e seleção e contribuir para o avanço da indústria tecnológica.
 
 Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
 
-(Validar)
+**(Validar) Objetivos específicos:**
 - Criar um sistema de cadastro e perfil de candidatos que permita uma apresentação abrangente de suas habilidades e experiências.
 - Desenvolver um mecanismo de filtragem que facilite a seleção de candidatos com base em critérios específicos, como competências técnicas e nível de experiência.
 - Implementar uma interface amigável e intuitiva para as empresas anunciarem suas vagas e gerenciarem o processo seletivo de forma eficiente.
@@ -42,7 +50,7 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
-(Validar) A proposta de desenvolver uma plataforma de vagas de emprego voltada para profissionais da área de tecnologia atende a diversas necessidades na sociedade contemporânea. O setor de tecnologia está em constante expansão, demandando uma maneira mais eficiente e centralizada de conectar profissionais qualificados a oportunidades de trabalho. Além disso, a crescente demanda por especialistas em tecnologia exige soluções que facilitem o recrutamento e a seleção de candidatos, contribuindo para o crescimento econômico e a inovação tecnológica. A plataforma visa preencher essa lacuna, proporcionando um ambiente onde empresas e candidatos possam interagir de forma eficaz, fomentando o progresso da área e aliviando os desafios enfrentados no processo de busca e contratação de talentos
+**(Validar) Justificativa:** A proposta de desenvolver uma plataforma de vagas de emprego voltada para profissionais da área de tecnologia atende a diversas necessidades na sociedade contemporânea. O setor de tecnologia está em constante expansão, demandando uma maneira mais eficiente e centralizada de conectar profissionais qualificados a oportunidades de trabalho. Além disso, a crescente demanda por especialistas em tecnologia exige soluções que facilitem o recrutamento e a seleção de candidatos, contribuindo para o crescimento econômico e a inovação tecnológica. A plataforma visa preencher essa lacuna, proporcionando um ambiente onde empresas e candidatos possam interagir de forma eficaz, fomentando o progresso da área e aliviando os desafios enfrentados no processo de busca e contratação de talentos
 
 ## Público-Alvo
 
