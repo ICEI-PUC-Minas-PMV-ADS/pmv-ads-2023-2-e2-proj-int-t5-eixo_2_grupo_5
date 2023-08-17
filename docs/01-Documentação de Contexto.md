@@ -16,12 +16,13 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-(Validar e depois Remover): Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
 
-Desenvolver uma plataforma de vagas de emprego especializada na área de tecnologia que facilite a conexão entre empresas e profissionais, visando agilizar o processo de recrutamento e seleção e contribuir para o avanço da indústria tecnológica.
+(Validar) Desenvolver uma plataforma de vagas de emprego especializada na área de tecnologia que facilite a conexão entre empresas e profissionais, visando agilizar o processo de recrutamento e seleção e contribuir para o avanço da indústria tecnológica.
 
-(Validar e depois Remover): Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
 
+(Validar)
 - Criar um sistema de cadastro e perfil de candidatos que permita uma apresentação abrangente de suas habilidades e experiências.
 - Desenvolver um mecanismo de filtragem que facilite a seleção de candidatos com base em critérios específicos, como competências técnicas e nível de experiência.
 - Implementar uma interface amigável e intuitiva para as empresas anunciarem suas vagas e gerenciarem o processo seletivo de forma eficiente.
@@ -40,6 +41,8 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+
+(Validar) A proposta de desenvolver uma plataforma de vagas de emprego voltada para profissionais da área de tecnologia atende a diversas necessidades na sociedade contemporânea. O setor de tecnologia está em constante expansão, demandando uma maneira mais eficiente e centralizada de conectar profissionais qualificados a oportunidades de trabalho. Além disso, a crescente demanda por especialistas em tecnologia exige soluções que facilitem o recrutamento e a seleção de candidatos, contribuindo para o crescimento econômico e a inovação tecnológica. A plataforma visa preencher essa lacuna, proporcionando um ambiente onde empresas e candidatos possam interagir de forma eficaz, fomentando o progresso da área e aliviando os desafios enfrentados no processo de busca e contratação de talentos
 
 ## Público-Alvo
 
