@@ -28,8 +28,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Profissional de TI  | Cadastrar no meu perfil as minhas habilidades ("hard skills") | Ser facilmente encontrado por empresas e recrutadores |
+|Empresa             | Localizar profissionais a partir das suas habilidades ("hard skills") | Convidar pessoas a integrar a equipe sem precisar anunciar uma vaga na plataforma |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
@@ -47,16 +47,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|------|-------------------------|------------|
+|RF-001| Permitir que o usuário (empresa ou profissional) crie um perfil na plataforma | ALTA | 
+|RF-002| Permitir que o usuário-empresa cadastre vagas de trabalho | ALTA | 
+|RF-003| Permitir que o usuário-profissional se candidate a vagas de trabalho  | ALTA |
+|RF-004| Permitir que o usuário-empresa encontre profissionais por meio de um mecanismo de pesquisa  | ALTA |
+|RF-005| Permitir que o usuário-profissional encontre vagas por meio de um mecanismo de pesquisa  | ALTA |
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|ID     | Descrição do Requisito  | Prioridade |
+|-------|-------------------------|------------|
+|RNF-001| O sistema deve ser responsivo, de modo a ser adequadamente exibido em dispositivos móveis | MÉDIA |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -77,11 +79,12 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
 
+|ID| Restrição |
+|--|-----------|
+|RE-01|A aplicação deve ser entregue de forma plenamente funcional até 06/12/2023.  |
+|RE-02|A aplicação deve ser desenvolvida exclusivamente pelos membros do grupo.  |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
