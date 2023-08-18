@@ -55,13 +55,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-003| Permitir que o usuário-profissional se candidate a vagas de trabalho  | ALTA |
 |RF-004| Permitir que o usuário-empresa encontre profissionais por meio de um mecanismo de pesquisa  | ALTA |
 |RF-005| Permitir que o usuário-profissional encontre vagas por meio de um mecanismo de pesquisa  | ALTA |
-
+|RF-006| O sistema deve permitir que o usuário-empresa defina as qualificações que procura em um profissional | ALTA |
+|RF-007| O sistema deve permitir que o usuário-profissional se autoavalie de acordo com as qualificações definidas pela empresa | ALTA |
+|RF-008| O sistema deve permitir que o usuário-empresa visualize os resultados das autoavaliações | ALTA |
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  | Prioridade |
 |-------|-------------------------|------------|
 |RNF-001| O sistema deve ser responsivo, de modo a ser adequadamente exibido em dispositivos móveis | MÉDIA |
-
+|RNF-002| O sistema deve ser implementado na linguagem de programação C# | ALTA | 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
 - [Requisitos Funcionais
