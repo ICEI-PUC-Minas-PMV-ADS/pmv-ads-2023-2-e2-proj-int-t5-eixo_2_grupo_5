@@ -8,7 +8,9 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Teresa tem 40 anos, é jornalista e estuda Análise e Desenvolvimento de Sistemas, a distância, em uma universidade de Minas Gerais. Pensa em fazer transição de carreira para a área de tecnologia da informação, mas teme ter dificuldade de encontrar oportunidades de trabalho, em virtude da sua idade e por não ter uma rede de contatos com pessoas que atuem no setor de TI.
+
+Albano tem 52 anos, é engenheiro agrônomo e sócio em uma *startup* que desenvolveu uma solução inovadora de [agricultura de precisão[(https://pt.wikipedia.org/wiki/Agricultura_de_precis%C3%A3o). Com a expansão dos seus negócios, o quadro de trabalhadores da empresa quadruplicou em três anos. Até o final de 2013, estima-se que a empresa precisará de oito novos empregados, entre desenvolvedores de software e analistas comerciais.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
