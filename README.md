@@ -1,26 +1,26 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`TECNOLOGIA EM DESENVOLVIMENTO E ANÁLISE DE SISTEMAS`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de uma Aplicação Interativa`
 
-`SEMESTRE`
+`2º Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Uma plataforma que aproxima empresas e candidatos em busca de oportunidades profisssionais no setor de Tecnologia da Informação e Comunicação.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Daniel Drumond Fonte Boa
+* Frederico Adjovani Silva de Aguilar Lemos
+* Lafayete Queiroz Horta
+* Letícia Rangel Vilarim
+* Maria Fernanda Silva Salomao
+* Weglesson de Moura Silva
 
 
 ## Orientador
 
-* Nome completo do professor 1
+* Luciana de Nardin
 
 ## Instruções de utilização
 
