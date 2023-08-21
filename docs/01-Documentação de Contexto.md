@@ -17,7 +17,8 @@ No contexto desse problema, a proposta de uma plataforma de vagas de emprego esp
 
 ## Objetivos
 
-**Objetivos:** Desenvolver uma plataforma de vagas de emprego especializada na área de tecnologia que facilite a conexão entre empresas e profissionais, visando agilizar o processo de recrutamento e seleção e contribuir para o avanço da indústria tecnológica.
+**Objetivos:** 
+Desenvolver uma plataforma de vagas de emprego especializada na área de tecnologia que facilite a conexão entre empresas e profissionais, visando agilizar o processo de recrutamento e seleção e contribuir para o avanço da indústria tecnológica.
 
 **Objetivos específicos:**
 - Criar um sistema de cadastro de candidatos que permita uma apresentação abrangente de suas habilidades e experiências.
@@ -25,9 +26,6 @@ No contexto desse problema, a proposta de uma plataforma de vagas de emprego esp
 - Implementar uma interface amigável e intuitiva para as empresas anunciarem suas vagas e gerenciarem o processo seletivo de forma eficiente.
 - Oferecer aos candidatos uma plataforma para explorar oportunidades de emprego, apresentar suas habilidades de maneira eficaz e acompanhar o progresso de suas candidaturas.
 - Integrar ferramentas de análise e acompanhamento para empresas avaliarem a eficácia da plataforma no processo de recrutamento e seleção.
-
- > **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
