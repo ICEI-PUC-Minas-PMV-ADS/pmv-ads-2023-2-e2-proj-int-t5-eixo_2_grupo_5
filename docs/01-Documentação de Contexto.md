@@ -2,18 +2,8 @@
 Meio milhão de vagas de trabalho em aberto, até 2025, por *déficit* de profissionais de TI. O [diagnóstico](https://ibre.fgv.br/blog-da-conjuntura-economica/artigos/deficit-de-profissionais-de-ti-pode-chegar-meio-milhao-ate-2025) é da [Brasscom](https://brasscom.org.br/quem-somos/sobre-a-brasscom/), Associação das Empresas de Tecnologia da Informação e Comunicação (TIC) e de Tecnologias Digitais, e reforça a necessidade de políticas públicas que facilitem a formação de novos profissionais na área de tecnologia. Mas não só: é preciso aproximar as empresas dos candidatos a oportunidades de carreira no setor. É essa conjuntura que reclama o desenvolvimento de uma solução que simplifique e dê agilidade ao processo de recrutamento e seleção de profissionais de TI.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
-
-**(Validar) Definição do Problema:**
+** Definição do Problema:**
 
 No atual cenário do mercado de trabalho na área de tecnologia, tanto empresas quanto profissionais enfrentam dificuldades significativas no processo de recrutamento e seleção. O rápido avanço tecnológico resultou em uma demanda crescente por especialistas qualificados nesse setor, tornando a competição por talentos mais acirrada do que nunca. As empresas frequentemente lutam para encontrar candidatos que se alinhem perfeitamente às suas necessidades técnicas e culturais, enquanto os profissionais enfrentam o desafio de encontrar oportunidades que correspondam às suas habilidades e aspirações.
 
