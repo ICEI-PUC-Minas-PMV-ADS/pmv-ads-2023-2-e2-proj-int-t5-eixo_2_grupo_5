@@ -31,7 +31,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Profissional de TI  | Cadastrar no meu perfil as minhas habilidades ("hard skills") | Ser facilmente encontrado por empresas e recrutadores |
-|Empresa             | Localizar profissionais a partir das suas habilidades ("hard skills") | Convidar pessoas a integrar a equipe sem precisar anunciar uma vaga na plataforma |
+|Recrutador          | Localizar profissionais a partir das suas habilidades ("hard skills") | Convidar pessoas a integrar a equipe sem precisar anunciar uma vaga na plataforma |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
