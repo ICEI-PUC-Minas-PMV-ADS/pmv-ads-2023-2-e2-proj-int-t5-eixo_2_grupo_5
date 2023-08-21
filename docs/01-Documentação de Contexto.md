@@ -3,8 +3,6 @@ Meio milhão de vagas de trabalho em aberto, até 2025, por *déficit* de profis
 
 ## Problema
 
-**Definição do Problema:**
-
 No atual cenário do mercado de trabalho na área de tecnologia, tanto empresas quanto profissionais enfrentam dificuldades significativas no processo de recrutamento e seleção. O rápido avanço tecnológico resultou em uma demanda crescente por especialistas qualificados nesse setor, tornando a competição por talentos mais acirrada do que nunca. As empresas frequentemente lutam para encontrar candidatos que se alinhem perfeitamente às suas necessidades técnicas e culturais, enquanto os profissionais enfrentam o desafio de encontrar oportunidades que correspondam às suas habilidades e aspirações.
 
 Um estudo conduzido pela Associação Brasileira de Startups (Abstartups), em parceria com o Google (2023), indicou que cerca de **85 milhões de empregos** em todo o mundo **não** serão preenchidos devido à falta de profissionais especializados até 2030. A [Brasscom](https://brasscom.org.br/quem-somos/sobre-a-brasscom/), Associação das Empresas de Tecnologia da Informação e Comunicação (TIC) e de Tecnologias Digitais, realizou uma [pesquisa](https://brasscom.org.br/pdfs/demanda-de-talentos-em-tic-e-estrategia-tcem/), divulgada em dezembro de 2021, segundo a qual haverá no Brasil, até 2025, uma demanda de aproximadamente **800 mil profissionais** de TIC. O estudo estima que os **53 mil formandos** em TIC que chegam anualmente ao mercado de trabalho serão insuficientes para atender a uma oferta de quase **160 mil vagas** anuais em funções relacionadas a Tecnologia da Informação e Comunicação. O [Relatório Setorial 2022 - Macrossetor de TI](https://brasscom.org.br/wp-content/uploads/2023/05/BRI2-2023-008-001-Relatorio-Setorial-v32-versao-resumida-SITE_compressed.pdf), também elaborado pela Brasscom e publicado em maio de 2023, afirma que o macrossetor TIC sofreu um incremento de **117 mil novos postos de trabalho em 2022** e cresceu, nos últimos cinco anos, **6,9% ao ano**.
@@ -17,7 +15,6 @@ No contexto desse problema, a proposta de uma plataforma de vagas de emprego esp
 
 ## Objetivos
 
-**Objetivos:** 
 Desenvolver uma plataforma de vagas de emprego especializada na área de tecnologia que facilite a conexão entre empresas e profissionais, visando agilizar o processo de recrutamento e seleção e contribuir para o avanço da indústria tecnológica.
 
 **Objetivos específicos:**
@@ -29,7 +26,7 @@ Desenvolver uma plataforma de vagas de emprego especializada na área de tecnolo
 
 ## Justificativa
 
-**Justificativa:** A proposta de desenvolver uma plataforma de vagas de emprego voltada para profissionais da área de tecnologia atende a diversas necessidades na sociedade contemporânea. O setor de tecnologia está em constante expansão, demandando uma maneira mais eficiente e centralizada de conectar profissionais qualificados a oportunidades de trabalho. Além disso, a crescente demanda por especialistas em tecnologia exige soluções que facilitem o recrutamento e a seleção de candidatos, contribuindo para o crescimento econômico e a inovação tecnológica. A plataforma visa preencher essa lacuna, proporcionando um ambiente onde empresas e candidatos possam interagir de forma eficaz, fomentando o progresso da área e aliviando os desafios enfrentados no processo de busca e contratação de talentos
+A proposta de desenvolver uma plataforma de vagas de emprego voltada para profissionais da área de tecnologia atende a diversas necessidades na sociedade contemporânea. O setor de tecnologia está em constante expansão, demandando uma maneira mais eficiente e centralizada de conectar profissionais qualificados a oportunidades de trabalho. Além disso, a crescente demanda por especialistas em tecnologia exige soluções que facilitem o recrutamento e a seleção de candidatos, contribuindo para o crescimento econômico e a inovação tecnológica. A plataforma visa preencher essa lacuna, proporcionando um ambiente onde empresas e candidatos possam interagir de forma eficaz, fomentando o progresso da área e aliviando os desafios enfrentados no processo de busca e contratação de talentos
 
 ## Público-Alvo
 
