@@ -3,7 +3,7 @@ Meio milhão de vagas de trabalho em aberto, até 2025, por *déficit* de profis
 
 ## Problema
 
-** Definição do Problema:**
+**Definição do Problema:**
 
 No atual cenário do mercado de trabalho na área de tecnologia, tanto empresas quanto profissionais enfrentam dificuldades significativas no processo de recrutamento e seleção. O rápido avanço tecnológico resultou em uma demanda crescente por especialistas qualificados nesse setor, tornando a competição por talentos mais acirrada do que nunca. As empresas frequentemente lutam para encontrar candidatos que se alinhem perfeitamente às suas necessidades técnicas e culturais, enquanto os profissionais enfrentam o desafio de encontrar oportunidades que correspondam às suas habilidades e aspirações.
 
@@ -31,29 +31,11 @@ No contexto desse problema, a proposta de uma plataforma de vagas de emprego esp
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
-
 **Justificativa:** A proposta de desenvolver uma plataforma de vagas de emprego voltada para profissionais da área de tecnologia atende a diversas necessidades na sociedade contemporânea. O setor de tecnologia está em constante expansão, demandando uma maneira mais eficiente e centralizada de conectar profissionais qualificados a oportunidades de trabalho. Além disso, a crescente demanda por especialistas em tecnologia exige soluções que facilitem o recrutamento e a seleção de candidatos, contribuindo para o crescimento econômico e a inovação tecnológica. A plataforma visa preencher essa lacuna, proporcionando um ambiente onde empresas e candidatos possam interagir de forma eficaz, fomentando o progresso da área e aliviando os desafios enfrentados no processo de busca e contratação de talentos
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
-
-**(Validar) Descrição dos Perfis de Usuários:**
+**Descrição dos Perfis de Usuários:**
 
 1. **Profissionais de Tecnologia:**
    - **Conhecimentos Prévios:** Possuem amplo conhecimento em tecnologias, linguagens de programação, metodologias de desenvolvimento, e outras áreas relacionadas.
