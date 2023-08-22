@@ -8,7 +8,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Teresa tem 40 anos, é jornalista e estuda Análise e Desenvolvimento de Sistemas, a distância, em uma universidade de Minas Gerais. Pensa em fazer transição de carreira para a área de tecnologia da informação, mas teme ter dificuldade de encontrar oportunidades de trabalho, em virtude da sua idade e por não ter uma rede de contatos com pessoas que atuem no setor de TI.
+Teresa tem 40 anos, tem uma filha, é jornalista e estuda Análise e Desenvolvimento de Sistemas, a distância, em uma universidade de Minas Gerais. Pensa em fazer transição de carreira para a área de tecnologia da informação, mas teme ter dificuldade de encontrar oportunidades de trabalho, em virtude da sua idade e por não ter uma rede de contatos com pessoas que atuem no setor de TI.|
 
 Albano tem 52 anos, é engenheiro agrônomo e sócio em uma *startup* que desenvolveu uma solução inovadora de [agricultura de precisão](https://pt.wikipedia.org/wiki/Agricultura_de_precis%C3%A3o). Com a expansão dos negócios, o quadro de trabalhadores da empresa quadruplicou em três anos. Até o final de 2023, estima-se que a empresa precisará de oito novos empregados, entre desenvolvedores de software e analistas comerciais.
 
@@ -18,8 +18,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Profissional de TI  | Cadastrar no meu perfil as minhas habilidades ("hard skills") | Ser facilmente encontrado por empresas e recrutadores |
-|Recrutador          | Localizar profissionais a partir das suas habilidades ("hard skills") | Convidar pessoas a integrar a equipe sem precisar anunciar uma vaga na plataforma |
+|Teresa              | Localizar vagas de trabalho na modalidade home office | Conseguir uma oportunidade profissional como desenvolvedora mobile junior |
+|Teresa              | Descrever no meu perfil as minhas habilidades como desenvolvedora de software | Ser encontrada por empresas de TI |
+|Albano              | Anunciar vagas de trabalho | Selecionar profissionais com o perfil desejado pela minha empresa |
+|Albano              | Localizar profissionais a partir das suas habilidades ("hard skills") | Convidar pessoas a ingressar na empresa sem precisar anunciar uma vaga na plataforma |
 
 ## Requisitos
 
@@ -29,21 +31,21 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-------------------------|------------|
-|RF-001| Permitir que o usuário (empresa ou profissional) crie um perfil na plataforma | ALTA | 
-|RF-002| Permitir que o usuário-empresa cadastre vagas de trabalho | ALTA | 
-|RF-003| Permitir que o usuário-profissional se candidate a vagas de trabalho  | ALTA |
-|RF-004| Permitir que o usuário-empresa encontre profissionais por meio de um mecanismo de pesquisa  | ALTA |
-|RF-005| Permitir que o usuário-profissional encontre vagas por meio de um mecanismo de pesquisa  | ALTA |
-|RF-006| O sistema deve permitir que o usuário-empresa defina as qualificações que procura em um profissional | ALTA |
-|RF-007| O sistema deve permitir que o usuário-profissional se autoavalie de acordo com as qualificações definidas pela empresa | ALTA |
-|RF-008| O sistema deve permitir que o usuário-empresa visualize os resultados das autoavaliações | ALTA |
+|RF-001| A aplicação deve permitir que o usuário (empresa ou profissional) gerencie um perfil na plataforma | ALTA | 
+|RF-002| A aplicação deve permitir que a empresa gerencie vagas de trabalho | ALTA | 
+|RF-003| A aplicação deve permitir que o profissional se candidate a vagas de trabalho  | ALTA |
+|RF-004| A aplicação deve permitir que o profissional encontre vagas por meio de um mecanismo de pesquisa  | ALTA |
+|RF-005| A aplicação deve permitir que a empresa defina as qualificações que procura em um profissional | ALTA |
+|RF-006| A aplicação deve permitir que o profissional se autoavalie de acordo com as qualificações definidas pela empresa | ALTA |
+|RF-007| A aplicação deve permitir que a empresa visualize os resultados das autoavaliações | ALTA |
+|RF-008| A aplicação deve permitir que a empresa encontre profissionais por meio de um mecanismo de pesquisa  | MÉDIA |
+
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  | Prioridade |
 |-------|-------------------------|------------|
 |RNF-001| O sistema deve ser responsivo, de modo a ser adequadamente exibido em dispositivos móveis | MÉDIA |
 |RNF-002| O sistema deve ser implementado na linguagem de programação C# | ALTA | 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
 - [Requisitos Funcionais
  (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
