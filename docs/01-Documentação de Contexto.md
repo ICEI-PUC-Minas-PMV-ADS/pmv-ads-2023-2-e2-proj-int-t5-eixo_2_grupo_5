@@ -83,11 +83,6 @@ A proposta de desenvolver uma plataforma de vagas de emprego voltada para profis
             |                        |
             | Empresas de Tecnologia |
             |                        |
-            | Desenvolvedores da     |
-            | Plataforma             |
-            |                        |
-            | Administradores da     |
-            | Plataforma             |
             +------------------------+
 ```
 
