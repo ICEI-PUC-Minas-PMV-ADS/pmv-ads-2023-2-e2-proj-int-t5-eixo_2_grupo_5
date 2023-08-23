@@ -46,6 +46,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|-------------------------|------------|
 |RNF-001| O sistema deve ser responsivo, de modo a ser adequadamente exibido em dispositivos móveis | MÉDIA |
 |RNF-002| O sistema deve ser implementado na linguagem de programação C# | ALTA | 
+|RNF-003| O sistema deve manter o tempo máximo de resposta para qualquer interação do usuário na aplicação abaixo de 15 segundos | MÉDIA |
+|RNF-004| O sistema deve ser capaz de suportar até 1000 usuários navegando simultaneamente, mantendo um tempo de resposta satisfatório e sem degradação significativa de desempenho | MÉDIA |
+|RNF-005| O sistema deve garantir a segurança dos dados dos usuários, protegendo as informações pessoais e confidenciais armazenadas na aplicação | ALTA | 
 
 - [Requisitos Funcionais
  (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
@@ -70,6 +73,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |--|-----------|
 |RE-01|A aplicação deve ser entregue de forma plenamente funcional até 06/12/2023.  |
 |RE-02|A aplicação deve ser desenvolvida exclusivamente pelos membros do grupo.  |
+|RE-03|A apliação deve exigir que apenas os usuários residentes no Brasil de candidatem as vagas de emprego.
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
