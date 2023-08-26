@@ -2,13 +2,52 @@
 
 ## Personas
 
-Teresa tem 40 anos, tem uma filha, é jornalista e estuda Análise e Desenvolvimento de Sistemas, a distância, em uma universidade de Minas Gerais. Pensa em fazer transição de carreira para a área de tecnologia da informação, mas teme ter dificuldade de encontrar oportunidades de trabalho, em virtude da sua idade e por não ter uma rede de contatos com pessoas que atuem no setor de TI.|
+<figure style="display: flex; align-items: flex-start;">
+  <img src="./img/teresa.png" alt="Image description" width="180" height="200" style="margin-right: 20px;">
+  <figcaption> <b>Teresa</b>:<br><br>
+    Teresa tem 40 anos, tem uma filha, é jornalista e estuda Análise e Desenvolvimento de Sistemas, a distância, em uma universidade de Minas Gerais. Pensa em fazer transição de carreira para a área de tecnologia da informação, mas teme ter dificuldade de encontrar oportunidades de trabalho, em virtude da sua idade e por não ter uma rede de contatos com pessoas que atuem no setor de TI.<br><br>
+    Motivada pela sua paixão por desafios e pelo desejo de constante aprendizado, Teresa enfrentou inúmeras situações ao longo de sua carreira como jornalista. Ela acredita que essa mesma determinação a capacitará a se destacar na área de tecnologia. No entanto, a incerteza sobre o futuro a frustra em momentos de reflexão. Seu tempo ao ar livre, desbravando trilhas, sempre lhe proporcionou clareza e tranquilidade para superar obstáculos. Agora, enquanto estuda Análise e Desenvolvimento de Sistemas, ela está pronta para combinar sua curiosidade inata com suas novas habilidades técnicas.<br><br>
+    Além disso, Teresa descobriu que o mundo da programação é como uma nova forma de expressão, onde a lógica se mescla com a criatividade. Seu hobby de pintura se encaixa surpreendentemente bem nessa nova paixão. Com a determinação que a impulsionou como jornalista, Teresa está empenhada em construir um perfil que evidencie suas habilidades como desenvolvedora de software, permitindo que empresas de TI a encontrem com facilidade. Ela sabe que o caminho pode ser desafiador, mas sua motivação, combinada com a satisfação que encontra em aprender algo novo a cada dia, a impulsionará a alcançar seus objetivos, mesmo que isso signifique começar de novo.<br><br>
+    <b>Aplicativos:</b> LinkedIn, WhatsApp, Facebook, Netflix, Youtube
+  </figcaption>
+</figure>
 
-Albano tem 52 anos, é engenheiro agrônomo e sócio em uma *startup* que desenvolveu uma solução inovadora de [agricultura de precisão](https://pt.wikipedia.org/wiki/Agricultura_de_precis%C3%A3o). Com a expansão dos negócios, o quadro de trabalhadores da empresa quadruplicou em três anos. Até o final de 2023, estima-se que a empresa precisará de oito novos empregados, entre desenvolvedores de software e analistas comerciais.
+<hr>
 
-Victor Almeida tem 38 anos, é Sócio e Diretor de uma empresa de Desenvolvimento de Software e criação de websites, com mais de 20 anos de experiência na área de t.i e gestão de projetos. Carlos está enfrentando dificuldades em encontrar profissionais qualificados para sua empresa. Muitos dos candidatos que ele encontra não possuem experiência na área de TI ou têm interesse em seguir outras carreiras além de sua formação. Isso torna difícil encontrar pessoas que possuam as habilidades técnicas necessárias e também estejam dispostas a se comprometer com a área de TI a longo prazo.
+<figure style="display: flex; align-items: flex-start;">
+  <img src="./img/albano.png" alt="Image description" width="180" height="200" style="margin-right: 20px;">
+  <figcaption> <b>Albano</b>:<br><br>
+    Albano, um engenheiro agrônomo de 52 anos, encontrou seu trilho na inovação e na terra fértil da agricultura de precisão. Como sócio fundador de uma startup que revoluciona a forma como encaramos a produção agrícola, ele viu sementes de ideias se transformarem em soluções concretas. Com uma determinação implacável, a equipe da startup floresceu quatro vezes ao longo de três anos, respondendo à crescente demanda por sua abordagem disruptiva. Olhando adiante, Albano vislumbra um novo desafio emocionante: até o final de 2023, a empresa almeja adicionar o talento de oito novos membros à equipe, incluindo desenvolvedores de software e analistas comerciais.<br><br>
+    No íntimo, Albano é movido pela paixão de selecionar os candidatos perfeitos para sua empresa. Ele está determinado a anunciar vagas de trabalho que atraíam indivíduos não apenas com habilidades excepcionais, mas também com afinidade aos valores e visão que impulsionam a equipe. Como um verdadeiro artesão de equipe, sua ambição é criar oportunidades de impacto para profissionais que compartilham a mesma visão inspiradora.<br><br>
+    Mas a busca por talento não é isenta de desafios. Albano enfrenta a frustração de encontrar o equilíbrio entre as "hard skills" necessárias para as funções e a paixão que alinha as pessoas com o propósito da empresa. Ele compreende a necessidade de encontrar candidatos que possam combinar o conhecimento técnico com a paixão e a dedicação que movem a startup adiante.<br><br>
+    <b>Aplicativos:</b> LinkedIn, Whatsapp, Google Meet, Agrivi, Climate FieldView, Agworld.
+  </figcaption>
+</figure>
 
-Aurora Barcelos tem 25 anos, formou-se recentemente em Ciência da Computação. Durante seu periodo academico teve um otimo desempenho e participou de diversos projetos de pesquisas e desenvolvimento na area de inteligencia artifical. Apesar de sua sólida formação acadêmica, Aurora está enfrentando dificuldades para ingressar no mercado de TI. Ela percebe que a maioria das vagas exige experiência profissional relevante, o que ele não possui. Aurora também sente que a concorrência é acirrada, com muitos candidatos mais experientes disputando as mesmas oportunidades.
+<hr>
+
+<figure style="display: flex; align-items: flex-start;">
+  <img src="./img/victor.png" alt="Image description" width="180" height="200" style="margin-right: 20px;">
+  <figcaption> <b>Victor Almeida</b>:<br><br>
+    Com seus 38 anos, Victor Almeida assume o papel influente de Sócio e Diretor em uma destacada empresa de Desenvolvimento de Software e criação de websites. Com uma bagagem que se estende por mais de duas décadas, é um veterano na área de tecnologia da informação e gestão de projetos. Seu percurso é um mosaico de inovação e liderança, que ganha forma com cada projeto conquistado e equipe direcionada.<br><br>
+    Enquanto capitaneia a empresa, Victor enfrenta um cenário desafiador na busca por profissionais qualificados. A dificuldade reside na escassez de candidatos que possuam a experiência necessária na área de TI e também estejam comprometidos a trilhar um percurso duradouro no campo. O desafio de encontrar indivíduos que conjuguem habilidades técnicas fundamentais com uma visão a longo prazo é uma incógnita que ele se esforça em decifrar diariamente.<br><br>
+    Nos bastidores da gestão e codificação, Victor encontra equilíbrio nos hobbies que energizam sua mente. Ele tem uma paixão pela astronomia e observação de estrelas, o que espelha sua visão de longo alcance no mundo da tecnologia. Assim como ele busca nas estrelas os segredos do universo, ele também busca no talento humano os pilares para o sucesso de sua empresa..<br><br>
+    <b>Aplicativos:</b> LinkedIn, Whatsapp, Google Meet.
+  </figcaption>
+</figure>
+
+<hr>
+
+<figure style="display: flex; align-items: flex-start;">
+  <img src="./img/aurora.png" alt="Image description" width="180" height="200" style="margin-right: 20px;">
+  <figcaption> <b>Aurora Barcelos</b>:<br><br>
+    Aurora Barcelos, uma jovem de 25 anos, emergiu recentemente com um diploma em Ciência da Computação. Sua trajetória acadêmica brilha com realizações, marcada por um desempenho exemplar e a participação em projetos de pesquisa e desenvolvimento na empolgante área de inteligência artificial. Contudo, apesar da base sólida construída durante sua formação, Aurora enfrenta barreiras ao tentar trilhar seu caminho no mercado de TI. Uma névoa de desafios surge à sua frente, principalmente devido à exigência de experiência profissional relevante, algo que ela ainda não acumulou. Em meio a essa jornada, ela também sente a presença marcante de uma concorrência acirrada, onde candidatos mais experientes batalham pelas mesmas oportunidades. <br><br>
+    Guiada por ambição e determinação, Aurora tem o desejo fervente de não apenas entrar no mercado de TI, mas também criar um impacto significativo. Ela busca ser uma peça ativa na engrenagem da inovação tecnológica, contribuindo com suas habilidades frescas e seu entusiasmo inabalável. Sua motivação para ingressar nesse campo está enraizada na curiosidade que a moveu durante seus anos acadêmicos, e agora ela anseia aplicar essa paixão em um cenário prático. <br><br>
+    Apesar de sua determinação, as frustrações rondam Aurora. A barreira da falta de experiência em um campo que valoriza essa qualidade é um obstáculo complexo de superar. No entanto, essa frustração só serve para alimentar sua resolução de provar seu valor. Aurora busca oportunidades no mercado de TI, não apenas como um trampolim para sua carreira, mas como uma plataforma para aprimorar suas habilidades. Ela anseia por práticas reais e aprendizado tangível, onde possa colher o conhecimento que apenas a experiência prática pode proporcionar. <br><br>
+    Nos intervalos da busca incansável por oportunidades, Aurora encontra conforto e expressão em suas atividades criativas. Seu amor pelas artes visuais e pelo desenho digital é uma fuga para um mundo onde ela pode dar vida a sua imaginação. Esse hobby oferece um espaço de descontração em meio aos desafios do mundo tecnológico e reflete sua natureza diversificada e criativa..<br><br>
+    <b>Aplicativos:</b> LinkedIn, Whatsapp, Instagram, Pinterest.
+  </figcaption>
+</figure>
 
 ## Histórias de Usuários
 
@@ -20,10 +59,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Teresa              | Descrever no meu perfil as minhas habilidades como desenvolvedora de software | Ser encontrada por empresas de TI |
 |Albano              | Anunciar vagas de trabalho | Selecionar profissionais com o perfil desejado pela minha empresa |
 |Albano              | Localizar profissionais a partir das suas habilidades ("hard skills") | Convidar pessoas a ingressar na empresa sem precisar anunciar uma vaga na plataforma |
-|João                | Encontrar profissionais qualificados na área de TI que estejam alinhados com os objetivos e necessidades da empresa. | Impulsionar o desenvolvimento de software, inovar, gerenciar projetos, oferecer suporte técnico, manter os sistemas e impulsionar o crescimento e a expansão de sua empresa de software. |
-|João                | Contratar profissionais de TI altamente qualificados. |  Impulsionar o crescimento da equipe e garantir a satisfação dos clientes. |
-|Aurora              | Ingressar no mercado de T.I | Impulsionar sua carreira profissional. | 
-|Aurora              | Oportunidade no mercado de T.I | Aprimorar suas habilidades e obter experiências praticas. | 
+|Victor                | Encontrar profissionais qualificados na área de TI que estejam alinhados com os objetivos e necessidades da empresa. | Impulsionar o desenvolvimento de software, inovar, gerenciar projetos, oferecer suporte técnico, manter os sistemas e impulsionar o crescimento e a expansão de sua empresa de software. |
+|Victor                | Contratar profissionais de TI altamente qualificados. |  Impulsionar o crescimento da equipe e garantir a satisfação dos clientes. |
+|Aurora              | Ingressar no mercado de T.I | Impulsionar sua carreira profissional. |
+|Aurora              | Oportunidade no mercado de T.I | Aprimorar suas habilidades e obter experiências praticas. |
 
 ## Requisitos
 
