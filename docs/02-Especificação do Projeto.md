@@ -42,6 +42,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-007| A aplicação deve permitir que a empresa visualize os resultados das autoavaliações | ALTA |
 |RF-008| A aplicação deve permitir que a empresa encontre profissionais por meio de um mecanismo de pesquisa  | MÉDIA |
 |RF-009| A aplicação deve permitir que o profissional acompanhe o status de suas candidaturas. | MÉDIA |
+|RF-010| A aplicação deve permitir que os usuários compartilhem vagas através de redes sociais. | BAIXA |
 
 ### Requisitos não Funcionais
 
