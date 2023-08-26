@@ -72,8 +72,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-------------------------|------------|
-|RF-001| A aplicação deve permitir que o usuário (empresa ou profissional) gerencie um perfil na plataforma | ALTA | 
-|RF-002| A aplicação deve permitir que a empresa gerencie vagas de trabalho | ALTA | 
+|RF-001| A aplicação deve permitir que o usuário (empresa ou profissional) gerencie um perfil na plataforma | ALTA |
+|RF-002| A aplicação deve permitir que a empresa gerencie vagas de trabalho | ALTA |
 |RF-003| A aplicação deve permitir que o profissional se candidate a vagas de trabalho  | ALTA |
 |RF-004| A aplicação deve permitir que o profissional encontre vagas por meio de um mecanismo de pesquisa  | ALTA |
 |RF-005| A aplicação deve permitir que a empresa defina as qualificações que procura em um profissional | ALTA |
@@ -88,10 +88,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  | Prioridade |
 |-------|-------------------------|------------|
 |RNF-001| O sistema deve ser responsivo, de modo a ser adequadamente exibido em dispositivos móveis | MÉDIA |
-|RNF-002| O sistema deve ser implementado na linguagem de programação C# | ALTA | 
+|RNF-002| O sistema deve ser implementado na linguagem de programação C# | ALTA |
 |RNF-003| O sistema deve manter o tempo máximo de resposta para qualquer interação do usuário na aplicação abaixo de 15 segundos | MÉDIA |
 |RNF-004| O sistema deve ser capaz de suportar até 1000 usuários navegando simultaneamente, mantendo um tempo de resposta satisfatório e sem degradação significativa de desempenho | MÉDIA |
-|RNF-005| O sistema deve garantir a segurança dos dados dos usuários, protegendo as informações pessoais e confidenciais armazenadas na aplicação | ALTA | 
+|RNF-005| O sistema deve garantir a segurança dos dados dos usuários, protegendo as informações pessoais e confidenciais armazenadas na aplicação | ALTA |
 
 - [Requisitos Funcionais
  (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
@@ -120,13 +120,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+[Arquivo .drawio (xmf).](./use_case_diagram.drawio)
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+Png:
+<img src="./img/use_case_diagram.png" alt="Use Case Diagram" width="800" height="450"/>
