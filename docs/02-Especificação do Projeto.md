@@ -14,6 +14,8 @@ Albano tem 52 anos, é engenheiro agrônomo e sócio em uma *startup* que desenv
 
 Victor Almeida tem 38 anos, é Sócio e Diretor de uma empresa de Desenvolvimento de Software e criação de websites, com mais de 20 anos de experiência na área de t.i e gestão de projetos. Carlos está enfrentando dificuldades em encontrar profissionais qualificados para sua empresa. Muitos dos candidatos que ele encontra não possuem experiência na área de TI ou têm interesse em seguir outras carreiras além de sua formação. Isso torna difícil encontrar pessoas que possuam as habilidades técnicas necessárias e também estejam dispostas a se comprometer com a área de TI a longo prazo.
 
+Aurora Barcelos tem 25 anos, formou-se recentemente em Ciência da Computação. Durante seu periodo academico teve um otimo desempenho e participou de diversos projetos de pesquisas e desenvolvimento na area de inteligencia artifical. Apesar de sua sólida formação acadêmica, Aurora está enfrentando dificuldades para ingressar no mercado de TI. Ela percebe que a maioria das vagas exige experiência profissional relevante, o que ele não possui. Aurora também sente que a concorrência é acirrada, com muitos candidatos mais experientes disputando as mesmas oportunidades.
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -25,7 +27,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Albano              | Anunciar vagas de trabalho | Selecionar profissionais com o perfil desejado pela minha empresa |
 |Albano              | Localizar profissionais a partir das suas habilidades ("hard skills") | Convidar pessoas a ingressar na empresa sem precisar anunciar uma vaga na plataforma |
 |João                | Encontrar profissionais qualificados na área de TI que estejam alinhados com os objetivos e necessidades da empresa. | Impulsionar o desenvolvimento de software, inovar, gerenciar projetos, oferecer suporte técnico, manter os sistemas e impulsionar o crescimento e a expansão de sua empresa de software. |
-|João                 | Contratar profissionais de TI altamente qualificados. |  Impulsionar o crescimento da equipe e garantir a satisfação dos clientes. |
+|João                | Contratar profissionais de TI altamente qualificados. |  Impulsionar o crescimento da equipe e garantir a satisfação dos clientes. |
+|Aurora              | Ingressar no mercado de T.I | Impulsionar sua carreira profissional. | 
+|Aurora              | Oportunidade no mercado de T.I | Aprimorar suas habilidades e obter experiências praticas. | 
+
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
@@ -42,6 +47,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-006| A aplicação deve permitir que o profissional se autoavalie de acordo com as qualificações definidas pela empresa | ALTA |
 |RF-007| A aplicação deve permitir que a empresa visualize os resultados das autoavaliações | ALTA |
 |RF-008| A aplicação deve permitir que a empresa encontre profissionais por meio de um mecanismo de pesquisa  | MÉDIA |
+|RF-009| A aplicação deve permitir que o profissional acompanhe o status de suas candidaturas. | MÉDIA |
 
 ### Requisitos não Funcionais
 
