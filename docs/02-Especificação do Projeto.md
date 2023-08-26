@@ -12,6 +12,8 @@ Teresa tem 40 anos, tem uma filha, é jornalista e estuda Análise e Desenvolvim
 
 Albano tem 52 anos, é engenheiro agrônomo e sócio em uma *startup* que desenvolveu uma solução inovadora de [agricultura de precisão](https://pt.wikipedia.org/wiki/Agricultura_de_precis%C3%A3o). Com a expansão dos negócios, o quadro de trabalhadores da empresa quadruplicou em três anos. Até o final de 2023, estima-se que a empresa precisará de oito novos empregados, entre desenvolvedores de software e analistas comerciais.
 
+Victor Almeida tem 38 anos, é Sócio e Diretor de uma empresa de Desenvolvimento de Software e criação de websites, com mais de 20 anos de experiência na área de t.i e gestão de projetos. Carlos está enfrentando dificuldades em encontrar profissionais qualificados para sua empresa. Muitos dos candidatos que ele encontra não possuem experiência na área de TI ou têm interesse em seguir outras carreiras além de sua formação. Isso torna difícil encontrar pessoas que possuam as habilidades técnicas necessárias e também estejam dispostas a se comprometer com a área de TI a longo prazo.
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -22,7 +24,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Teresa              | Descrever no meu perfil as minhas habilidades como desenvolvedora de software | Ser encontrada por empresas de TI |
 |Albano              | Anunciar vagas de trabalho | Selecionar profissionais com o perfil desejado pela minha empresa |
 |Albano              | Localizar profissionais a partir das suas habilidades ("hard skills") | Convidar pessoas a ingressar na empresa sem precisar anunciar uma vaga na plataforma |
-
+|João                | Encontrar profissionais qualificados na área de TI que estejam alinhados com os objetivos e necessidades da empresa. | Impulsionar o desenvolvimento de software, inovar, gerenciar projetos, oferecer suporte técnico, manter os sistemas e impulsionar o crescimento e a expansão de sua empresa de software. |
+|João                 | Contratar profissionais de TI altamente qualificados. |  Impulsionar o crescimento da equipe e garantir a satisfação dos clientes. |
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
