@@ -6,7 +6,7 @@ Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvo
 > - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
 > - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
 
-BRASSCOM. Quem somos. Disponível em: https://brasscom.org.br/quem-somos/sobre-a-brasscom/. Acesso em: 26 ago. 2023.
+BRASSCOM. Déficit de profissionais de TI pode chegar a meio milhão até 2025. Como mitigá-lo?. Disponível em: https://ibre.fgv.br/blog-da-conjuntura-economica/artigos/deficit-de-profissionais-de-ti-pode-chegar-meio-milhao-ate-2025. Acesso em: 26 ago. 2023.
 
 D'AVILA, Geyza Cunha; REGIS, Helder Pontes  e  OLIVEIRA, Lúcia Maria Barbosa de.Redes sociais e indicações para processos de recrutamento e seleção: uma análise pela perspectiva dos candidatos. Rev. Psicol., Organ. Trab. [online]. 2010, vol.10, n.1, pp. 65-80. ISSN 1984-6657.
 
