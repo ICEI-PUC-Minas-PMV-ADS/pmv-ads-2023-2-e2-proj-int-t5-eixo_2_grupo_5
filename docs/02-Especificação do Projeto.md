@@ -116,7 +116,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |--|-----------|
 |RE-01|A aplicação deve ser entregue de forma plenamente funcional até 06/12/2023.  |
 |RE-02|A aplicação deve ser desenvolvida exclusivamente pelos membros do grupo.  |
-|RE-03|A apliação deve exigir que apenas os usuários residentes no Brasil de candidatem as vagas de emprego.
+|RE-03|A aplicação deve exigir que apenas os usuários residentes no Brasil se candidatem às vagas de emprego.
 
 ## Diagrama de Casos de Uso
 
