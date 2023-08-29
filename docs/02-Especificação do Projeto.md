@@ -70,18 +70,23 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-------------------------|------------|
-|RF-001| A aplicação deve permitir que o usuário (empresa ou profissional) gerencie um perfil na plataforma | ALTA |
-|RF-002| A aplicação deve permitir que a empresa gerencie vagas de trabalho | ALTA |
-|RF-003| A aplicação deve permitir que o profissional se candidate a vagas de trabalho  | ALTA |
-|RF-004| A aplicação deve permitir que o profissional encontre vagas por meio de um mecanismo de pesquisa  | ALTA |
-|RF-005| A aplicação deve permitir que a empresa defina as qualificações que procura em um profissional no anuncio de uma vaga | ALTA |
-|RF-006| A aplicação deve permitir que o profissional se autoavalie de acordo com as qualificações definidas pela empresa | ALTA |
-|RF-007| A aplicação deve permitir que a empresa visualize os resultados das autoavaliações por candidato e ou vaga | ALTA |
-|RF-008| A aplicação deve permitir que a empresa encontre profissionais por meio de um mecanismo de pesquisa  | MÉDIA |
-|RF-009| A aplicação deve permitir que o profissional acompanhe o status de suas candidaturas. | MÉDIA |
-|RF-010| A aplicação deve permitir que os usuários compartilhem vagas através de redes sociais. | BAIXA |
+Claro, aqui estão os requisitos detalhados em formato de tabela, incluindo uma coluna de prioridades:
+
+| Requisito | Prioridade | Descrição do Requesito |
+|---|---|---|
+| RF-001 (Gerenciamento de Perfil) | ALTA | A aplicação deve permitir que tanto empresas quanto profissionais criem e gerenciem seus perfis na plataforma. Isso inclui a capacidade de preencher informações relevantes, como nome, informações de contato, descrição da empresa ou currículo do profissional, foto do perfil e quaisquer outras informações relevantes. Os perfis devem ser personalizáveis e editáveis a qualquer momento. |
+| RF-002 (Gerenciamento de Vagas) | ALTA | A aplicação deve ter a capacidade de permitir que uma empresa crie e gerencie vagas de trabalho disponíveis na plataforma. As empresas devem ser capazes de fornecer detalhes sobre a vaga, como título, descrição, localização, requisitos, benefícios e prazos para candidatura. Além disso, as empresas devem ter a opção de marcar vagas como abertas ou fechadas, dependendo do status da vaga. |
+| RF-003 (Candidatura a Vagas) | ALTA | A aplicação deve oferecer aos profissionais a capacidade de se candidatarem a vagas de trabalho que estão listadas na plataforma. Isso deve incluir a opção de enviar um currículo, carta de apresentação e outras informações relevantes conforme exigido pela empresa. |
+| RF-004 (Mecanismo de Pesquisa Avançada) | ALTA | A aplicação deve disponibilizar um mecanismo de pesquisa avançado que permita aos profissionais procurar vagas de trabalho com base em critérios específicos, como palavras-chave, localização, setor da indústria, tipo de contrato e nível de experiência. Os resultados da pesquisa devem ser precisos e relevantes. |
+| RF-005 (Definição de Qualificações) | ALTA | A aplicação deve permitir que as empresas definam as qualificações e requisitos desejados para uma vaga ao criarem um anúncio. Isso pode incluir formação educacional, experiência profissional anterior, habilidades técnicas e comportamentais, entre outros critérios. Essas informações ajudarão a filtrar os candidatos mais adequados para a vaga. |
+| RF-006 (Autoavaliação de Habilidades) | ALTA | A aplicação deve possibilitar que um profissional avalie suas próprias qualificações e habilidades com base nos critérios definidos pela empresa no anúncio da vaga. Isso pode envolver respostas a perguntas específicas ou a seleção de opções que melhor descrevam suas habilidades em áreas relevantes. |
+| RF-007 (Visualização de Autoavaliações) | ALTA | A aplicação deve fornecer à empresa a capacidade de visualizar os resultados das autoavaliações realizadas pelos candidatos para uma vaga específica. Isso pode incluir gráficos ou pontuações que mostram a correspondência entre as habilidades do candidato e os requisitos da vaga. |
+| RF-008 (Pesquisa de Profissionais) | MÉDIA | A aplicação deve ter um mecanismo de pesquisa que permita que as empresas encontrem profissionais com base em critérios como habilidades, experiência, localização e formação. Isso permitirá que as empresas identifiquem possíveis candidatos para futuras oportunidades de emprego. |
+| RF-009 (Acompanhamento de Candidaturas) | MÉDIA | A aplicação deve permitir que os profissionais acompanhem o status de suas candidaturas. Isso pode incluir informações sobre se a candidatura está pendente, em análise, rejeitada ou aceita. Esse recurso fornecerá aos profissionais uma visão clara de suas atividades de candidatura. |
+| RF-010 (Compartilhamento em Redes Sociais) | BAIXA | A aplicação deve permitir que os usuários compartilhem vagas de trabalho por meio de redes sociais, como Facebook, Twitter, LinkedIn, etc. Isso aumentará a visibilidade das vagas e permitirá que os usuários ajudem a divulgar oportunidades para sua rede de contatos. |
+
+
+
 
 ### Requisitos não Funcionais
 
