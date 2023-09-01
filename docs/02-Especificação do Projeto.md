@@ -128,7 +128,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 ## Diagrama de Casos de Uso
 
-[Arquivo .drawio (xmf).](./use_case_diagram.drawio)
 
-Png:
+
+
 <img src="./img/diagrama_casos_de_uso.png" alt="Use Case Diagram" width="800" height="450"/>
