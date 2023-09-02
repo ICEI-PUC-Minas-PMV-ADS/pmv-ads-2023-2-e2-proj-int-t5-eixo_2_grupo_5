@@ -10,11 +10,11 @@ O avanço tecnológico tem impulsionado uma rápida expansão do setor de tecnol
 Desenvolver uma plataforma de vagas de emprego especializada na área de tecnologia que facilite a conexão entre empresas e profissionais, visando agilizar o processo de recrutamento e seleção e contribuir para o avanço da indústria tecnológica.
 
 **Objetivos específicos:**
-- Criar um sistema de cadastro de candidatos que permita uma apresentação abrangente de suas habilidades e experiências.
-- Desenvolver um mecanismo de filtragem que facilite a seleção de candidatos com base em critérios específicos, como competências técnicas e nível de experiência.
-- Implementar uma interface amigável e intuitiva para as empresas anunciarem suas vagas e gerenciarem o processo seletivo de forma eficiente.
-- Oferecer aos candidatos uma plataforma para explorar oportunidades de emprego, apresentar suas habilidades de maneira eficaz e acompanhar o progresso de suas candidaturas.
-- Integrar ferramentas de análise e acompanhamento para empresas avaliarem a eficácia da plataforma no processo de recrutamento e seleção.
+- Oferecer aos profissionais uma solução eficaz para para explorar oportunidades de emprego, candidatar-se a vagas e acompanhar o progresso de suas candidaturas.
+- Facilitar, para os profissionais em busca de oportunidades, uma apresentação abrangente de suas habilidades e experiências.
+- Possibilitar às empresas anunciar vagas de trabalho e gerenciar o processo seletivo de forma eficiente.
+- Permitir, para as empresas em busca de profissionais, a seleção de candidatos com base em critérios específicos, como competências técnicas e nível de experiência.
+- Proporcionar às empresas meios de aferir a eficácia da plataforma no processo de recrutamento e seleção.
 
 ## Justificativa
 
