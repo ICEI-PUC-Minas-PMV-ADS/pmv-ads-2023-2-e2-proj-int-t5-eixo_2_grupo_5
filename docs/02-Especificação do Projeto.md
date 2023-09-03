@@ -59,10 +59,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Teresa              | Descrever no meu perfil as minhas habilidades como desenvolvedora de software | Ser encontrada por empresas de TI |
 |Albano              | Anunciar vagas de trabalho | Selecionar profissionais com o perfil desejado pela minha empresa |
 |Albano              | Localizar profissionais a partir das suas habilidades ("hard skills") | Convidar pessoas a ingressar na empresa sem precisar anunciar uma vaga na plataforma |
-|Victor                | Encontrar profissionais qualificados na área de TI que estejam alinhados com os objetivos e necessidades da empresa. | Impulsionar o desenvolvimento de software, inovar, gerenciar projetos, oferecer suporte técnico, manter os sistemas e impulsionar o crescimento e a expansão de sua empresa de software. |
-|Victor                | Contratar profissionais de TI altamente qualificados. |  Impulsionar o crescimento da equipe e garantir a satisfação dos clientes. |
-|Aurora              | Ingressar no mercado de T.I | Impulsionar sua carreira profissional. |
-|Aurora              | Oportunidade no mercado de T.I | Aprimorar suas habilidades e obter experiências praticas. |
+|Victor                | Encontrar profissionais qualificados na área de TI que estejam alinhados com os objetivos e necessidades da empresa | Impulsionar o desenvolvimento de software, inovar, gerenciar projetos, oferecer suporte técnico, manter os sistemas e impulsionar o crescimento e a expansão de sua empresa de software |
+|Victor                | Contratar profissionais de TI altamente qualificados |  Impulsionar o crescimento da equipe e garantir a satisfação dos clientes |
+|Aurora              | Ingressar no mercado de TI | Impulsionar sua carreira profissional |
+|Aurora              | Obter oportunidade no mercado de TI | Aprimorar suas habilidades e obter experiências práticas |
 
 ## Requisitos
 
@@ -70,18 +70,20 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-------------------------|------------|
-|RF-001| A aplicação deve permitir que o usuário (empresa ou profissional) gerencie um perfil na plataforma | ALTA |
-|RF-002| A aplicação deve permitir que a empresa gerencie vagas de trabalho | ALTA |
-|RF-003| A aplicação deve permitir que o profissional se candidate a vagas de trabalho  | ALTA |
-|RF-004| A aplicação deve permitir que o profissional encontre vagas por meio de um mecanismo de pesquisa  | ALTA |
-|RF-005| A aplicação deve permitir que a empresa defina as qualificações que procura em um profissional | ALTA |
-|RF-006| A aplicação deve permitir que o profissional se autoavalie de acordo com as qualificações definidas pela empresa | ALTA |
-|RF-007| A aplicação deve permitir que a empresa visualize os resultados das autoavaliações | ALTA |
-|RF-008| A aplicação deve permitir que a empresa encontre profissionais por meio de um mecanismo de pesquisa  | MÉDIA |
-|RF-009| A aplicação deve permitir que o profissional acompanhe o status de suas candidaturas. | MÉDIA |
-|RF-010| A aplicação deve permitir que os usuários compartilhem vagas através de redes sociais. | BAIXA |
+| Requisito | Prioridade | Descrição do Requesito |
+|---|---|---|
+| RF-001 (Gerenciamento de Perfil) | ALTA | A aplicação deve permitir que tanto empresas quanto profissionais criem e gerenciem seus perfis na plataforma. Isso inclui a capacidade de preencher informações relevantes, como nome, informações de contato, descrição da empresa ou currículo do profissional, foto do perfil e quaisquer outras informações relevantes. Os perfis devem ser personalizáveis e editáveis a qualquer momento. |
+| RF-002 (Gerenciamento de Vagas) | ALTA | A aplicação deve ter a capacidade de permitir que uma empresa crie e gerencie vagas de trabalho disponíveis na plataforma. As empresas devem ser capazes de fornecer detalhes sobre a vaga, como título, descrição, localização, requisitos, benefícios e prazos para candidatura. Além disso, as empresas devem ter a opção de marcar vagas como abertas ou fechadas, dependendo do status da vaga. |
+| RF-003 (Candidatura a Vagas) | ALTA | A aplicação deve oferecer aos profissionais a capacidade de se candidatarem a vagas de trabalho que estão listadas na plataforma. Isso deve incluir a opção de enviar um currículo, carta de apresentação e outras informações relevantes conforme exigido pela empresa. |
+| RF-004 (Mecanismo de Pesquisa Avançada) | ALTA | A aplicação deve disponibilizar um mecanismo de pesquisa avançado que permita aos profissionais procurar vagas de trabalho com base em critérios específicos, como palavras-chave, localização, setor da indústria, tipo de contrato e nível de experiência. Os resultados da pesquisa devem ser precisos e relevantes. |
+| RF-005 (Definição de Qualificações) | ALTA | A aplicação deve permitir que as empresas definam as qualificações e requisitos desejados para uma vaga ao criarem um anúncio. Isso pode incluir formação educacional, experiência profissional anterior, habilidades técnicas e comportamentais, entre outros critérios. Essas informações ajudarão a filtrar os candidatos mais adequados para a vaga. |
+| RF-006 (Autoavaliação de Habilidades) | ALTA | A aplicação deve possibilitar que um profissional avalie suas próprias qualificações e habilidades com base nos critérios definidos pela empresa no anúncio da vaga. Isso pode envolver respostas a perguntas específicas ou a seleção de opções que melhor descrevam suas habilidades em áreas relevantes. |
+| RF-007 (Visualização de Autoavaliações) | ALTA | A aplicação deve fornecer à empresa a capacidade de visualizar os resultados das autoavaliações realizadas pelos candidatos para uma vaga específica. Isso pode incluir gráficos ou pontuações que mostram a correspondência entre as habilidades do candidato e os requisitos da vaga. |
+| RF-008 (Pesquisa de Profissionais) | MÉDIA | A aplicação deve ter um mecanismo de pesquisa que permita que as empresas encontrem profissionais com base em critérios como habilidades, experiência, localização e formação. Isso permitirá que as empresas identifiquem possíveis candidatos para futuras oportunidades de emprego. |
+| RF-009 (Acompanhamento de Candidaturas) | MÉDIA | A aplicação deve permitir que os profissionais acompanhem o status de suas candidaturas. Isso pode incluir informações sobre se a candidatura está pendente, em análise, rejeitada ou aceita. Esse recurso fornecerá aos profissionais uma visão clara de suas atividades de candidatura. |
+| RF-010 (Compartilhamento em Redes Sociais) | BAIXA | A aplicação deve permitir que os usuários compartilhem vagas de trabalho por meio de redes sociais, como Facebook, Twitter, LinkedIn, etc. Isso aumentará a visibilidade das vagas e permitirá que os usuários ajudem a divulgar oportunidades para sua rede de contatos. |
+| RF-011 (Login e Cadastro) | ALTA | A aplicação deve fornecer um mecanismo de login e registro para as empresas e os profissionais. O login e o registro devem ser separados para cada tipo de usuário (empresas e profissionais) permitindo que eles acessem funcionalidades específicas.  As empresas devem ter a opção de se registrar na plataforma, fornecendo informação como nome da empresa, endereço de email, número de telefone, CNPJ, senha e confirmar senha. Os profissionais devem ter a opção de se registrar na plataforma fornecendo informações como nome completo, endereço de email, senha e confirmar senha. Após o registro, as empresas e os profissionais devem ter a opção de fazer login na plataforma usando suas credenciais (por exemplo, e-mail e senha). |
+| RF-012 (Recuperação de acesso) | ALTA | A aplicação deve fornecer um mecanismo de recuperação de senha para permitir que os usuários redefinam suas senhas em caso de esquecimento. |
 
 ### Requisitos não Funcionais
 
@@ -93,19 +95,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-004| O sistema deve ser capaz de suportar até 1000 usuários navegando simultaneamente, mantendo um tempo de resposta satisfatório e sem degradação significativa de desempenho | MÉDIA |
 |RNF-005| O sistema deve garantir a segurança dos dados dos usuários, protegendo as informações pessoais e confidenciais armazenadas na aplicação | ALTA |
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
@@ -116,11 +105,11 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |--|-----------|
 |RE-01|A aplicação deve ser entregue de forma plenamente funcional até 06/12/2023.  |
 |RE-02|A aplicação deve ser desenvolvida exclusivamente pelos membros do grupo.  |
-|RE-03|A apliação deve exigir que apenas os usuários residentes no Brasil de candidatem as vagas de emprego.
+|RE-03|A aplicação deve exigir que apenas os usuários residentes no Brasil se candidatem às vagas de emprego.
 
 ## Diagrama de Casos de Uso
 
-[Arquivo .drawio (xmf).](./use_case_diagram.drawio)
+<img src="./img/diagrama_casos_de_uso.png" alt="Use Case Diagram" width="800" height="450"/>
 
-Png:
-<img src="./img/use_case_diagram.png" alt="Use Case Diagram" width="800" height="450"/>
+## Vídeo de Apresentação
+ <a href="./vid/TechTalent%20-%20Pitch.mp4"> <img src="./img/techtalent.jpg" alt="Assista!" width="800"> </a>
