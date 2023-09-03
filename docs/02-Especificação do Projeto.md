@@ -110,3 +110,6 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 ## Diagrama de Casos de Uso
 
 <img src="./img/diagrama_casos_de_uso.png" alt="Use Case Diagram" width="800" height="450"/>
+
+## Vídeo de Apresentação
+ <a href="./vid/TechTalent%20-%20Pitch.mp4"> <img src="./img/techtalent.jpg" alt="Assista!" width="800"> </a>
