@@ -59,18 +59,16 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Teresa              | Descrever no meu perfil as minhas habilidades como desenvolvedora de software | Ser encontrada por empresas de TI |
 |Albano              | Anunciar vagas de trabalho | Selecionar profissionais com o perfil desejado pela minha empresa |
 |Albano              | Localizar profissionais a partir das suas habilidades ("hard skills") | Convidar pessoas a ingressar na empresa sem precisar anunciar uma vaga na plataforma |
-|Victor                | Encontrar profissionais qualificados na área de TI que estejam alinhados com os objetivos e necessidades da empresa. | Impulsionar o desenvolvimento de software, inovar, gerenciar projetos, oferecer suporte técnico, manter os sistemas e impulsionar o crescimento e a expansão de sua empresa de software. |
-|Victor                | Contratar profissionais de TI altamente qualificados. |  Impulsionar o crescimento da equipe e garantir a satisfação dos clientes. |
-|Aurora              | Ingressar no mercado de T.I | Impulsionar sua carreira profissional. |
-|Aurora              | Oportunidade no mercado de T.I | Aprimorar suas habilidades e obter experiências praticas. |
+|Victor                | Encontrar profissionais qualificados na área de TI que estejam alinhados com os objetivos e necessidades da empresa | Impulsionar o desenvolvimento de software, inovar, gerenciar projetos, oferecer suporte técnico, manter os sistemas e impulsionar o crescimento e a expansão de sua empresa de software |
+|Victor                | Contratar profissionais de TI altamente qualificados |  Impulsionar o crescimento da equipe e garantir a satisfação dos clientes |
+|Aurora              | Ingressar no mercado de TI | Impulsionar sua carreira profissional |
+|Aurora              | Obter oportunidade no mercado de TI | Aprimorar suas habilidades e obter experiências práticas |
 
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
 ### Requisitos Funcionais
-
-Claro, aqui estão os requisitos detalhados em formato de tabela, incluindo uma coluna de prioridades:
 
 | Requisito | Prioridade | Descrição do Requesito |
 |---|---|---|
@@ -87,10 +85,6 @@ Claro, aqui estão os requisitos detalhados em formato de tabela, incluindo uma 
 | RF-011 (Login e Cadastro) | ALTA | A aplicação deve fornecer um mecanismo de login e registro para as empresas e os profissionais. O login e o registro devem ser separados para cada tipo de usuário (empresas e profissionais) permitindo que eles acessem funcionalidades específicas.  As empresas devem ter a opção de se registrar na plataforma, fornecendo informação como nome da empresa, endereço de email, número de telefone, CNPJ, senha e confirmar senha. Os profissionais devem ter a opção de se registrar na plataforma fornecendo informações como nome completo, endereço de email, senha e confirmar senha. Após o registro, as empresas e os profissionais devem ter a opção de fazer login na plataforma usando suas credenciais (por exemplo, e-mail e senha). |
 | RF-012 (Recuperação de acesso) | ALTA | A aplicação deve fornecer um mecanismo de recuperação de senha para permitir que os usuários redefinam suas senhas em caso de esquecimento. |
 
-
-
-
-
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  | Prioridade |
@@ -100,19 +94,6 @@ Claro, aqui estão os requisitos detalhados em formato de tabela, incluindo uma 
 |RNF-003| O sistema deve manter o tempo máximo de resposta para qualquer interação do usuário na aplicação abaixo de 15 segundos | MÉDIA |
 |RNF-004| O sistema deve ser capaz de suportar até 1000 usuários navegando simultaneamente, mantendo um tempo de resposta satisfatório e sem degradação significativa de desempenho | MÉDIA |
 |RNF-005| O sistema deve garantir a segurança dos dados dos usuários, protegendo as informações pessoais e confidenciais armazenadas na aplicação | ALTA |
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -127,8 +108,5 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |RE-03|A aplicação deve exigir que apenas os usuários residentes no Brasil se candidatem às vagas de emprego.
 
 ## Diagrama de Casos de Uso
-
-
-
 
 <img src="./img/diagrama_casos_de_uso.png" alt="Use Case Diagram" width="800" height="450"/>
