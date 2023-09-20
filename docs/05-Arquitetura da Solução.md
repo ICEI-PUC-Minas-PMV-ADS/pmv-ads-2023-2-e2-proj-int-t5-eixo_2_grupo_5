@@ -3,7 +3,7 @@
 ## Diagrama de Classes
 
 <div align="center">
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/102912738/268804094-68a6a719-1770-48f6-baef-296ef876c4e2.png" width="700px" />
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/102912738/269121733-015d5570-2b5b-430b-84b2-55972eb05a30.png)" width="700px" />
 </div>
 
 ## Modelo ER (Projeto Conceitual)
