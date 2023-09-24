@@ -27,15 +27,37 @@
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+### Modo interativo
+https://www.figma.com/proto/AM2U81Dy7HADBsDqdlFfxz/Wireframe-interativo?type=design&node-id=1-2&t=JuSSEfDVKu12dow5-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+### Página inicial
+![wireframe-1](/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/docs/img/Wireframe%20interativo_page-0008.jpg)
+
+### Página de login
+![wireframe-2](/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/docs/img/Wireframe%20interativo_page-0004.jpg)
+
+### Página de escolha Empresa/Profissional
+![wireframe-3](/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/docs/img/Wireframe%20interativo_page-0005.jpg)
+
+### Página de cadastro
+![wireframe-4](/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/docs/img/Wireframe%20interativo_page-0009.jpg)
+
+### Página de cadastro empresarial
+![wireframe-5](/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/docs/img/Wireframe%20interativo_page-0010.jpg)
+
+### Página de redefinição de senha
+![wireframe-6](/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/docs/img/Wireframe%20interativo_page-0006.jpg)
+
+### Página de vagas
+![wireframe-7](/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/docs/img/Wireframe%20interativo_page-0002.jpg)
+
+### Página Criar/Editar vagas
+![wireframe-8](/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/docs/img/Wireframe%20interativo_page-0001.jpg)
+
+### Página de Edição dos dados do usuário
+![wireframe-9](/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/docs/img/Wireframe%20interativo_page-0003.jpg)
+
+### Página de Preenchimento de vaga
+![wireframe-10](/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/docs/img/Wireframe%20interativo_page-0007.jpg)
+
+###
