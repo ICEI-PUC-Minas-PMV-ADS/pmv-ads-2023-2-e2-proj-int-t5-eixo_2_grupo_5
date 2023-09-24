@@ -24,7 +24,7 @@
 ### Gerenciar perfil
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/assets/102912738/adae46ce-69ec-4b62-9bef-2b5f6168e78c">
 
-### Bucas e compartilhar vagas
+### Bucar e compartilhar vagas
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/assets/102912738/219e3bca-bfaf-4074-9586-2aa21129e9b9">
 
 ### Encontrar profissioanis
