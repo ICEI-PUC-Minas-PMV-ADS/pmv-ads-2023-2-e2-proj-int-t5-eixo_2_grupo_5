@@ -70,7 +70,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-| Requisito | Prioridade | Descrição do Requesito |
+| Requisito | Prioridade | Descrição do Requisito |
 |---|---|---|
 | RF-001 (Gerenciamento de Perfil) | ALTA | A aplicação deve permitir que tanto empresas quanto profissionais criem e gerenciem seus perfis na plataforma. Isso inclui a capacidade de preencher informações relevantes, como nome, informações de contato, descrição da empresa ou currículo do profissional, foto do perfil e quaisquer outras informações relevantes. Os perfis devem ser personalizáveis e editáveis a qualquer momento. |
 | RF-002 (Gerenciamento de Vagas) | ALTA | A aplicação deve ter a capacidade de permitir que uma empresa crie e gerencie vagas de trabalho disponíveis na plataforma. As empresas devem ser capazes de fornecer detalhes sobre a vaga, como título, descrição, localização, requisitos, benefícios e prazos para candidatura. Além disso, as empresas devem ter a opção de marcar vagas como abertas ou fechadas, dependendo do status da vaga. |
