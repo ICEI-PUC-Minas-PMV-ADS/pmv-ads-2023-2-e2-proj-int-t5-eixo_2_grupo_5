@@ -31,7 +31,7 @@ A equipe adotará metodologias ágeis, tendo escolhido o Scrum como base para a 
 **Scrum Master:**
 - Weglesson de Moura Silva
 
-Product Owner:**
+**Product Owner:**
 - Letícia Rangel Vilarim
 
 **Equipe de Desenvolvimento:**
