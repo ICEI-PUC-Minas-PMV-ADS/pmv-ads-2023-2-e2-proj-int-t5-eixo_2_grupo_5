@@ -9,6 +9,8 @@
 ## Modelo ER (Projeto Conceitual)
 <div align="center">
 <img src="./img/diagramaEntidadeRelacionamento.drawio.png" alt="Diagrama Entidade-Relacionamento" width="800px"/>
+
+[Versão editável xml](./img/diagramaEntidadeRelacionamento.drawio.xml)
 </div>
 
 ## Projeto da Base de Dados
