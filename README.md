@@ -6,7 +6,7 @@
 
 `2º Semestre`
 
-Uma plataforma que aproxima empresas e candidatos em busca de oportunidades profisssionais no setor de Tecnologia da Informação e Comunicação.
+Uma plataforma que aproxima empresas e candidatos em busca de oportunidades profissionais no setor de Tecnologia da Informação e Comunicação.
 
 ## Integrantes
 
@@ -18,7 +18,7 @@ Uma plataforma que aproxima empresas e candidatos em busca de oportunidades prof
 * Weglesson de Moura Silva
 
 
-## Orientador
+## Orientadora
 
 * Luciana de Nardin
 
