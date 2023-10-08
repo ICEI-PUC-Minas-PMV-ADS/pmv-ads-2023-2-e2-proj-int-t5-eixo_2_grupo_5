@@ -9,11 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = app_tech_talent
 build_property.RootNamespace = app_tech_talent
-build_property.ProjectDir = C:\Users\Eddy Moura\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\app_tech_talent\app_tech_talent\
+build_property.ProjectDir = C:\Users\Eddy Moura\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\app_tech_talent\app_tech_talent\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\Eddy Moura\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\app_tech_talent\app_tech_talent
+build_property.MSBuildProjectDirectory = C:\Users\Eddy Moura\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\app_tech_talent\app_tech_talent
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/Eddy Moura/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/app_tech_talent/app_tech_talent/Views/Home/Index.cshtml]
