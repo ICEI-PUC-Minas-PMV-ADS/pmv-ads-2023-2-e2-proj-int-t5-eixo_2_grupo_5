@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3SWZhr+fmBkdZqZsTFNwVcm4nQ5b6NRV/uUTeZVIItPL+5alJMjf5gXNVEkAC7sOa8R/6CUMl0AazW0JIwsZ0A==",
+  "dgSpecHash": "YWftn2CkzxCTEWEh6ayumU2apiSEfg6jE37dAAzmz6f3KnoMztipQMo9UZ1H+5066iWLECczo+zFDCzB22G2Mw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Eddy Moura\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj",
+  "projectFilePath": "C:\\Users\\Eddy Moura\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eddy Moura\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Eddy Moura\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using app_tech_talent.Models;
 
@@ -10,9 +11,10 @@ using app_tech_talent.Models;
 namespace app_tech_talent.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231010232956_M05_Update_Usuarios_And_Profissional")]
+    partial class M05_Update_Usuarios_And_Profissional
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -20,6 +22,28 @@ namespace app_tech_talent.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("app_tech_talent.Models.Empresa", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("RazaoSocial")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("Empresas");
+                });
 
             modelBuilder.Entity("app_tech_talent.Models.Profissional", b =>
                 {
@@ -59,23 +83,38 @@ namespace app_tech_talent.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TipoUsuario")
-                        .HasColumnType("int");
-
                     b.HasKey("UsuarioId");
 
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("app_tech_talent.Models.Profissional", b =>
+            modelBuilder.Entity("app_tech_talent.Models.Empresa", b =>
                 {
                     b.HasOne("app_tech_talent.Models.Usuario", "Usuario")
-                        .WithMany()
+                        .WithMany("Empresas")
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("app_tech_talent.Models.Profissional", b =>
+                {
+                    b.HasOne("app_tech_talent.Models.Usuario", "Usuario")
+                        .WithMany("Profissionais")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("app_tech_talent.Models.Usuario", b =>
+                {
+                    b.Navigation("Empresas");
+
+                    b.Navigation("Profissionais");
                 });
 #pragma warning restore 612, 618
         }

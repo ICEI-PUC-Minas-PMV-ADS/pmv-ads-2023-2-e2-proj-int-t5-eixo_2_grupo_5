@@ -1,4 +1,4 @@
-namespace app_tech_talent.Models
+﻿namespace app_tech_talent.Models
 {
     public class ErrorViewModel
     {

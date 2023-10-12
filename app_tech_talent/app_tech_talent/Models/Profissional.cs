@@ -7,15 +7,14 @@ namespace app_tech_talent.Models
     public class Profissional
     {
         [Key]
-        public int Id { get; set; }
+        public int ProfissionalId { get; set; }
 
         [Required(ErrorMessage = "O campo Nome é obrigatório.")]
         public string Nome { get; set; }
 
-        // Chave estrangeira para associar o Profissional a um Usuario
         [ForeignKey("Usuario")]
         public int UsuarioId { get; set; }
 
-        public virtual Usuario Usuario { get; set; }
+        public Usuario Usuario { get; set; }
     }
 }

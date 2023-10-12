@@ -7,7 +7,7 @@ namespace app_tech_talent.Models
     public class Usuario
     {
         [Key]
-        public int Id { get; set; }
+        public int UsuarioId { get; set; }
 
         [Required(ErrorMessage = "O campo E-mail é obrigatório.")]
         [EmailAddress(ErrorMessage = "Informe um endereço de e-mail válido.")]
@@ -17,5 +17,13 @@ namespace app_tech_talent.Models
         [MinLength(6, ErrorMessage = "A senha deve ter pelo menos 6 caracteres.")]
         [DataType(DataType.Password)]
         public string Senha { get; set; }
+
+        public TipoUsuario TipoUsuario { get; set; }
+    }
+
+    public enum TipoUsuario
+    {
+        Empresa,
+        Profissional
     }
 }
