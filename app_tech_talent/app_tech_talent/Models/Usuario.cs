@@ -18,6 +18,7 @@ namespace app_tech_talent.Models
         [DataType(DataType.Password)]
         public string Senha { get; set; }
 
+        [Display(Name = "Tipo de Usuário")]
         public TipoUsuario TipoUsuario { get; set; }
     }
 
