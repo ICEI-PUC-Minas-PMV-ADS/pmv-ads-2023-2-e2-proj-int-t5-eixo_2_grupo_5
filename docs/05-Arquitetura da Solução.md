@@ -15,4 +15,4 @@
 
 ## Projeto da Base de Dados
 
-<img src="./img/projetoBD.png" alt="Projeto da Base de Dados">
+<img src="./img/BD-Projeto.png" alt="Projeto da Base de Dados">
