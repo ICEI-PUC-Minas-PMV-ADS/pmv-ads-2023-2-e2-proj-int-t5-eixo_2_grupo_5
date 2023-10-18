@@ -70,11 +70,23 @@ namespace app_tech_talent.Controllers
 
                 await HttpContext.SignInAsync(principal, props);
 
-                return Redirect("/");
+                if (dados.TipoUsuario == TipoUsuario.Profissional)
+                {
+                    var profissionalExistente = await _context.Profissionais.FirstOrDefaultAsync(p => p.UsuarioId == dados.UsuarioId);
+
+                    if (profissionalExistente != null)
+                    {
+                        return Redirect("/");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Create", "Profissionais");
+                    }
+                }
             }
             else
             {
-                ViewBag.Message = "Usuário ou senha invalios!";
+                ViewBag.Message = "Usuário ou senha inválidos!";
             }
 
             return View();
@@ -108,6 +120,7 @@ namespace app_tech_talent.Controllers
         }
 
         // GET: Usuarios/Create
+        [AllowAnonymous]
         public IActionResult Create()
         {
             return View();
@@ -118,6 +131,7 @@ namespace app_tech_talent.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public async Task<IActionResult> Create([Bind("UsuarioId,Email,Senha,TipoUsuario")] Usuario usuario)
         {
             if (ModelState.IsValid)

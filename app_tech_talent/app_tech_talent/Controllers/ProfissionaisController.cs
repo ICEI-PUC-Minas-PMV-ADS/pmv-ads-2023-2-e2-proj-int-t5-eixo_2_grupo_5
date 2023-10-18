@@ -47,7 +47,7 @@ namespace app_tech_talent.Controllers
             return View(profissional);
         }
 
-        // GET: Profissionais/Creates
+        // GET: Profissionais/Create
         public IActionResult Create()
         {
             if (User.Identity.IsAuthenticated)
@@ -68,10 +68,14 @@ namespace app_tech_talent.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+
         public async Task<IActionResult> Create([Bind("ProfissionalId,Nome,UsuarioId")] Profissional profissional)
         {
             if (ModelState.IsValid)
             {
+
+                profissional.UsuarioId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
                 _context.Add(profissional);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
