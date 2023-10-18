@@ -24,8 +24,24 @@ namespace app_tech_talent.Controllers
         // GET: Profissionais
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Profissionais.Include(p => p.Usuario);
-            return View(await appDbContext.ToListAsync());
+            if (User.Identity.IsAuthenticated)
+            {
+                var usuarioId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+                var profissional = await _context.Profissionais
+                    .Include(p => p.Usuario)
+                    .FirstOrDefaultAsync(p => p.UsuarioId == usuarioId);
+
+                if (profissional != null)
+                {
+
+                    var profissionaisList = new List<Profissional> { profissional };
+
+                    return View(profissionaisList);
+                }
+            }
+
+            return View(new List<Profissional>());
         }
 
         // GET: Profissionais/Details/5
@@ -53,12 +69,20 @@ namespace app_tech_talent.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 var usuarioId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+                var existingProfissional = _context.Profissionais.FirstOrDefault(p => p.UsuarioId == usuarioId);
+
+                if (existingProfissional != null)
+                {
+                    return RedirectToAction("Details", new { id = existingProfissional.ProfissionalId });
+                }
+
                 ViewBag.UsuarioId = usuarioId;
                 return View();
             }
             else
             {
-                // Trate o cenário em que o usuário não está autenticado
+
                 return NotFound();
             }
         }
@@ -93,13 +117,24 @@ namespace app_tech_talent.Controllers
             }
 
             var profissional = await _context.Profissionais.FindAsync(id);
+
             if (profissional == null)
             {
                 return NotFound();
             }
+
+            var usuarioId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            if (profissional.UsuarioId != usuarioId)
+            {
+
+                return Forbid();
+            }
+
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "UsuarioId", "Email", profissional.UsuarioId);
             return View(profissional);
         }
+
 
         // POST: Profissionais/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -148,13 +183,24 @@ namespace app_tech_talent.Controllers
             var profissional = await _context.Profissionais
                 .Include(p => p.Usuario)
                 .FirstOrDefaultAsync(m => m.ProfissionalId == id);
+
             if (profissional == null)
             {
                 return NotFound();
             }
 
+            var usuarioId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+
+            if (profissional.UsuarioId != usuarioId)
+            {
+
+                return Forbid();
+            }
+
             return View(profissional);
         }
+
 
         // POST: Profissionais/Delete/5
         [HttpPost, ActionName("Delete")]
