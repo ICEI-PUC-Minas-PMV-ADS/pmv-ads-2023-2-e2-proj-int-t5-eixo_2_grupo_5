@@ -24,10 +24,28 @@ namespace app_tech_talent.Controllers
         }
 
         // GET: Usuarios
+        // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Usuarios.ToListAsync());
+            // Obtenha o ID do usuário autenticado
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            // Verifique se o usuário autenticado criou um perfil de usuário
+            var isUserWithProfile = await _context.Usuarios.AnyAsync(u => u.UsuarioId == userId);
+
+            if (isUserWithProfile)
+            {
+                // Se o usuário autenticado criou um perfil de usuário, exiba os detalhes
+                var usuario = await _context.Usuarios
+                    .FirstOrDefaultAsync(u => u.UsuarioId == userId);
+
+                return View(new List<Usuario> { usuario });
+            }
+
+            // Se o usuário autenticado não criou um perfil de usuário, exiba uma lista vazia
+            return View(new List<Usuario>());
         }
+
 
         [AllowAnonymous]
         public IActionResult Login()
@@ -136,7 +154,7 @@ namespace app_tech_talent.Controllers
         {
             if (ModelState.IsValid)
             {
-                
+
                 var existingUser = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == usuario.Email);
 
                 if (existingUser != null)
@@ -163,10 +181,21 @@ namespace app_tech_talent.Controllers
             }
 
             var usuario = await _context.Usuarios.FindAsync(id);
+
             if (usuario == null)
             {
                 return NotFound();
             }
+
+            var usuarioId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+
+            if (usuario.UsuarioId != usuarioId)
+            {
+ 
+                return Forbid();
+            }
+
             return View(usuario);
         }
 
@@ -220,6 +249,15 @@ namespace app_tech_talent.Controllers
                 return NotFound();
             }
 
+            var usuarioId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+
+            if (usuario.UsuarioId != usuarioId)
+            {
+
+                return Forbid();
+            }
+
             return View(usuario);
         }
 
@@ -230,21 +268,24 @@ namespace app_tech_talent.Controllers
         {
             if (_context.Usuarios == null)
             {
-                return Problem("Entity set 'AppDbContext.Usuarios'  is null.");
+                return Problem("Entity set 'AppDbContext.Usuarios' is null.");
             }
+
             var usuario = await _context.Usuarios.FindAsync(id);
+
             if (usuario != null)
             {
                 _context.Usuarios.Remove(usuario);
+                await _context.SaveChangesAsync();
             }
-            
-            await _context.SaveChangesAsync();
+
+
             return RedirectToAction(nameof(Index));
         }
 
         private bool UsuarioExists(int id)
         {
-          return _context.Usuarios.Any(e => e.UsuarioId == id);
+            return _context.Usuarios.Any(e => e.UsuarioId == id);
         }
     }
 }
