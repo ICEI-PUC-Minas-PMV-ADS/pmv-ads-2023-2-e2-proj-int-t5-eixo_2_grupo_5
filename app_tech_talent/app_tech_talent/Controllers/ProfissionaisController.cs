@@ -69,7 +69,7 @@ namespace app_tech_talent.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
 
-        public async Task<IActionResult> Create([Bind("ProfissionalId,Nome,UsuarioId")] Profissional profissional)
+        public async Task<IActionResult> Create([Bind("ProfissionalId,Nome,UsuarioId,CPF,Idade")] Profissional profissional)
         {
             if (ModelState.IsValid)
             {
@@ -106,7 +106,7 @@ namespace app_tech_talent.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProfissionalId,Nome,UsuarioId")] Profissional profissional)
+        public async Task<IActionResult> Edit(int id, [Bind("ProfissionalId,Nome,UsuarioId,CPF,Idade")] Profissional profissional)
         {
             if (id != profissional.ProfissionalId)
             {
