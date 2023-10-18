@@ -63,7 +63,7 @@ namespace app_tech_talent.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Login(Usuario usuario)
         {
-            // var dados = await _context.Usuarios.FindAsync(usuario.UsuarioId);
+
             var dados = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == usuario.Email);
 
             if (dados != null && BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha))
@@ -99,6 +99,19 @@ namespace app_tech_talent.Controllers
                     else
                     {
                         return RedirectToAction("Create", "Profissionais");
+                    }
+                }
+                else if (dados.TipoUsuario == TipoUsuario.Empresa)
+                {
+                    var empresaExistente = await _context.Empresas.FirstOrDefaultAsync(e => e.UsuarioId == dados.UsuarioId);
+
+                    if (empresaExistente != null)
+                    {
+                        return Redirect("/");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Create", "Empresas");
                     }
                 }
             }

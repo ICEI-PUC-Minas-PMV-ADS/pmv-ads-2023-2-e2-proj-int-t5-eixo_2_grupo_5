@@ -8,5 +8,6 @@ namespace app_tech_talent.Models
 
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Profissional> Profissionais { get; set; }
+        public DbSet<Empresa> Empresas { get; set; }
     }
 }
