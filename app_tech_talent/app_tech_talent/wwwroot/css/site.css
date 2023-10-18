@@ -16,3 +16,12 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.nav-welcome {
+    display: flex;
+    align-items: center;
+}
+
+.nav-welcome-message {
+    margin-right: 10px;
+}
