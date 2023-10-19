@@ -2,15 +2,15 @@
 
 |Número do Teste    | UT-01  |
 |------|-----------------------------------------|
-|Objetivos | Avaliar a usabilidade do processo de criação de perfil |
-|Procedimentos de Condução | Os testes serão realizados presencialmente. A observação direta será o método principal para coletar dados. |
-|Usuários-alvo| Novos usuários que desejam criar um perfil na plataforma. |
+|Objetivos | Avaliar a usabilidade do processo de cadastro e login. |
+|Procedimentos de Condução | Os testes serão realizados remotamente, com observação direta através de videoconferência. |
+|Usuários-alvo| Novos usuários que desejam se cadastrar e acessar a plataforma. |
 |Critérios de Seleção dos Participantes| Participantes serão selecionados aleatoriamente entre indivíduos com diferentes níveis de experiência em navegação na web, sem considerar conhecimento específico sobre o domínio da plataforma. |
 |Etapas da Sessão de Teste | Etapa 1: Introdução e explicação dos objetivos do teste. Etapa 2: Execução das tarefas pelos usuários. Etapa 3: Coleta de feedback dos usuários. |
-|Roteiro Detalhado das Tarefas Realizadas pelos Usuários| 1. Os usuários serão instruídos a criar um perfil como empresa. 2. Registrar informações relevantes, como nome da empresa, informações de contato, descrição da empresa, foto do perfil, etc. 3. Realizar o processo de criação de perfil. 4. Observar qualquer dificuldade, confusão ou problemas que os usuários possam encontrar. |
+|Roteiro Detalhado das Tarefas Realizadas pelos Usuários| 1. Os usuários serão instruídos a criar um perfil como empresa ou profissonal. 2. Registrar informações como e-mail, senha e tipo de conta na tela de cadastro. 3. Fazer o login  4. Concluir a criação de perfil como profissional ou empresa. 5. Observar qualquer dificuldade, confusão ou problemas que os usuários possam encontrar. |
 |Recursos Demandados| Computadores com acesso à internet, ambiente tranquilo para testes, observadores para registrar dados. |
-|Dados Coletados| Quantidade de cliques, número de erros (por exemplo, campos obrigatórios não preenchidos), tempo gasto no processo de criação de perfil. |
-|Métricas Coletadas | Taxa de conclusão do processo de criação de perfil, tempo médio para completar o processo, número de erros cometidos durante o processo. |
+|Dados Coletados| Quantidade de cliques, número de erros (por exemplo, campos obrigatórios não preenchidos), tempo gasto no processo de cadastro de perfil e login do usuário. |
+|Métricas Coletadas | Taxa de conclusão do processo de cadastro e login, tempo médio para completar o processo, número de erros cometidos durante o processo. |
 
 |Número do Teste    | UT-02  |
 |------|-----------------------------------------|
