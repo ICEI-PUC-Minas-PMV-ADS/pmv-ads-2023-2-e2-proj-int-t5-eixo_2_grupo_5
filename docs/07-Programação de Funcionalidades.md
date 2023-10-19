@@ -1,11 +1,4 @@
 # Programação de Funcionalidades
-
-
-|ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
-|------|-----------------------------------------|----|
-|RF-011| Login e Cadastro  | tarefas.shtml / tarefas.cs / controllertarefas.cs | 
-
-
 | ID | Status | Descrição do Requisito | Artefato(s) produzido(s) |
 |---|---|---|---|
 | RF-001 (Gerenciamento de Perfil) | Em construção | A aplicação deve permitir que tanto empresas quanto profissionais criem e gerenciem seus perfis na plataforma. Isso inclui a capacidade de preencher informações relevantes, como nome, informações de contato, descrição da empresa ou currículo do profissional, foto do perfil e quaisquer outras informações relevantes. Os perfis devem ser personalizáveis e editáveis a qualquer momento. | - |
