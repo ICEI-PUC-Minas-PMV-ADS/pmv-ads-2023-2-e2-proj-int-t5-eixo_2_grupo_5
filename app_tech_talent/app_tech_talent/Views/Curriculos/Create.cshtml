@@ -1,0 +1,33 @@
+﻿@model app_tech_talent.Models.Curriculo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Criar Perfil</h1>
+
+<h4>Currículo</h4>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ResumoProfissional" class="control-label"></label>
+                <textarea asp-for="ResumoProfissional" class="form-control" rows="4"></textarea>
+                <span asp-validation-for="ResumoProfissional" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <a asp-action="Index" class="btn btn-primary">Voltar</a>
+                <input type="submit" value="Salvar Informações" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

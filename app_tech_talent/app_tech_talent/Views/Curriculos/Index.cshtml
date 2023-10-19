@@ -1,0 +1,32 @@
+﻿@model IEnumerable<app_tech_talent.Models.Curriculo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Gerenciar Perfil</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ResumoProfissional)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResumoProfissional)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdCurriculo" class="btn btn-primary">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdCurriculo" class="btn btn-primary">Visualizar informações</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
