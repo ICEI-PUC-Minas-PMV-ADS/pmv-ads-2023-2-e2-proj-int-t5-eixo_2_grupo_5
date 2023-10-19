@@ -2,9 +2,11 @@
 
 A seguir, apresentamos o registro das evidências dos testes realizados na aplicação pela equipe, que confirmam se o critério de êxito foi alcançado ou não.
 
-| Caso de Teste                   | Evidência |
-|-----------------------------|-----------|
-| CT-11 - Login, Cadastro     | - [Vídeo 1](https://www.youtube.com/embed/8Hyh923iCoQ?si=7ELGPodV6Gs24zMi) - [Vídeo 2](https://www.youtube.com/embed/cAc-FRB0LT8?si=pOKAe8takrv2sF1r) |
+| Caso de Teste            | Evidência |
+|--------------------------|-----------|
+| CT-11 - Login, Cadastro | - [Vídeo 1](https://www.youtube.com/embed/8Hyh923iCoQ?si=7ELGPodV6Gs24zMi)
+                           | - [Vídeo 2](https://www.youtube.com/embed/cAc-FRB0LT8?si=pOKAe8takrv2sF1r) |
+
 
 
 
