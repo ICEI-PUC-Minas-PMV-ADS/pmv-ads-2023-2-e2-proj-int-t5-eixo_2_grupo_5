@@ -70,9 +70,16 @@
 |Passos| Fazer login na plataforma como profissional. Compartilhar uma vaga de trabalho em uma rede social. |
 |Critérios de Êxito| A opção de compartilhamento em redes sociais deve funcionar corretamente. |
 
-|Caso de Teste    | CT-11 - Login, Cadastro e Recuperação de Acesso  |
+|Caso de Teste    | CT-11 - Login, Cadastro |
 |------|-----------------------------------------|
-|Requisitos associados| RF-011, RF-012 |
-|Objetivo do Teste| Verificar se é possível realizar o login, o cadastro e a recuperação de senha na plataforma. |
-|Passos| Realizar o registro como empresa. Realizar o registro como profissional. Fazer login na plataforma como empresa. Fazer login na plataforma como profissional.Tentar recuperar a senha. |
-|Critérios de Êxito| O registro, o login e a recuperação de senha devem ser bem-sucedidos para empresas e profissionais. |
+|Requisitos associados| RF-011 |
+|Objetivo do Teste| Verificar se é possível realizar o login e o cadastro. |
+|Passos| Realizar o registro como empresa. Realizar o registro como profissional. Fazer login na plataforma como empresa. Fazer login na plataforma como profissional. |
+|Critérios de Êxito| O registro e o login devem ser bem-sucedidos para empresas e profissionais. |
+
+|Caso de Teste    | CT-12 - Recuperação de Acesso  |
+|------|-----------------------------------------|
+|Requisitos associados| RF-012 |
+|Objetivo do Teste| Verificar se é possível realizar a recuperação de senha na plataforma. |
+|Passos| Tentar recuperar a senha. |
+|Critérios de Êxito| A recuperação de senha deve ser bem-sucedida para empresas e profissionais. |
