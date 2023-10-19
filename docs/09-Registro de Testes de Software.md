@@ -13,7 +13,4 @@ A seguir, apresentamos o registro das evidências dos testes realizados na aplic
 
 ## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
-
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+A seguir, exibimos os resultados do teste, destacando tanto os aspectos positivos quanto os desafios identificados na solução. Também discutiremos como planejamos abordar esses desafios nas próximas iterações, incluindo as falhas detectadas e as melhorias decorrentes dos resultados dos testes.
