@@ -4,5 +4,5 @@ Após realizar os testes de usabilidade, obtém-se um relatório a partir das an
 
 | Usuário | Artefato | Tempo gasto | Clicks | Quantidade de erros | Recuperação dos erros | Observações |
 |---|---|---|---|---|---|---|
-| Usuário 1 | UT-001 | 00:01:48 | 13 | 1 | Sim | O usuário não digitou o CPF com a formatação correta, mas, apesar disso, realizou o cadastro e login de forma rápida e fácil. |
+| Usuário 1 | UT-01 | 00:01:48 | 13 | 1 | Sim | O usuário não digitou o CPF com a formatação correta, mas, apesar disso, realizou o cadastro e login de forma rápida e fácil. |
 
