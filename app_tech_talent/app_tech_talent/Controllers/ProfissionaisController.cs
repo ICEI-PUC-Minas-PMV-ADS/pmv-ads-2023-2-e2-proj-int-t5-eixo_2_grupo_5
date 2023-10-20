@@ -212,13 +212,22 @@ namespace app_tech_talent.Controllers
                 return Problem("Entity set 'AppDbContext.Profissionais'  is null.");
             }
             var profissional = await _context.Profissionais.FindAsync(id);
+
+            var usuarioId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var usuario = await _context.Usuarios.FindAsync(usuarioId);
+            
+
             if (profissional != null)
             {
-                _context.Profissionais.Remove(profissional);
+                
+                    _context.Profissionais.Remove(profissional);
+                    _context.Usuarios.Remove(usuario);
+                
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Logout", "Usuarios");
         }
 
         private bool ProfissionalExists(int id)

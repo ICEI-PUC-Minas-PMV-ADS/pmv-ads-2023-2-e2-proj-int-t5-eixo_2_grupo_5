@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eddy Moura\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj": {}
+    "C:\\Users\\valci\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eddy Moura\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj": {
+    "C:\\Users\\valci\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eddy Moura\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj",
+        "projectUniqueName": "C:\\Users\\valci\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj",
         "projectName": "app_tech_talent",
-        "projectPath": "C:\\Users\\Eddy Moura\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj",
-        "packagesPath": "C:\\Users\\Eddy Moura\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eddy Moura\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\obj\\",
+        "projectPath": "C:\\Users\\valci\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj",
+        "packagesPath": "C:\\Users\\valci\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\valci\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Eddy Moura\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\valci\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
