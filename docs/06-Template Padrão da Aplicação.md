@@ -117,7 +117,7 @@ Essa tela permite que o profissional responda um questionario fornecido pela emp
 ## Definição da autoavvaliação
 Essa tela permite que a empresa crie um questionario de acordo com as habilidades exigidas.
 
-<img src="./img/Definição de qualificações.png" width="50%"/> <img src="./img/Definição de qualificações-mobile.png" width="50%"/> 
+<img src="./img/Definição de qualificações.png" width="50%"/> <img src="./img/Definição de qualificações-mobile.png" width="15%"/> 
 
 
 > **Links Úteis**:
