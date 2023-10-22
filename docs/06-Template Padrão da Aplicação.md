@@ -27,9 +27,83 @@ A junção de todas essas cores criam uma paleta visual, equilibrada e completa 
 #EC3434 (Vermelho): O vermelho é uma cor vibrante e enérgica, que foi utilizada para chamar a atenção dos usuários e transmitir uma sensação de urgência ou alerta. O vermelho foi aplicado em mensagens de erro, avisos importantes ou em botões que demandam uma maior atenção do usuario. 
 
 ### Tipografia
-<img src="./img/Tipografia.png" alt="Paleta de cores">
+<img src="./img/Tipografia.png" alt="Tipografia">
 
-A fonte escolhida para construção da interface foi a Poppins, que promove uma excelente legibilidade, mesmo em tamanhos menores ou em telas de dispositivos móveis, o que é importante, pois os usuarios pois os usuários precisam ler informações detalhadas, como descrições de trabalhos e requisitos. Essa fonte também possui um design moderno e limpo, transmitindo uma imagem atualizada e profissional para a aplicação, mantendo-a visualmente atraente para os usuários.
+A fonte escolhida para construção da interface foi a Poppins, que promove uma excelente legibilidade, mesmo em tamanhos menores ou em telas de dispositivos móveis, o que é importante, pois os usuarios precisam ler informações detalhadas, como descrições de trabalhos e requisitos. Essa fonte também possui um design moderno e limpo, transmitindo uma imagem atualizada e profissional para a aplicação, mantendo-a visualmente atraente para os usuários.
+
+### Componentes e Ícones
+<img src="./img/componentes.png" alt="Componentes">
+
+Os componentes destacam as cores utilizadas.
+Os ícones escolhidos são simples, trazendo uma sensação de familiaridade e confiança aos usuarios.
+A logo foi desenvolvida de forma minimalista, utilizamos a cor branco para combinar com o tom de azul que foi utilizado no cabeçalho. A cor escolhida lembra simplicidade, coerencia e legibilidade.
+
+## Fluxo de Telas 
+O fluxo de telas mostra a trilha de uso do usuario pela aplicação.
+
+Fluxo de tela do usuario (profissional)
+<img src="./img/tela_profissional.png" alt="Fluxo de telas">
+
+Fluxo de telas do usuario (empresa)
+<img src="./img/tela_empresa.png" alt="Fluxo de telas">
+
+### Aplicação nas telas 
+
+Abaixo estão representadas as principais telas desenvolvidas, em suas versões para versão desktop e para versão mobile, e a explicação de suas funcionalidades.
+
+## Home 
+Ao acessar a aplicação, o usuário inicialmente visualiza a página de boas-vindas que contém um pequeno texto de apresentação da aplicação e as opções de entrar ou criar conta.
+<img src="img/home_desktop.png" width="50%"/> <img src="img/index_mobile.png" width="15%"/>
+
+
+## Cadastro 
+Para realizar o primeiro acesso na aplicação, o usuário (empresa ou profissional) precisa efetuar o cadastro com seus dados pessoais.
+<img src="img/cadastro empresa.png" width="50%"/> <img src="img/cadastro-empresa.png" width="15%"/>
+<img src="img/cadastro-profissional.png" width="50%"/> <img src="img/cadastro-profissional-mobile.png" width="15%"/>
+
+## Login 
+Na tela login é possivel acessar a aplicação com um emaile e senha pré-cadastrado.
+<img src="./img/Login.png" alt="Login"> <img src="./img/Login-mobile.png" alt="Login">
+
+## Redefinir senha
+Na tela redefinir senha permite aos usuários redefinir a senha de sua conta quando a esqueceram ou desejam alterá-la por motivos de segurança.
+<img src="./img/Redefinir senha.png" alt="Redefinir senha"> <img src="./img/redefinir senha-mobile.png" alt="Redefinir senha"> 
+
+## Visualizar vagas
+Essa tela permite que o usuario explore e examine oportunidades de emprego disponiveis, utilizando a lista de vagas ou o filtro de pesquisa.
+<img src="./img/Visualizar vagas.png" alt="Visualizar vagas"> <img src="./img/Visualizar vagas-mobile.png" alt="Visualizar Vagas">
+
+## Criar Vagas 
+A tela criar vagas permite que recrutadores inseriram informações sobre uma nova vaga de emprego que desejam anunciar. Essa tela permite que eles forneçam detalhes específicos sobre a posição e requisitos necessários. 
+<img src="./img/telas_empresa.png" alt="Fluxo de telas">
+
+## Criar ou gerenciar perfil
+A tela de criar ou gerenciar perfil permite aos usuários (empresa/profissional) criar ou atualizar informações pessoais e profissionais associadas à sua conta.
+<img src="./img/Criar e gerenciar perfil-empresa.png" alt="Gerenciar Perfil"> <img src="./img/perfil-mobile.png" alt="Gerenciar Perfil">
+
+<img src="./img/Criar e gerenciar perfil-profissional.png" alt="Gerenciar Perfil"> <img src="./img/perfil-profissional-mobile.png" alt="Gerenciar Perfil"> 
+
+## Candidatar a vagas
+Esta tela permite que o profissional envie informações e se inscreva na vaga que o mesmo selecionou.
+<img src="./img/telas_empresa.png" alt="Fluxo de telas">
+
+## Gerenciar Vagas
+A tela gerenciar vagas permite que os recrutadores visualizem, editem
+ou excluam as vagas de emprego que eles criaram.
+<img src="./img/Gerenciar vagas.png" alt="Gerenciar Vagas"> <img src="./img/gerenciar vagas-mobile.png" alt="Gerenciar Vagas">
+
+## Visualizar resultado das autoavaliações
+Essa tela permite aos recrutadores visualizarem os resultados das autoavaliações dos candidatos que se candidataram a vaga criada pelo mesmo.
+<img src="./img/Visualizar resultados das autoavaliações.png" alt="Visualizar resultados"> <img src="./img/visualizar-autoavaliações.png" alt="Visualizar resultados">
+
+## Autoavaliação
+Essa tela permite que o profissional responda um questionario fornecido pela empresa para avaliar suas habilidades.
+<img src="./img/Autoavaliação.png" alt="Autoavaliação"> <img src="./img/autoavalição-mobile.png" alt="Autoavaliação">
+
+## Definição da autoavvaliação
+Essa tela permite que a empresa crie um questionario de acordo com as habilidades exigidas.
+<img src="./img/Definição de qualificações-mobile.png" alt="Definição de qualificações"> 
+
 
 > **Links Úteis**:
 >
