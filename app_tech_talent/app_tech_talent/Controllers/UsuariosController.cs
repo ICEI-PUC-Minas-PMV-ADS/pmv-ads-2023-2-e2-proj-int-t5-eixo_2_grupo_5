@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using app_tech_talent.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Net.Mail;
+using System.Net;
 
 namespace app_tech_talent.Controllers
 {
@@ -48,6 +44,12 @@ namespace app_tech_talent.Controllers
 
 
         [AllowAnonymous]
+        public IActionResult Alter(string Email) {
+            ViewData["Email"] = Email;
+            return View();
+        }
+
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
@@ -58,6 +60,109 @@ namespace app_tech_talent.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> Recover(Usuario usuario) {
+            string GenerateRandomKey(int length) {
+                const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                Random random = new Random();
+                return new string(Enumerable.Repeat(chars, length)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+            }
+            var dados = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == usuario.Email);
+
+            if (dados != null) {
+                try {
+                    string recoveryKey = GenerateRandomKey(8);
+
+                    dados.RecoveryKey = recoveryKey;
+                    await _context.SaveChangesAsync();
+
+                    using (SmtpClient client = new SmtpClient("smtp-relay.brevo.com")) {
+                        client.Port = 587;
+                        client.Credentials = new NetworkCredential("techtalent702@gmail.com", "2ktcNxHYgZAd4bza");
+                        client.EnableSsl = true;
+
+                        MailMessage message = new MailMessage();
+                        message.From = new MailAddress("techtalent702@gmail.com", "Tech Talent");
+                        message.To.Add(new MailAddress(usuario.Email, "Usuário TechTalent"));
+                        message.Subject = "Recuperação de senha";
+                        message.Body = "Seu código de recuperação de senha (Recovery Key): " + recoveryKey;
+
+                        client.Send(message);
+
+                        return RedirectToAction("Alter", new { Email = usuario.Email });
+                    }
+                } catch (Exception ex) {
+                    ViewBag.Message = "Falha em enviar e-mail: " + ex.Message;
+                }
+            } else {
+                ViewBag.Message = "E-mail inválido!";
+            }
+
+            return View();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> Alter(Usuario usuario) {
+            var dados = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == usuario.Email);
+
+            if (dados != null && dados.RecoveryKey == usuario.RecoveryKey) {
+
+                usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
+                dados.Senha = usuario.Senha;
+                dados.RecoveryKey = null;
+                usuario.RecoveryKey = null;
+                usuario.TipoUsuario= dados.TipoUsuario;
+                _context.Update(dados);
+                await _context.SaveChangesAsync();
+
+                var claims = new List<Claim> {
+                    new Claim(ClaimTypes.Email, dados.Email),
+                    new Claim(ClaimTypes.Name, dados.Email),
+                    new Claim(ClaimTypes.NameIdentifier, dados.UsuarioId.ToString()),
+                    new Claim(ClaimTypes.Role, dados.TipoUsuario.ToString()),
+                };
+
+                var usuarioIdentity = new ClaimsIdentity(claims, "Alter");
+                ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
+
+                var props = new AuthenticationProperties {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
+                    IsPersistent = true,
+                };
+
+                await HttpContext.SignInAsync(principal, props);
+
+                if (dados.TipoUsuario == TipoUsuario.Profissional) {
+                    var profissionalExistente = await _context.Profissionais.FirstOrDefaultAsync(p => p.UsuarioId == dados.UsuarioId);
+
+                    if (profissionalExistente != null) {
+                        return Redirect("/");
+                    }
+                    else {
+                        return RedirectToAction("Create", "Profissionais");
+                    }
+                } else if (dados.TipoUsuario == TipoUsuario.Empresa) {
+                    var empresaExistente = await _context.Empresas.FirstOrDefaultAsync(e => e.UsuarioId == dados.UsuarioId);
+
+                    if (empresaExistente != null) {
+                        return Redirect("/");
+                    } else {
+                        return RedirectToAction("Create", "Empresas");
+                    }
+                }
+            } else {
+                ViewBag.Message = "Senha ou Recovery Key inválidos!";
+                ViewBag.Email = usuario.Email;
+            }
+
+            return View();
+        }
+
 
         [HttpPost]
         [AllowAnonymous]
@@ -156,6 +261,11 @@ namespace app_tech_talent.Controllers
         {
             return View();
         }
+        [AllowAnonymous]
+        public IActionResult Recover()
+        {
+            return View();
+        }
 
         // POST: Usuarios/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -205,7 +315,6 @@ namespace app_tech_talent.Controllers
 
             if (usuario.UsuarioId != usuarioId)
             {
- 
                 return Forbid();
             }
 
