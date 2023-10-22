@@ -11169,19 +11169,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Eddy Moura\\.nuget\\packages\\": {}
+    "C:\\Users\\Frederico\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Eddy Moura\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj",
+      "projectUniqueName": "C:\\Users\\Frederico\\Documents\\TechTalent\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj",
       "projectName": "app_tech_talent",
-      "projectPath": "C:\\Users\\Eddy Moura\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj",
-      "packagesPath": "C:\\Users\\Eddy Moura\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Eddy Moura\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\obj\\",
+      "projectPath": "C:\\Users\\Frederico\\Documents\\TechTalent\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj",
+      "packagesPath": "C:\\Users\\Frederico\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Frederico\\Documents\\TechTalent\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5\\app_tech_talent\\app_tech_talent\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Eddy Moura\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Frederico\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11255,6 +11255,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.23, 6.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.23, 6.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.23, 6.0.23]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.23, 6.0.23]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -11263,7 +11281,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
