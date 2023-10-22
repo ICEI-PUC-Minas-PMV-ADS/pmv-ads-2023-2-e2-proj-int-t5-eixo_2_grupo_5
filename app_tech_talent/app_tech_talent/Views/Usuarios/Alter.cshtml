@@ -1,29 +1,33 @@
-﻿@model app_tech_talent.Models.Usuario
+@model app_tech_talent.Models.Usuario
 
 @{
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = "Alter";
 }
 
-<h1>Acesse sua conta</h1>
+<h1>Altere a senha</h1>
 
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Login">
+        <form asp-action="Alter">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Email" class="control-label">E-mail</label>
-                <input asp-for="Email" class="form-control" />
+                <input asp-for="Email" class="form-control" readonly="readonly" value="@ViewData["Email"]"/>
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Senha" class="control-label">Senha</label>
+                <label asp-for="Senha" class="control-label">Nova Senha</label>
                 <input asp-for="Senha" class="form-control" />
                 <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="RecoveryKey" class="control-label">Recovery Key</label>
+                <input asp-for="RecoveryKey" class="form-control" />
+                <span asp-validation-for="RecoveryKey" class="text-danger"></span>
+            </div>
             <div class="form-group mt-3">
-                <input type="submit" value="Entrar" class="btn btn-success" />
-                <a class="btn btn-warning" asp-area="" asp-controller="Usuarios" asp-action="Recover">Recuperar Senha</a>
+                <input type="submit" value="Alterar Senha" class="btn btn-success" />
             </div>
         </form>
         <h3>@ViewBag.Message</h3>

@@ -1,8 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
-using Microsoft.VisualBasic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
 
 namespace app_tech_talent.Models
 {

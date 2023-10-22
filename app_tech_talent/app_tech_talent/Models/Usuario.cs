@@ -20,6 +20,8 @@ namespace app_tech_talent.Models
 
         [Display(Name = "Tipo de Usuário")]
         public TipoUsuario TipoUsuario { get; set; }
+
+        public string RecoveryKey { get; set; }
     }
 
     public enum TipoUsuario
