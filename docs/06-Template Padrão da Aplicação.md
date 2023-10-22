@@ -35,7 +35,9 @@ A fonte escolhida para construção da interface foi a Poppins, que promove uma 
 <img src="./img/componentes.png" alt="Componentes">
 
 Os componentes destacam as cores utilizadas.
+
 Os ícones escolhidos são simples, trazendo uma sensação de familiaridade e confiança aos usuarios.
+
 A logo foi desenvolvida de forma minimalista, utilizamos a cor branco para combinar com o tom de azul que foi utilizado no cabeçalho. A cor escolhida lembra simplicidade, coerencia e legibilidade.
 
 ## Fluxo de Telas 
@@ -58,51 +60,53 @@ Ao acessar a aplicação, o usuário inicialmente visualiza a página de boas-vi
 
 ## Cadastro 
 Para realizar o primeiro acesso na aplicação, o usuário (empresa ou profissional) precisa efetuar o cadastro com seus dados pessoais.
+
 <img src="img/cadastro empresa.png" width="50%"/> <img src="img/cadastro-empresa.png" width="15%"/>
+
 <img src="img/cadastro-profissional.png" width="50%"/> <img src="img/cadastro-profissional-mobile.png" width="15%"/>
 
 ## Login 
 Na tela login é possivel acessar a aplicação com um emaile e senha pré-cadastrado.
-<img src="./img/Login.png" alt="Login"> <img src="./img/Login-mobile.png" alt="Login">
+<img src="./img/Login.png" alt="Login" width="50%" /> <img src="./img/login-mobile.png" width="15%"/>
 
 ## Redefinir senha
 Na tela redefinir senha permite aos usuários redefinir a senha de sua conta quando a esqueceram ou desejam alterá-la por motivos de segurança.
-<img src="./img/Redefinir senha.png" alt="Redefinir senha"> <img src="./img/redefinir senha-mobile.png" alt="Redefinir senha"> 
+<img src="./img/Redefinir senha.png" width="50%" /> <img src="./img/redefinir senha-mobile.png" width="15%"/> 
 
 ## Visualizar vagas
 Essa tela permite que o usuario explore e examine oportunidades de emprego disponiveis, utilizando a lista de vagas ou o filtro de pesquisa.
-<img src="./img/Visualizar vagas.png" alt="Visualizar vagas"> <img src="./img/Visualizar vagas-mobile.png" alt="Visualizar Vagas">
+<img src="./img/Visualizar vagas.png" width="50%"/> <img src="./img/Visualizar vagas-mobile.png" width="15%"/>
 
 ## Criar Vagas 
 A tela criar vagas permite que recrutadores inseriram informações sobre uma nova vaga de emprego que desejam anunciar. Essa tela permite que eles forneçam detalhes específicos sobre a posição e requisitos necessários. 
-<img src="./img/telas_empresa.png" alt="Fluxo de telas">
+<img src="./img/Criar vagas.png" width="50%"/> <img src="./img/criar vagas-mobile.png" width="15%"/>
 
 ## Criar ou gerenciar perfil
 A tela de criar ou gerenciar perfil permite aos usuários (empresa/profissional) criar ou atualizar informações pessoais e profissionais associadas à sua conta.
-<img src="./img/Criar e gerenciar perfil-empresa.png" alt="Gerenciar Perfil"> <img src="./img/perfil-mobile.png" alt="Gerenciar Perfil">
+<img src="./img/Criar e gerenciar perfil-empresa.png" width="50%"/> <img src="./img/perfil-mobile.png" width="15%"/>
 
-<img src="./img/Criar e gerenciar perfil-profissional.png" alt="Gerenciar Perfil"> <img src="./img/perfil-profissional-mobile.png" alt="Gerenciar Perfil"> 
+<img src="./img/Criar e gerenciar perfil-profissional.png" width="50%"/> <img src="./img/perfil-profissional-mobile.png" width="15%"/>
 
 ## Candidatar a vagas
 Esta tela permite que o profissional envie informações e se inscreva na vaga que o mesmo selecionou.
-<img src="./img/telas_empresa.png" alt="Fluxo de telas">
+<img src="./img/Candidatar a vagas" width="50%"/> <img src="./img/candidatura a vagas.png" width="15%"/>
 
 ## Gerenciar Vagas
 A tela gerenciar vagas permite que os recrutadores visualizem, editem
 ou excluam as vagas de emprego que eles criaram.
-<img src="./img/Gerenciar vagas.png" alt="Gerenciar Vagas"> <img src="./img/gerenciar vagas-mobile.png" alt="Gerenciar Vagas">
+<img src="./img/Gerenciar vagas.png" width="50%"/> <img src="./img/gerenciar vagas-mobile.png" width="15%"/>
 
 ## Visualizar resultado das autoavaliações
 Essa tela permite aos recrutadores visualizarem os resultados das autoavaliações dos candidatos que se candidataram a vaga criada pelo mesmo.
-<img src="./img/Visualizar resultados das autoavaliações.png" alt="Visualizar resultados"> <img src="./img/visualizar-autoavaliações.png" alt="Visualizar resultados">
+<img src="./img/Visualizar resultados das autoavaliações.png" width="50%"/> <img src="./img/visualizar-autoavaliações.png" width="15%"/>
 
 ## Autoavaliação
 Essa tela permite que o profissional responda um questionario fornecido pela empresa para avaliar suas habilidades.
-<img src="./img/Autoavaliação.png" alt="Autoavaliação"> <img src="./img/autoavalição-mobile.png" alt="Autoavaliação">
+<img src="./img/Autoavaliação.png" width="50%"/> <img src="./img/autoavalição-mobile.png" width="15%"/>
 
 ## Definição da autoavvaliação
 Essa tela permite que a empresa crie um questionario de acordo com as habilidades exigidas.
-<img src="./img/Definição de qualificações-mobile.png" alt="Definição de qualificações"> 
+<img src="./img/Definição de qualificações.png" width="50%"/> <img src="./img/Definição de qualificações-mobile.png" width="50%"/> 
 
 
 > **Links Úteis**:
