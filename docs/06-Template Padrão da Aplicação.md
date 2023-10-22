@@ -55,6 +55,7 @@ Abaixo estão representadas as principais telas desenvolvidas, em suas versões 
 
 ## Home 
 Ao acessar a aplicação, o usuário inicialmente visualiza a página de boas-vindas que contém um pequeno texto de apresentação da aplicação e as opções de entrar ou criar conta.
+
 <img src="img/home_desktop.png" width="50%"/> <img src="img/index_mobile.png" width="15%"/>
 
 
@@ -67,45 +68,55 @@ Para realizar o primeiro acesso na aplicação, o usuário (empresa ou profissio
 
 ## Login 
 Na tela login é possivel acessar a aplicação com um emaile e senha pré-cadastrado.
+
 <img src="./img/Login.png" alt="Login" width="50%" /> <img src="./img/login-mobile.png" width="15%"/>
 
 ## Redefinir senha
 Na tela redefinir senha permite aos usuários redefinir a senha de sua conta quando a esqueceram ou desejam alterá-la por motivos de segurança.
+
 <img src="./img/Redefinir senha.png" width="50%" /> <img src="./img/redefinir senha-mobile.png" width="15%"/> 
 
 ## Visualizar vagas
 Essa tela permite que o usuario explore e examine oportunidades de emprego disponiveis, utilizando a lista de vagas ou o filtro de pesquisa.
+
 <img src="./img/Visualizar vagas.png" width="50%"/> <img src="./img/Visualizar vagas-mobile.png" width="15%"/>
 
 ## Criar Vagas 
 A tela criar vagas permite que recrutadores inseriram informações sobre uma nova vaga de emprego que desejam anunciar. Essa tela permite que eles forneçam detalhes específicos sobre a posição e requisitos necessários. 
+
 <img src="./img/Criar vagas.png" width="50%"/> <img src="./img/criar vagas-mobile.png" width="15%"/>
 
 ## Criar ou gerenciar perfil
 A tela de criar ou gerenciar perfil permite aos usuários (empresa/profissional) criar ou atualizar informações pessoais e profissionais associadas à sua conta.
+
 <img src="./img/Criar e gerenciar perfil-empresa.png" width="50%"/> <img src="./img/perfil-mobile.png" width="15%"/>
 
 <img src="./img/Criar e gerenciar perfil-profissional.png" width="50%"/> <img src="./img/perfil-profissional-mobile.png" width="15%"/>
 
 ## Candidatar a vagas
 Esta tela permite que o profissional envie informações e se inscreva na vaga que o mesmo selecionou.
-<img src="./img/Candidatar a vagas" width="50%"/> <img src="./img/candidatura a vagas.png" width="15%"/>
+
+<img src="./img/Candidatar a vagas.png" width="50%"/> <img src="./img/candidatura a vagas.png" width="15%"/>
 
 ## Gerenciar Vagas
 A tela gerenciar vagas permite que os recrutadores visualizem, editem
 ou excluam as vagas de emprego que eles criaram.
+
 <img src="./img/Gerenciar vagas.png" width="50%"/> <img src="./img/gerenciar vagas-mobile.png" width="15%"/>
 
 ## Visualizar resultado das autoavaliações
 Essa tela permite aos recrutadores visualizarem os resultados das autoavaliações dos candidatos que se candidataram a vaga criada pelo mesmo.
+
 <img src="./img/Visualizar resultados das autoavaliações.png" width="50%"/> <img src="./img/visualizar-autoavaliações.png" width="15%"/>
 
 ## Autoavaliação
 Essa tela permite que o profissional responda um questionario fornecido pela empresa para avaliar suas habilidades.
+
 <img src="./img/Autoavaliação.png" width="50%"/> <img src="./img/autoavalição-mobile.png" width="15%"/>
 
 ## Definição da autoavvaliação
 Essa tela permite que a empresa crie um questionario de acordo com as habilidades exigidas.
+
 <img src="./img/Definição de qualificações.png" width="50%"/> <img src="./img/Definição de qualificações-mobile.png" width="50%"/> 
 
 
