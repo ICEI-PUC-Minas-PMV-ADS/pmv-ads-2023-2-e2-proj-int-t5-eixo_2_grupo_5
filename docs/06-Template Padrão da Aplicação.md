@@ -10,7 +10,7 @@ Antes de estabelecer o template da aplicação, foi criado um guia de estilos, d
 ### Paleta de cores 
 <img src="./img/Guia de estilos.png" alt="Paleta de cores">
 
-A junção de todas essas cores pode criar uma paleta visual equilibrada e completa para a aplicação.
+A junção de todas essas cores criam uma paleta visual, equilibrada e completa para a aplicação.
 
 #003d7a (Azul Escuro): O azul escuro transmite uma sensação de profissionalismo, confiança e estabilidade. Essa cor é frequentemente associada à seriedade e ao ambiente corporativo. Ao utilizar o azul escuro, estamos transmitindo uma imagem sólida e confiável para os usuários.
 
@@ -25,6 +25,11 @@ A junção de todas essas cores pode criar uma paleta visual equilibrada e compl
 #65D73D (Verde): O verde é frequentemente associado à natureza, crescimento e positividade. Nesse caso, o verde foi utilizado para transmitir uma sensação de progresso, sucesso e aprovação. Aplicado em botões de confirmação, indicadores de status ou áreas que destacam ações bem-sucedidas, como a submissão de candidaturas.
 
 #EC3434 (Vermelho): O vermelho é uma cor vibrante e enérgica, que foi utilizada para chamar a atenção dos usuários e transmitir uma sensação de urgência ou alerta. O vermelho foi aplicado em mensagens de erro, avisos importantes ou em botões que demandam uma maior atenção do usuario. 
+
+### Tipografia
+<img src="./img/Tipografia.png" alt="Paleta de cores">
+
+A fonte escolhida para construção da interface foi a Poppins, que promove uma excelente legibilidade, mesmo em tamanhos menores ou em telas de dispositivos móveis, o que é importante, pois os usuarios pois os usuários precisam ler informações detalhadas, como descrições de trabalhos e requisitos. Essa fonte também possui um design moderno e limpo, transmitindo uma imagem atualizada e profissional para a aplicação, mantendo-a visualmente atraente para os usuários.
 
 > **Links Úteis**:
 >
