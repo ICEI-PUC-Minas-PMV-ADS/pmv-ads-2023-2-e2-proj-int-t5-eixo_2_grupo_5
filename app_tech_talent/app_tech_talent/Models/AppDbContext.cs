@@ -9,5 +9,9 @@ namespace app_tech_talent.Models
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Profissional> Profissionais { get; set; }
         public DbSet<Empresa> Empresas { get; set; }
+        public DbSet<Habilidades> Habilidades { get; set; }
+        public DbSet<Curriculo> Curriculo { get; set; }
+        public DbSet<FormacaoAcademica> FormacaoAcademica { get; set; }
+        public DbSet<ExperienciaProfissional> ExperienciaProfissional { get; set; }
     }
 }

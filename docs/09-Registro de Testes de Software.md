@@ -1,12 +1,16 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
+A seguir, apresentamos o registro das evidências dos testes realizados na aplicação pela equipe, que confirmam se o critério de êxito foi alcançado ou não.
 
-Para cada caso de teste definido no Plano de Testes de Software, realize o registro das evidências dos testes feitos na aplicação pela equipe, que comprovem que o critério de êxito foi alcançado (ou não!!!). Para isso, utilize uma ferramenta de captura de tela que mostre cada um dos casos de teste definidos (obs.: cada caso de teste deverá possuir um vídeo do tipo _screencast_ para caracterizar uma evidência do referido caso).
+| Caso de Teste            | Evidência |
+|--------------------------|-----------|
+| CT-11 - Login, Cadastro  | - [Cadastro e Login Profissional](https://www.youtube.com/embed/8Hyh923iCoQ?si=7ELGPodV6Gs24zMi) - [Cadastro e Login Empresa](https://www.youtube.com/embed/cAc-FRB0LT8?si=pOKAe8takrv2sF1r) |
 
 ## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+A seguir, exibimos os resultados dos testes, destacando tanto os aspectos positivos quanto os desafios identificados na solução. Também discutiremos como planejamos abordar esses desafios nas próximas iterações, incluindo as falhas detectadas e as melhorias decorrentes dos resultados dos testes.
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+
+| Caso de Teste            | Avaliação |
+|--------------------------|-----------|
+| CT-11 - Login, Cadastro  | A solução atende ao requisito conforme o esperado, permitindo que os usuários realizem o processo de cadastro e login, seja como empresa ou como profissional. As validações dos campos nos formulários de cadastro e login, como o tamanho da senha e a verificação se o e-mail já está sendo utilizado, funcionam corretamente. A navegação e as permissões entre as páginas funcionam adequadamente, com a opção de cadastro e perfil de usuário aparecendo somente após o login. Além disso, a performance de navegação não apresenta problemas. O principal desafio será consolidar o perfil do usuário, tanto como empresa quanto como profissional. Uma alternativa em consideração é ocultar a aba de usuário para ambos e adicionar o e-mail no perfil de profissional e empresa com base no usuário. Se o usuário excluir o perfil, implementaremos um fluxo de saída e será necessário um novo cadastro, sem a capacidade de recuperação de dados. Além disso, é de extrema importância trabalhar no requisito de recuperação de senha. |
