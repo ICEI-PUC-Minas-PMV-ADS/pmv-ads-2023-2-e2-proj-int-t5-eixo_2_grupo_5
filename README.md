@@ -24,13 +24,32 @@ Uma plataforma que aproxima empresas e candidatos em busca de oportunidades prof
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+### Programas necessários para inicializar o projeto:
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+#### .NET Framework 6.0
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+#### Dotnet Entity Framework
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+Comando de instalação:
+
+``dotnet tool install --global dotnet-ef``
+
+#### Database: SQL Server Express - LocalDB
+
+Localização da connection line:
+[./app_tech_talent/appsettings.Development.json](./app_tech_talent/app_tech_talent/appsettings.Development.json)
+
+### Como inicializar o projeto:
+
+Vá para a pasta de conteúdo do app ([aqui](./app_tech_talent/app_tech_talent/)) e rode os seguintes comandos:
+
+```bash
+dotnet build
+dotnet ef database update # para rodar as migrations
+dotnet run
+```
+
+Acesse a aplicação no endereço fornecido no console.
 
 # Documentação
 
@@ -52,7 +71,7 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+<li><a href="./app_tech_talent/app_tech_talent/"> Código Fonte</a></li>
 
 # Apresentação
 
