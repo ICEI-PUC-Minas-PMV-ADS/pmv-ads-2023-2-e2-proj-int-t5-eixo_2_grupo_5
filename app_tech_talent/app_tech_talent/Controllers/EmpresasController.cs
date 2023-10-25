@@ -203,12 +203,19 @@ namespace app_tech_talent.Controllers
                 return Problem("Entity set 'AppDbContext.Empresas'  is null.");
             }
             var empresa = await _context.Empresas.FindAsync(id);
+
+            var usuarioId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var usuario = await _context.Usuarios.FindAsync(usuarioId);
+
             if (empresa != null)
             {
                 _context.Empresas.Remove(empresa);
+                _context.Usuarios.Remove(usuario);
             }
+
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Logout", "Usuarios");
         }
 
         private bool EmpresaExists(int id)
