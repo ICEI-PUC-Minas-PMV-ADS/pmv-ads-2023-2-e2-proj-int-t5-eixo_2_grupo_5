@@ -46,6 +46,13 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastre-se</a>
                             </li>
                         }
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("Profissional"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Curriculos" asp-action="Index">Currículo</a>
+                            </li>
+                        }
+
                     </ul>
                     <ul class="navbar-nav">
 

@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using app_tech_talent.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace app_tech_talent.Controllers
 {
-
+    [Authorize]
     public class CurriculosController : Controller
     {
         private readonly AppDbContext _context;
@@ -22,7 +19,22 @@ namespace app_tech_talent.Controllers
         // GET: Curriculos
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Curriculo.ToListAsync());
+
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var profissional = _context.Profissionais.FirstOrDefault(p => p.UsuarioId == userId);
+
+            var curriculo = await _context.Curriculo.FirstOrDefaultAsync(u => u.CPF == profissional.CPF);
+
+            if (curriculo != null)
+            {
+                var curriculoList = new List<Curriculo> { curriculo };
+                return View(curriculoList);
+
+            }
+
+            return RedirectToAction(nameof(Create));
+
         }
 
         // GET: Curriculos/Details/5
@@ -44,8 +56,9 @@ public async Task<IActionResult> Details(int? id)
             return View(curriculo);
         }
 
-        // GET: Curriculos/Create
+        // Insert: Curriculos/Create
         public IActionResult Create()
+
         {
             return View();
         }
@@ -57,8 +70,15 @@ public async Task<IActionResult> Details(int? id)
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdCurriculo,CPF,ResumoProfissional")] Curriculo curriculo)
         {
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var profissional = _context.Profissionais.FirstOrDefault(p => p.UsuarioId == userId);
+           
+            curriculo.CPF = profissional.CPF;
+
             if (ModelState.IsValid)
             {
+                
                 _context.Add(curriculo);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
