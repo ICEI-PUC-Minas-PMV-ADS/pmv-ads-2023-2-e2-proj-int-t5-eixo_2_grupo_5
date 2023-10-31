@@ -212,14 +212,11 @@ namespace app_tech_talent.Controllers
             var usuarioId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
 
             var usuario = await _context.Usuarios.FindAsync(usuarioId);
-            
 
             if (profissional != null)
             {
-                
-                    _context.Profissionais.Remove(profissional);
-                    _context.Usuarios.Remove(usuario);
-                
+                _context.Profissionais.Remove(profissional);
+                _context.Usuarios.Remove(usuario);
             }
             
             await _context.SaveChangesAsync();

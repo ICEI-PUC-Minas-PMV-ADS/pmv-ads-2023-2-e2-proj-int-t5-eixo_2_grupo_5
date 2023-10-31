@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Lista de Usuários</h1>
+<h1>Editar sua senha e/ou e-mail</h1>
 
 <div class="table-responsive">
     <table class="table table-bordered">
@@ -12,7 +12,6 @@
             <tr>
                 <th>Email</th>
                 <th>Senha</th>
-                <th>Tipo de Usuário</th>
                 <th>Ações</th>
             </tr>
         </thead>
@@ -22,11 +21,8 @@
                 <tr>
                     <td>@Html.DisplayFor(modelItem => item.Email)</td>
                     <td>@Html.DisplayFor(modelItem => item.Senha)</td>
-                    <td>@Html.DisplayFor(modelItem => item.TipoUsuario)</td>
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.UsuarioId" class="btn btn-primary btn-sm">Editar</a>
-                        <a asp-action="Details" asp-route-id="@item.UsuarioId" class="btn btn-info btn-sm">Detalhes</a>
-                        <a asp-action="Delete" asp-route-id="@item.UsuarioId" class="btn btn-danger btn-sm">Excluir</a>
                     </td>
                 </tr>
             }

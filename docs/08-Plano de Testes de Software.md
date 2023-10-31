@@ -83,3 +83,10 @@
 |Objetivo do Teste| Verificar se é possível realizar a recuperação de senha na plataforma. |
 |Passos| Tentar recuperar a senha. |
 |Critérios de Êxito| A recuperação de senha deve ser bem-sucedida para empresas e profissionais. |
+
+|Caso de Teste    | CT-13 - Cadastro de currículo  |
+|------|-----------------------------------------|
+|Requisitos associados| RF-013 |
+|Objetivo do Teste| Verificar se é possível realizar o cadastro de currículo na plataforma. |
+|Passos| Fazer login na plataforma como profissional. Cadastrar currículo. |
+|Critérios de Êxito| O cadastro de currículo deve ser bem-sucedido para profissionais. |
