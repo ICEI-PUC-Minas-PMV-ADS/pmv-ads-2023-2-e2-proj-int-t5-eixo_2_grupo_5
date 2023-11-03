@@ -3,8 +3,11 @@
     "",
     "\\app_tech_talent",
     "\\app_tech_talent\\app_tech_talent",
-    "\\app_tech_talent\\app_tech_talent\\Controllers"
+    "\\app_tech_talent\\app_tech_talent\\Controllers",
+    "\\app_tech_talent\\app_tech_talent\\Models",
+    "\\app_tech_talent\\app_tech_talent\\Views",
+    "\\app_tech_talent\\app_tech_talent\\Views\\Curriculos"
   ],
-  "SelectedNode": "\\app_tech_talent\\app_tech_talent\\Controllers\\CurriculosController.cs",
+  "SelectedNode": "\\app_tech_talent\\app_tech_talent\\Models\\AppDbContext.cs",
   "PreviewInSolutionExplorer": false
 }

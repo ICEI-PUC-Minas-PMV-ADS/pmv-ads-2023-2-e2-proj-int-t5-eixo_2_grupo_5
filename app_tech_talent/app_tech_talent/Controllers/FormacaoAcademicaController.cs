@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using app_tech_talent.Models;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace app_tech_talent.Controllers
 {
@@ -23,7 +24,7 @@ namespace app_tech_talent.Controllers
         // GET: FormacaoAcademica
         public async Task<IActionResult> Index()
         {
-              return View(await _context.FormacaoAcademica.ToListAsync());
+            return View(await _context.FormacaoAcademica.ToListAsync());
         }
 
         // GET: FormacaoAcademica/Details/5
