@@ -3,11 +3,8 @@
     "",
     "\\app_tech_talent",
     "\\app_tech_talent\\app_tech_talent",
-    "\\app_tech_talent\\app_tech_talent\\Controllers",
-    "\\app_tech_talent\\app_tech_talent\\Models",
-    "\\app_tech_talent\\app_tech_talent\\Views",
-    "\\app_tech_talent\\app_tech_talent\\Views\\Curriculos"
+    "\\app_tech_talent\\app_tech_talent\\Controllers"
   ],
-  "SelectedNode": "\\app_tech_talent\\app_tech_talent\\Models\\AppDbContext.cs",
+  "SelectedNode": "\\app_tech_talent\\app_tech_talent\\Controllers\\FormacaoAcademicaController.cs",
   "PreviewInSolutionExplorer": false
 }

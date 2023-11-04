@@ -24,8 +24,26 @@ namespace app_tech_talent.Controllers
         // GET: FormacaoAcademica
         public async Task<IActionResult> Index()
         {
-            return View(await _context.FormacaoAcademica.ToListAsync());
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.UsuarioId == userId);
+
+            var profissional = await _context.Profissionais.FirstOrDefaultAsync(p => p.UsuarioId == userId);
+
+            var curriculo = _context.Curriculo.FirstOrDefault(c => c.CPF == profissional.CPF);
+
+            var formacaoAcademica = await _context.FormacaoAcademica.Where(u => u.IdCurriculo == curriculo.IdCurriculo).ToListAsync();
+
+                if (formacaoAcademica != null)
+                {
+                  
+                    return View(formacaoAcademica);
+                }
+            
+
+            return RedirectToAction(nameof(Create));
         }
+
 
         // GET: FormacaoAcademica/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -58,12 +76,22 @@ namespace app_tech_talent.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdFormacaoAcademica,IdCurriculo,InstituicaoDeEnsino,grauObtido,AnoDeConclusao,AreaDeEstudo")] FormacaoAcademica formacaoAcademica)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(formacaoAcademica);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.UsuarioId == userId);
+
+            var profissional = await _context.Profissionais.FirstOrDefaultAsync(p => p.UsuarioId == userId);
+
+            var curriculo = _context.Curriculo.FirstOrDefault(c => c.CPF == profissional.CPF);
+            
+            formacaoAcademica.IdCurriculo = curriculo.IdCurriculo;
+
+                if (ModelState.IsValid) 
+                {
+                    _context.Add(formacaoAcademica);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
             return View(formacaoAcademica);
         }
 

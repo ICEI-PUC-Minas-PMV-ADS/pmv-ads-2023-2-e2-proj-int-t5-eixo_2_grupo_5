@@ -4,8 +4,11 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Formação acadêmica</h1>
 
+<p>
+<a href="https://localhost:44375/ExperienciaProfissional" class="btn btn-primary">Ir para a Próxima Página</a>
+</p>
 <p>
     <a asp-action="Create">Criar Formação academica</a>
 </p>
@@ -45,11 +48,14 @@
                 @Html.DisplayFor(modelItem => item.AreaDeEstudo)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdFormacaoAcademica">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdFormacaoAcademica">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdFormacaoAcademica">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdFormacaoAcademica" class="btn btn-info">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdFormacaoAcademica" class="btn btn-primary">Visualizar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdFormacaoAcademica" class="btn btn-danger">Deletar</a>
             </td>
         </tr>
-}
+        }
     </tbody>
 </table>
+<p>
+    <a href="https://localhost:44375/Curriculos" class="btn btn-primary">Voltar</a>
+</p>

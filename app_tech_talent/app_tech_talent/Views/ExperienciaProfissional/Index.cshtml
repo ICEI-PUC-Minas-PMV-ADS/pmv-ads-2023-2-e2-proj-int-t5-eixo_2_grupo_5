@@ -4,17 +4,15 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Experiência profissional</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Criar experiência profissional</a>
 </p>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.IdCurriculo)
-            </th>
+           
             <th>
                 @Html.DisplayNameFor(model => model.Empresa)
             </th>
@@ -36,9 +34,7 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdCurriculo)
-            </td>
+          
             <td>
                 @Html.DisplayFor(modelItem => item.Empresa)
             </td>
@@ -55,11 +51,14 @@
                 @Html.DisplayFor(modelItem => item.ResumoDaAtuacao)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdExperienciaProfissional">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdExperienciaProfissional">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdExperienciaProfissional">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdExperienciaProfissional" class="btn btn-info">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdExperienciaProfissional" class="btn btn-primary">Visualizar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdExperienciaProfissional" class="btn btn-danger">Deletar</a>
             </td>
         </tr>
-}
+        }
     </tbody>
 </table>
+<p>
+<a href="https://localhost:44375/FormacaoAcademica" class="btn btn-primary">Voltar</a>
+</p>

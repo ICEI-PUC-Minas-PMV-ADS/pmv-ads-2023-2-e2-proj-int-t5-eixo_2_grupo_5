@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using app_tech_talent.Models;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace app_tech_talent.Controllers
 {
@@ -23,8 +24,26 @@ namespace app_tech_talent.Controllers
         // GET: ExperienciaProfissional
         public async Task<IActionResult> Index()
         {
-              return View(await _context.ExperienciaProfissional.ToListAsync());
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.UsuarioId == userId);
+
+            var profissional = await _context.Profissionais.FirstOrDefaultAsync(p => p.UsuarioId == userId);
+
+            var curriculo = _context.Curriculo.FirstOrDefault(c => c.CPF == profissional.CPF);
+
+            var experienciaProfissional = await _context.ExperienciaProfissional.Where(u => u.IdCurriculo == curriculo.IdCurriculo).ToListAsync();
+
+            if (experienciaProfissional != null)
+            {
+
+                return View(experienciaProfissional);
+            }
+
+
+            return RedirectToAction(nameof(Create));
         }
+
 
         // GET: ExperienciaProfissional/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -57,6 +76,16 @@ namespace app_tech_talent.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdExperienciaProfissional,IdCurriculo,Empresa,Cargo,DataDeInicio,DataDeTermino,ResumoDaAtuacao")] ExperienciaProfissional experienciaProfissional)
         {
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.UsuarioId == userId);
+
+            var profissional = await _context.Profissionais.FirstOrDefaultAsync(p => p.UsuarioId == userId);
+
+            var curriculo = _context.Curriculo.FirstOrDefault(c => c.CPF == profissional.CPF);
+
+            experienciaProfissional.IdCurriculo = curriculo.IdCurriculo;
+
             if (ModelState.IsValid)
             {
                 _context.Add(experienciaProfissional);
