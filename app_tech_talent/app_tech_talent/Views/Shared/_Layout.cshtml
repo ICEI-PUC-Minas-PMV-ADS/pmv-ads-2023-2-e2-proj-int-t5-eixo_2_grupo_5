@@ -25,19 +25,28 @@
                         @if (User.Identity.IsAuthenticated)
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
-                            </li>
-                        }
-                        @if (User.Identity.IsAuthenticated && User.IsInRole("Profissional"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Profissionais" asp-action="Index">Profissionais</a>
-                            </li>
-                        }
-                        @if (User.Identity.IsAuthenticated && User.IsInRole("Empresa"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Empresas" asp-action="Index">Empresas</a>
+                                <div class="dropdown">
+                                    <a class="nav-link text-dark dropdown-toggle" href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Meu Perfil
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                                        
+                                        <a class="dropdown-item" asp-area="" asp-controller="Usuarios" asp-action="Index">Alterar Senha</a>
+
+                                        @if (User.IsInRole("Profissional"))
+                                        {
+                                            <a class="dropdown-item" asp-area="" asp-controller="Profissionais" asp-action="Index">Dados Cadastrais</a>
+                                        }
+                                        @if (User.IsInRole("Empresa"))
+                                        {
+                                            <a class="dropdown-item" asp-area="" asp-controller="Empresas" asp-action="Index">Dados Cadastrais</a>
+                                        }
+                                        @if (User.Identity.IsAuthenticated && User.IsInRole("Profissional"))
+                                        {
+                                            <a class="dropdown-item" asp-area="" asp-controller="Curriculos" asp-action="Index">Currículo</a>
+                                        }
+                                    </div>
+                                </div>
                             </li>
                         }
                         @if (!User.Identity.IsAuthenticated)
@@ -46,6 +55,8 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastre-se</a>
                             </li>
                         }
+                       
+
                     </ul>
                     <ul class="navbar-nav">
 
