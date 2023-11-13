@@ -1,0 +1,64 @@
+﻿@model IEnumerable<app_tech_talent.Models.ExperienciaProfissional>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Experiência profissional</h1>
+
+<p>
+    <a asp-action="Create">Criar experiência profissional</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.Empresa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cargo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataDeInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataDeTermino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResumoDaAtuacao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+          
+            <td>
+                @Html.DisplayFor(modelItem => item.Empresa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cargo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataDeInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataDeTermino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResumoDaAtuacao)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdExperienciaProfissional" class="btn btn-info">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdExperienciaProfissional" class="btn btn-primary">Visualizar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdExperienciaProfissional" class="btn btn-danger">Deletar</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<p>
+<a href="https://localhost:44375/FormacaoAcademica" class="btn btn-primary">Voltar</a>
+</p>
