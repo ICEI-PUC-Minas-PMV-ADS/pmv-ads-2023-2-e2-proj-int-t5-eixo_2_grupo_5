@@ -20,13 +20,16 @@ namespace app_tech_talent.Models
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MM/yyyy}", ApplyFormatInEditMode = true)]
+        [Display(Name = "Data de início")]
         public DateTime DataDeInicio { get; set; }
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MM/yyyy}", ApplyFormatInEditMode = true)]
+        [Display(Name = "Data de término")]
         public DateTime DataDeTermino { get; set; }
         
         [StringLength(500, ErrorMessage = "A Resumo da Atuação deve ter no máximo 500 caracteres.")]
+        [Display(Name = "Resumo da atuação")]
         public string ResumoDaAtuacao { get; set; }
     }
 }

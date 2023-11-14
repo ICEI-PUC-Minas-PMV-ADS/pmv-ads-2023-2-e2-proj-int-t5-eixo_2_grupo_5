@@ -1,0 +1,32 @@
+﻿@model app_tech_talent.Models.Curriculo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Currículo</h1>
+
+<h4>Resumo profissional</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="ResumoProfissional" class="control-label"></label>
+                <input asp-for="ResumoProfissional" class="form-control" />
+                <span asp-validation-for="ResumoProfissional" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <a asp-action="Index" class="btn btn-info">Voltar</a>
+                <input type="submit" value="Criar" class="btn btn-primary" />
+                <a href="https://localhost:44375/FormacaoAcademica" class="btn btn-primary">Ir para a Próxima Página</a>
+            </div>
+        </form>
+        
+    </div>
+</div>
+
+
+
