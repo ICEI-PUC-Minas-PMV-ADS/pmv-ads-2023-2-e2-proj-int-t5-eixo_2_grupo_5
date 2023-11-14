@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using app_tech_talent.Models;
 
@@ -11,9 +12,10 @@ using app_tech_talent.Models;
 namespace app_tech_talent.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231108233409_AddTableVagas")]
+    partial class AddTableVagas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -257,26 +259,23 @@ namespace app_tech_talent.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("app_tech_talent.Models.Vaga", b =>
+            modelBuilder.Entity("app_tech_talent.Models.Vagas", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdVagas")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdVagas"), 1L, 1);
 
                     b.Property<string>("Descricao")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("EmpresaId")
-                        .HasColumnType("int");
-
                     b.Property<string>("ExperienciaProficional")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Habilidades")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("IdHabilidades")
+                        .HasColumnType("int");
 
                     b.Property<string>("Localizacao")
                         .IsRequired()
@@ -286,10 +285,13 @@ namespace app_tech_talent.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("dataFechamento")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("dateAbertura")
+                    b.Property<DateTime>("dateTime")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("formacao")
@@ -301,7 +303,9 @@ namespace app_tech_talent.Migrations
                     b.Property<bool>("status")
                         .HasColumnType("bit");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdVagas");
+
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Vagas");
                 });
