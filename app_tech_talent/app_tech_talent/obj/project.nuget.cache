@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q79IT2Ti3AaJHlxPS1Foe49lDnOPNrrSRtdOaji5iLbrDrpOMowHn9EAvNMdzbrO1w9LmMDvKfYpdKNmyJlUtQ==",
+  "dgSpecHash": "oOZejNooFEkhf3NYNqRjcEpSNmuwpeZZ8rKDWdOMIYYzn24YKlZFDAdozgVcJblUXweu2vwQD5sjl4ywgbhzTQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\errei o smite\\Desktop\\projeto Etapa 2\\faaf\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj",
+  "projectFilePath": "C:\\Users\\errei o smite\\Desktop\\pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5-develop - Copia\\app_tech_talent\\app_tech_talent\\app_tech_talent.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\errei o smite\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\errei o smite\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
