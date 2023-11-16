@@ -207,5 +207,42 @@ namespace app_tech_talent.Controllers
             return View();
 
         }
+
+        [Authorize(Roles = "Empresa")]
+        public async Task<IActionResult> Candidaturas()
+        {
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var empresa = await _context.Empresas.FirstOrDefaultAsync(e => e.UsuarioId == userId);
+
+            if (empresa != null)
+            {
+                // Obter as IDs das vagas associadas à empresa
+                var idsVagasDaEmpresa = await _context.Vagas
+                    .Where(v => v.EmpresaId == empresa.EmpresaId)
+                    .Select(v => v.Id)
+                    .ToListAsync();
+
+                // Obter as candidaturas relacionadas às vagas da empresa
+                var candidaturasDaEmpresa = await _context.Candidaturas
+                    .Where(c => idsVagasDaEmpresa.Contains(c.VagaId))
+                    .ToListAsync();
+
+                // Obter os IDs dos profissionais associados às candidaturas
+                var idsProfissionais = candidaturasDaEmpresa.Select(c => c.ProfissionalId).ToList();
+
+                // Obter informações sobre os profissionais
+                var profissionais = await _context.Profissionais
+                    .Where(p => idsProfissionais.Contains(p.ProfissionalId))
+                    .ToListAsync();
+
+                ViewBag.Candidaturas = candidaturasDaEmpresa;
+                ViewBag.Profissionais = profissionais;
+
+                return View();
+            }
+
+            // A empresa não foi encontrada, você pode tratar isso de acordo com sua lógica
+            return View(new { Candidaturas = new List<Candidatura>(), Profissionais = new List<Profissional>() });
+        }
     }
 }

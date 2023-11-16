@@ -1,0 +1,41 @@
+﻿@{
+    var candidaturas = ViewBag.Candidaturas as List<Candidatura>;
+    var profissionais = ViewBag.Profissionais as List<Profissional>;
+}
+
+<!-- restante do código da View -->
+@if (candidaturas != null && candidaturas.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Candidatura ID</th>
+                <th>Status</th>
+                <th>Profissional ID</th>
+                <th>Nome do Profissional</th>
+                <th>Idade</th>
+                <th>CPF</th>
+                <!-- Adicione mais colunas conforme necessário -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var candidatura in candidaturas)
+            {
+                var profissional = profissionais.FirstOrDefault(p => p.ProfissionalId == candidatura.ProfissionalId);
+                <tr>
+                    <td>@candidatura.CandidaturaId</td>
+                    <td>@candidatura.Status</td>
+                    <td>@candidatura.ProfissionalId</td>
+                    <td>@(profissional != null ? profissional.Nome : "N/A")</td>
+                    <td>@(profissional != null ? profissional.Idade.ToString() : "N/A")</td>
+                    <td>@(profissional != null ? profissional.CPF : "N/A")</td>
+                    <!-- Adicione mais colunas conforme necessário -->
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Nenhuma candidatura encontrada.</p>
+}
