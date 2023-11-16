@@ -21,19 +21,18 @@
                     </li>
                     @if (User.Identity.IsAuthenticated)
                     {
-                        @if (User.IsInRole("Profissional"))
-                        {
-                            <li>
-                                <a asp-area="" asp-controller="Vagas" asp-action="VagasDisponiveis" class="nav-link">Vagas Disponíveis</a>
-                            </li>
-                        }
-
                         <li>
                             <div class="dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Vagas
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                                    @if (User.IsInRole("Profissional"))
+                                    {
+                                        <a asp-area="" asp-controller="Vagas" asp-action="VagasDisponiveis" class="nav-link">Vagas Disponíveis</a>
+                                        <a asp-area="" asp-controller="Vagas" asp-action="VagasCandidatadas" class="nav-link">Vagas Candidatadas</a>
+                                    }
+
                                     @if (User.IsInRole("Empresa"))
                                     {
                                         <a asp-area="" asp-controller="Vagas" asp-action="Index" class="dropdown-item">Vagas criadas</a>

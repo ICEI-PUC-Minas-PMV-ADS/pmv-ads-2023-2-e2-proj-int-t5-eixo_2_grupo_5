@@ -14,5 +14,7 @@ namespace app_tech_talent.Models
         public DbSet<FormacaoAcademica> FormacaoAcademica { get; set; }
         public DbSet<ExperienciaProfissional> ExperienciaProfissional { get; set; }
         public DbSet<Vaga> Vagas { get; set; }
+        public DbSet<Candidatura> Candidaturas { get; set; }
+
     }
 }

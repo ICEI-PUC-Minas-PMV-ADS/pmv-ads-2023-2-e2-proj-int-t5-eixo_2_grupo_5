@@ -136,8 +136,76 @@ namespace app_tech_talent.Controllers
         [Authorize(Roles = "Profissional")]
         public async Task<IActionResult> VagasDisponiveis()
         {
-            var vagasDisponiveis = await _context.Vagas.ToListAsync();
-            return View(vagasDisponiveis);
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var profissional = await _context.Profissionais.FirstOrDefaultAsync(e => e.UsuarioId == userId);
+
+            if (profissional != null)
+            {
+                // Obter as IDs das vagas às quais o profissional já se candidatou
+                var idsVagasCandidatadas = await _context.Candidaturas
+                    .Where(c => c.ProfissionalId == profissional.ProfissionalId)
+                    .Select(c => c.VagaId)
+                    .ToListAsync();
+
+                // Filtrar vagas disponíveis que o profissional ainda não se candidatou
+                var vagasDisponiveis = await _context.Vagas
+                    .Where(v => !idsVagasCandidatadas.Contains(v.Id))
+                    .ToListAsync();
+
+                return View(vagasDisponiveis);
+            }
+
+            // O profissional não foi encontrado, você pode tratar isso de acordo com sua lógica
+            return View(new List<Vaga>()); // Ou redirecionar para uma página de erro, por exemplo.
+        }
+
+        [Authorize(Roles = "Profissional")]
+        public async Task<IActionResult> VagasCandidatadas()
+        {
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var profissional = await _context.Profissionais.FirstOrDefaultAsync(e => e.UsuarioId == userId);
+
+            if (profissional != null)
+            {
+                // Obter as IDs das vagas às quais o profissional já se candidatou
+                var idsVagasCandidatadas = await _context.Candidaturas
+                    .Where(c => c.ProfissionalId == profissional.ProfissionalId)
+                    .Select(c => c.VagaId)
+                    .ToListAsync();
+
+                // Filtrar vagas disponíveis que o profissional ainda não se candidatou
+                var vagasDisponiveis = await _context.Vagas
+                    .Where(v => idsVagasCandidatadas.Contains(v.Id))
+                    .ToListAsync();
+
+                return View(vagasDisponiveis);
+            }
+
+            // O profissional não foi encontrado, você pode tratar isso de acordo com sua lógica
+            return View(new List<Vaga>()); // Ou redirecionar para uma página de erro, por exemplo.
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Candidatar(int vagaId)
+        {
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.UsuarioId == userId);
+            var profissional = await _context.Profissionais.FirstOrDefaultAsync(e => e.UsuarioId == userId);
+            var candidatura = new Candidatura();
+
+            candidatura.ProfissionalId = profissional.ProfissionalId; 
+            candidatura.VagaId = vagaId;
+            candidatura.Status = Status.Enviada;
+
+            if (ModelState.IsValid)
+            {
+                _context.Candidaturas.Add(candidatura);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("VagasDisponiveis");
+            }
+
+            return View();
+
         }
     }
 }
