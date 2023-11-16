@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <Folder Include="Curriculos\" />
+    <Folder Include="wwwroot\imagens\" />
   </ItemGroup>
 
 </Project>

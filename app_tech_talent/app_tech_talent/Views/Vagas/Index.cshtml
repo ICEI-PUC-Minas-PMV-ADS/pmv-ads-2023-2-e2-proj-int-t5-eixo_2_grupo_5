@@ -1,14 +1,15 @@
 ﻿@model IEnumerable<app_tech_talent.Models.Vaga>
 
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "Index";
 }
 
 <h1>Lista de Vagas</h1>
 
 <p>
-	<a asp-action="Create" class="btn btn-success" >Criar nova vaga</a>
+	<a asp-action="Create" class="btn btn-success">Criar nova vaga</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -46,44 +47,45 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Titulo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Localizacao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.formacao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ExperienciaProficional)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Habilidades)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.salario)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.dateAbertura)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.dataFechamento)
-            </td>
-            <td>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Titulo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Localizacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.formacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExperienciaProficional)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Habilidades)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.salario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dateAbertura)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dataFechamento)
+                </td>
+                <td>
                     <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                     <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Details</a> |
                     <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

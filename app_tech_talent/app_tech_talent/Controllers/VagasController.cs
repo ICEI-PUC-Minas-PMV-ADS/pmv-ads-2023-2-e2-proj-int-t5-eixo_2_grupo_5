@@ -1,10 +1,7 @@
 ﻿using app_tech_talent.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using app_tech_talent.Models;
-using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using System;
 using System.Collections.Generic;
@@ -28,21 +25,16 @@ namespace app_tech_talent.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
-
                 var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.UsuarioId == userId);
-
                 var empresa = await _context.Empresas.FirstOrDefaultAsync(e => e.UsuarioId == userId);
 
                 if (empresa != null)
                 {
-                    // Obtém a lista de vagas relacionadas à empresa específica
                     var vagas = await _context.Vagas.Where(v => v.EmpresaId == empresa.EmpresaId).ToListAsync();
-
                     return View(vagas);
                 }
             }
 
-            // Retorna uma lista vazia se o usuário não estiver autenticado ou se a empresa não for encontrada
             return View(new List<Vaga>());
         }
 
@@ -55,9 +47,7 @@ namespace app_tech_talent.Controllers
         public async Task<IActionResult> Create(Vaga vaga)
         {
             var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
-
             var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.UsuarioId == userId);
-
             var empresa = await _context.Empresas.FirstOrDefaultAsync(e => e.UsuarioId == userId);
 
             vaga.EmpresaId = empresa.EmpresaId;
@@ -79,9 +69,8 @@ namespace app_tech_talent.Controllers
 
             var dados = await _context.Vagas.FindAsync(Id);
 
-            if (Id == null)
+            if (dados == null)
                 return NotFound();
-
 
             return View(dados);
         }
@@ -112,7 +101,6 @@ namespace app_tech_talent.Controllers
             if (dados == null)
                 return NotFound();
 
-
             return View(dados);
         }
 
@@ -125,7 +113,6 @@ namespace app_tech_talent.Controllers
 
             if (dados == null)
                 return NotFound();
-
 
             return View(dados);
         }
@@ -143,9 +130,14 @@ namespace app_tech_talent.Controllers
 
             _context.Vagas.Remove(dados);
             await _context.SaveChangesAsync();
-
-
             return RedirectToAction("Index");
+        }
+
+        [Authorize(Roles = "Profissional")]
+        public async Task<IActionResult> VagasDisponiveis()
+        {
+            var vagasDisponiveis = await _context.Vagas.ToListAsync();
+            return View(vagasDisponiveis);
         }
     }
 }

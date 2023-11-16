@@ -1,0 +1,108 @@
+﻿    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #003d7a;
+    }
+
+    .login-container {
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #003d7a;
+        padding: 1rem;
+    }
+
+    .form-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .form-registration {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        padding: 3rem;
+    }
+
+    .form-registration h1,
+    .form-registration h4 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-registration form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .form-registration input,
+    .form-registration select {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-registration .btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .form-registration button,
+    #voltar-btn {
+        padding: 15px;
+        margin: 10px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 45%;
+    }
+
+    #voltar-btn {
+        background-color: #0066CC;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .form-registration button {
+        background-color: #65D73D;
+        color: white;
+    }
+
+    .form-registration button:focus,
+    #voltar-btn:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
