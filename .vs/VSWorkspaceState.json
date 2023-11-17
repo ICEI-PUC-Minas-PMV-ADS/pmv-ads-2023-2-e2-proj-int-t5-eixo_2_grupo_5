@@ -3,8 +3,11 @@
     "",
     "\\app_tech_talent",
     "\\app_tech_talent\\app_tech_talent",
-    "\\app_tech_talent\\app_tech_talent\\Controllers"
+    "\\app_tech_talent\\app_tech_talent\\Controllers",
+    "\\app_tech_talent\\app_tech_talent\\Views",
+    "\\app_tech_talent\\app_tech_talent\\Views\\ExperienciaProfissional",
+    "\\app_tech_talent\\app_tech_talent\\Views\\Shared"
   ],
-  "SelectedNode": "\\app_tech_talent\\app_tech_talent\\Controllers\\FormacaoAcademicaController.cs",
+  "SelectedNode": "\\app_tech_talent\\app_tech_talent\\Views\\Shared\\_ExperienciaProfissionalDetails.cshtml",
   "PreviewInSolutionExplorer": false
 }

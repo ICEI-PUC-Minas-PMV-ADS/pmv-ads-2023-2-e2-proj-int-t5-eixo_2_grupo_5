@@ -19,7 +19,6 @@ namespace app_tech_talent.Controllers
         // GET: Curriculos
         public async Task<IActionResult> Index()
         {
-
             var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
 
             var profissional = _context.Profissionais.FirstOrDefault(p => p.UsuarioId == userId);
@@ -28,18 +27,31 @@ namespace app_tech_talent.Controllers
 
             if (curriculo != null)
             {
+                var experienciaProfissional = await _context.ExperienciaProfissional
+                .Where(e => e.IdCurriculo == curriculo.IdCurriculo)
+                .ToListAsync();
+
+                ViewData["ExperienciaProfissionalDetails"] = experienciaProfissional;
+                if (curriculo != null)
+                {
+                    // Carregando os detalhes da Formação Acadêmica
+                    var formacaoAcademica = await _context.FormacaoAcademica
+                    .Where(f => f.IdCurriculo == curriculo.IdCurriculo)
+                    .ToListAsync();
+
+                    ViewData["FormacaoAcademica"] = formacaoAcademica;
+                }
                 var curriculoList = new List<Curriculo> { curriculo };
                 return View(curriculoList);
-
             }
 
             return RedirectToAction(nameof(Create));
-
         }
+
 
         // GET: Curriculos/Details/5
 
-public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Curriculo == null)
             {
@@ -110,6 +122,12 @@ public async Task<IActionResult> Details(int? id)
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdCurriculo,CPF,ResumoProfissional")] Curriculo curriculo)
         {
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var profissional = _context.Profissionais.FirstOrDefault(p => p.UsuarioId == userId);
+
+            curriculo.CPF = profissional.CPF;
+
             if (id != curriculo.IdCurriculo)
             {
                 return NotFound();

@@ -20,7 +20,7 @@ namespace app_tech_talent.Models
         [Display(Name = "Grau obtido")]
         public string grauObtido { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:yyyy}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:MM/yyyy}", ApplyFormatInEditMode = true)]
         [Display(Name = "Ano de conclusão")]
         public DateTime AnoDeConclusao { get; set; }
 
