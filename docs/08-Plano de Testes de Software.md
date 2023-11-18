@@ -3,8 +3,8 @@
 |Caso de Teste    | CT-01 - Gerenciamento de Perfil  |
 |------|-----------------------------------------|
 |Requisitos associados| RF-001 |
-|Objetivo do Teste| Verificar se é possível criar e gerenciar perfis de empresas e profissionais na plataforma. |
-|Passos| Realizar o registro como empresa. Realizar o registro como profissional. Fazer login na plataforma como empresa. Fazer login na plataforma como profissional |
+|Objetivo do Teste| Verificar se é possível gerenciar perfis de empresas e profissionais na plataforma. |
+|Passos| Fazer login na plataforma como empresa. Fazer login na plataforma como profissional. Gerenciar perfil como empresa. Gerenciar perfil como profissional. |
 |Critérios de Êxito| Os perfis de empresa e profissional devem ser criados corretamente. |
 
 |Caso de Teste    | CT-02 - Gerenciamento de Vagas  |
