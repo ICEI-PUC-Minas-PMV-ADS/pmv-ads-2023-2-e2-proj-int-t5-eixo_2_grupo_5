@@ -4,31 +4,32 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Resumo profissional</h1>
-
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ResumoProfissional)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ResumoProfissional)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdCurriculo" class="btn btn-info">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCurriculo" class="btn btn-primary">Visualizar</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdCurriculo" class="btn btn-danger">Deletar</a>
-            </td>
-        </tr>
-}
+    <h1>Resumo profissional</h1>
+    <table class="table table-bordered border-primary">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ResumoProfissional)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ResumoProfissional)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdCurriculo" class="btn btn-info">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdCurriculo" class="btn btn-primary">Visualizar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdCurriculo" class="btn btn-danger">Deletar</a>
+                </td>
+            </tr>
+        }
         <a href="https://localhost:44375/FormacaoAcademica" class="btn btn-primary">Ir para a Próxima Página</a>
     </tbody>
 </table>
+
+

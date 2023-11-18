@@ -62,6 +62,7 @@ namespace app_tech_talent.Controllers
             return View(vaga);
         }
 
+
         public async Task<IActionResult> Edit(int? Id)
         {
             if (Id == null)
@@ -80,6 +81,12 @@ namespace app_tech_talent.Controllers
         {
             if (Id != vaga.Id)
                 return NotFound();
+
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.UsuarioId == userId);
+            var empresa = await _context.Empresas.FirstOrDefaultAsync(e => e.UsuarioId == userId);
+
+            vaga.EmpresaId = empresa.EmpresaId;
 
             if (ModelState.IsValid)
             {
@@ -205,7 +212,6 @@ namespace app_tech_talent.Controllers
             }
 
             return View();
-
         }
 
         [Authorize(Roles = "Empresa")]

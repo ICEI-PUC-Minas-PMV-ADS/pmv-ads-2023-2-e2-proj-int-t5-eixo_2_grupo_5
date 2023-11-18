@@ -2,27 +2,47 @@
 
 @{
     ViewData["Title"] = "Recuperar Senha";
+    Layout = null;
 }
 
-<h1>Recupere sua Senha</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Recover">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label">E-mail</label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/css/cadastro.css">
+    <title>Recuperar Senha</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="form-image">
+            <img src="~/imagens/logo_tech (1).png" alt="Logo da Aplicação">
+        </div>
+        <div class="form-registration">
+            <h1>Recupere sua Senha</h1>
+            <hr />
+            <div class="row">
+                <div class="col-md-4">
+                    <form asp-action="Recover">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label">E-mail</label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="submit" value="Enviar e-mail de recuperação" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h3>@ViewBag.Message</h3>
+                </div>
             </div>
-            <div class="form-group mt-3">
-                <input type="submit" value="Enviar e-mail de recuperação" class="btn btn-success" />
-            </div>
-        </form>
-        <h3>@ViewBag.Message</h3>
+        </div>
     </div>
-</div>
+</body>
+</html>
 
 @section Scripts {
     @{

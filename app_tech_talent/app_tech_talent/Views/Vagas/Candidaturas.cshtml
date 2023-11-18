@@ -3,10 +3,9 @@
     var profissionais = ViewBag.Profissionais as List<Profissional>;
 }
 
-<!-- restante do código da View -->
 @if (candidaturas != null && candidaturas.Count > 0)
 {
-    <table class="table">
+    <table class="table table-bordered border-primary">
         <thead>
             <tr>
                 <th>Candidatura ID</th>
@@ -15,9 +14,8 @@
                 <th>Nome do Profissional</th>
                 <th>Idade</th>
                 <th>CPF</th>
-                <!-- Adicione mais colunas conforme necessário -->
             </tr>
-        </thead>
+        </thead>0
         <tbody>
             @foreach (var candidatura in candidaturas)
             {
@@ -29,7 +27,6 @@
                     <td>@(profissional != null ? profissional.Nome : "N/A")</td>
                     <td>@(profissional != null ? profissional.Idade.ToString() : "N/A")</td>
                     <td>@(profissional != null ? profissional.CPF : "N/A")</td>
-                    <!-- Adicione mais colunas conforme necessário -->
                 </tr>
             }
         </tbody>

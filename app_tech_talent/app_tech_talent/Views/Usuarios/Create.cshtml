@@ -18,7 +18,7 @@
 <body>
     <div class="login-container">
         <div class="form-image">
-            <img src="imagens/logo_tech (1).png" alt="Logo da Aplicação">
+            <img src="~/imagens/logo_tech (1).png" alt="Logo da Aplicação">
         </div>
         <div class="form-registration">
             <h1>Cadastre-se</h1>
@@ -53,4 +53,10 @@
 </body>
 </html>
 
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
 

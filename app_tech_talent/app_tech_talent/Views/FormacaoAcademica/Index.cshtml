@@ -10,9 +10,9 @@
 <a href="https://localhost:44375/ExperienciaProfissional" class="btn btn-primary">Ir para a Próxima Página</a>
 </p>
 <p>
-    <a asp-action="Create">Criar Formação academica</a>
+    <a asp-action="Create" class="btn btn-success">Criar Formação academica</a>
 </p>
-<table class="table">
+<table class="table table-bordered border-primary">
     <thead>
         <tr>
           
@@ -48,9 +48,9 @@
                 @Html.DisplayFor(modelItem => item.AreaDeEstudo)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdFormacaoAcademica" class="btn btn-info">Editar</a> |
-                    <a asp-action="Details" asp-route-id="@item.IdFormacaoAcademica" class="btn btn-primary">Visualizar</a> |
-                    <a asp-action="Delete" asp-route-id="@item.IdFormacaoAcademica" class="btn btn-danger">Deletar</a>
+                <a asp-action="Edit" asp-route-id="@item.IdFormacaoAcademica" class="btn btn-warning">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdFormacaoAcademica" class="btn btn-primary">Visualizar</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdFormacaoAcademica" class="btn btn-danger">Deletar</a>
             </td>
         </tr>
         }
