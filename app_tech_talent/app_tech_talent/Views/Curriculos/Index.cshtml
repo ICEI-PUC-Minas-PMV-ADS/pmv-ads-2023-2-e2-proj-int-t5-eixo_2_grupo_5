@@ -4,6 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
+<<<<<<< HEAD
     <h1>Resumo profissional</h1>
     <table class="table table-bordered border-primary">
         <thead>
@@ -29,7 +30,52 @@
             </tr>
         }
         <a href="https://localhost:44375/FormacaoAcademica" class="btn btn-primary">Ir para a Próxima Página</a>
+=======
+<h1>Resumo profissional</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ResumoProfissional)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResumoProfissional)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdCurriculo" class="btn btn-info">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdCurriculo" class="btn btn-primary">Visualizar</a> 
+            </td>
+        </tr>
+
+          
+}
+       
+>>>>>>> origin
     </tbody>
 </table>
 
 
+<<<<<<< HEAD
+=======
+<div>
+    @await Html.PartialAsync("_ExperienciaProfissionalDetails", ViewData["ExperienciaProfissionalDetails"])
+</div>
+
+<!-- Código para exibir a partial view da Formação Acadêmica -->
+<div>
+    @await Html.PartialAsync("_FormacaoAcademica", ViewData["FormacaoAcademica"])
+</div>
+
+<p>
+    <a href="/FormacaoAcademica" class="btn btn-primary">Ir para a Próxima Página</a>
+
+    </p>
+>>>>>>> origin
