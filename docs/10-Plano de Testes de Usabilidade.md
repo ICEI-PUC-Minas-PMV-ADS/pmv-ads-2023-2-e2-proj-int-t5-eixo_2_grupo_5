@@ -71,3 +71,16 @@
 |Recursos Demandados| CComputadores com acesso à internet, software de videoconferência, ambiente silencioso para os usuários. |
 |Dados Coletados| Quantidade de cliques para realizar o compartilhamento, tempo gasto para compartilhar a vaga, identificação de problemas na função de compartilhamento. |
 |Métricas Coletadas | Taxa de sucesso no compartilhamento, tempo médio para completar o compartilhamento, identificação de problemas na função de compartilhamento. |
+
+
+|Número do Teste    | UT-07 |
+|------|-----------------------------------------|
+|Objetivos | Avaliar o gerenciamento do currículo pelo profissional. |
+|Procedimentos de Condução | Os testes serão realizados remotamente, com observação direta através de videoconferência. |
+|Usuários-alvo| Profissionais que desejam criar um currículo e gerenciá-lo na plataforma. |
+|Critérios de Seleção dos Participantes| Participantes serão selecionados aleatoriamente entre profissionais que se registraram recentemente na plataforma, sem considerar conhecimento prévio sobre a plataforma. |
+|Etapas da Sessão de Teste | Etapa 1: Introdução e explicação dos objetivos do teste e uso da videoconferência. Etapa 2: Execução das tarefas pelos usuários com acompanhamento remoto. Etapa 3: Coleta de feedback dos usuários. |
+|Roteiro Detalhado das Tarefas Realizadas pelos Usuários| 1. Os usuários serão instruídos a fazer login na plataforma como profissional. 2. Selecionar a funcionalidade currículo. 3. Preencher resumo profissional, experiência profissional e formação acadêmica. 4.Gerenciar os campos preenchidos (alterar, excluir) 5. Observar a facilidade de uso e eficácia da função de gerenciar perfil. |
+|Recursos Demandados| Computadores com acesso à internet, software de videoconferência, ambiente silencioso para os usuários. |
+|Dados Coletados| Quantidade de cliques para realizar o compartilhamento, tempo gasto para compartilhar a vaga, identificação de problemas na função de compartilhamento. |
+|Métricas Coletadas | Taxa de sucesso no compartilhamento, tempo médio para completar o compartilhamento, identificação de problemas na função de compartilhamento. |
