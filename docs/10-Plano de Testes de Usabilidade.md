@@ -84,3 +84,16 @@
 |Recursos Demandados| Computadores com acesso à internet, software de videoconferência, ambiente silencioso para os usuários. |
 |Dados Coletados| Quantidade de cliques para realizar o gerenciamento do perfil, tempo gasto no gerenciamento do perfil, identificação de problemas na função. |
 |Métricas Coletadas | Taxa de sucesso no gerenciamento, tempo médio para completar o gerenciamento, identificação de problemas na função de gerenciamento. |
+
+|Número do Teste    | UT-08 |
+|------|-----------------------------------------|
+|Objetivos | Avaliar o processo de candidatura a vagas na plataforma. |
+|Procedimentos de Condução | Os testes serão realizados remotamente, com observação direta através de videoconferência. |
+|Usuários-alvo| Profissionais que desejam se candidatar a vagas na plataforma. |
+|Critérios de Seleção dos Participantes| Participantes serão selecionados aleatoriamente entre profissionais que indicaram interesse em candidaturas recentemente na plataforma, sem considerar conhecimento prévio sobre o processo de candidatura. |
+|Etapas da Sessão de Teste | Etapa 1: Introdução e explicação dos objetivos do teste e uso da videoconferência. Etapa 2: Execução das tarefas pelos usuários com acompanhamento remoto. Etapa 3: Coleta de feedback dos usuários. |
+|Roteiro Detalhado das Tarefas Realizadas pelos Usuários| 1. Os usuários serão instruídos a fazer login na plataforma como profissional. 2. Navegar até a seção de "Vagas Disponíveis" na plataforma. 3. Clicar em "Candidatar" 4. Verificar se o modal exibiu uma mensagem de sucesso 5. Navegar até a pagina Vagas Candidatadas e acompanhar o status da mesma. |
+|Recursos Demandados| Computadores com acesso à internet, software de videoconferência, ambiente silencioso para os usuários. |
+|Dados Coletados| Quantidade de cliques para realizar o gerenciamento do perfil, tempo gasto no gerenciamento do perfil, identificação de problemas na função. |
+|Métricas Coletadas | Taxa de sucesso no candidatura, tempo médio para completar o candidatura, identificação de problemas na função de candidatura. |
+
