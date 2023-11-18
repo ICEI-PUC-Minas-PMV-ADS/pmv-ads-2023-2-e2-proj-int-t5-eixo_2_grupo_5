@@ -1,10 +1,7 @@
 ﻿using app_tech_talent.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using app_tech_talent.Models;
-using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using System;
 using System.Collections.Generic;
@@ -28,21 +25,16 @@ namespace app_tech_talent.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
-
                 var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.UsuarioId == userId);
-
                 var empresa = await _context.Empresas.FirstOrDefaultAsync(e => e.UsuarioId == userId);
 
                 if (empresa != null)
                 {
-                    // Obtém a lista de vagas relacionadas à empresa específica
                     var vagas = await _context.Vagas.Where(v => v.EmpresaId == empresa.EmpresaId).ToListAsync();
-
                     return View(vagas);
                 }
             }
 
-            // Retorna uma lista vazia se o usuário não estiver autenticado ou se a empresa não for encontrada
             return View(new List<Vaga>());
         }
 
@@ -55,9 +47,7 @@ namespace app_tech_talent.Controllers
         public async Task<IActionResult> Create(Vaga vaga)
         {
             var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
-
             var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.UsuarioId == userId);
-
             var empresa = await _context.Empresas.FirstOrDefaultAsync(e => e.UsuarioId == userId);
 
             vaga.EmpresaId = empresa.EmpresaId;
@@ -72,6 +62,7 @@ namespace app_tech_talent.Controllers
             return View(vaga);
         }
 
+
         public async Task<IActionResult> Edit(int? Id)
         {
             if (Id == null)
@@ -79,9 +70,8 @@ namespace app_tech_talent.Controllers
 
             var dados = await _context.Vagas.FindAsync(Id);
 
-            if (Id == null)
+            if (dados == null)
                 return NotFound();
-
 
             return View(dados);
         }
@@ -91,6 +81,12 @@ namespace app_tech_talent.Controllers
         {
             if (Id != vaga.Id)
                 return NotFound();
+
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.UsuarioId == userId);
+            var empresa = await _context.Empresas.FirstOrDefaultAsync(e => e.UsuarioId == userId);
+
+            vaga.EmpresaId = empresa.EmpresaId;
 
             if (ModelState.IsValid)
             {
@@ -112,7 +108,6 @@ namespace app_tech_talent.Controllers
             if (dados == null)
                 return NotFound();
 
-
             return View(dados);
         }
 
@@ -125,7 +120,6 @@ namespace app_tech_talent.Controllers
 
             if (dados == null)
                 return NotFound();
-
 
             return View(dados);
         }
@@ -143,9 +137,118 @@ namespace app_tech_talent.Controllers
 
             _context.Vagas.Remove(dados);
             await _context.SaveChangesAsync();
-
-
             return RedirectToAction("Index");
+        }
+
+        [Authorize(Roles = "Profissional")]
+        public async Task<IActionResult> VagasDisponiveis()
+        {
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var profissional = await _context.Profissionais.FirstOrDefaultAsync(e => e.UsuarioId == userId);
+
+            if (profissional != null)
+            {
+                // Obter as IDs das vagas às quais o profissional já se candidatou
+                var idsVagasCandidatadas = await _context.Candidaturas
+                    .Where(c => c.ProfissionalId == profissional.ProfissionalId)
+                    .Select(c => c.VagaId)
+                    .ToListAsync();
+
+                // Filtrar vagas disponíveis que o profissional ainda não se candidatou
+                var vagasDisponiveis = await _context.Vagas
+                    .Where(v => !idsVagasCandidatadas.Contains(v.Id))
+                    .ToListAsync();
+
+                return View(vagasDisponiveis);
+            }
+
+            // O profissional não foi encontrado, você pode tratar isso de acordo com sua lógica
+            return View(new List<Vaga>()); // Ou redirecionar para uma página de erro, por exemplo.
+        }
+
+        [Authorize(Roles = "Profissional")]
+        public async Task<IActionResult> VagasCandidatadas()
+        {
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var profissional = await _context.Profissionais.FirstOrDefaultAsync(e => e.UsuarioId == userId);
+
+            if (profissional != null)
+            {
+                // Obter as IDs das vagas às quais o profissional já se candidatou
+                var idsVagasCandidatadas = await _context.Candidaturas
+                    .Where(c => c.ProfissionalId == profissional.ProfissionalId)
+                    .Select(c => c.VagaId)
+                    .ToListAsync();
+
+                // Filtrar vagas disponíveis que o profissional ainda não se candidatou
+                var vagasDisponiveis = await _context.Vagas
+                    .Where(v => idsVagasCandidatadas.Contains(v.Id))
+                    .ToListAsync();
+
+                return View(vagasDisponiveis);
+            }
+
+            // O profissional não foi encontrado, você pode tratar isso de acordo com sua lógica
+            return View(new List<Vaga>()); // Ou redirecionar para uma página de erro, por exemplo.
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Candidatar(int vagaId)
+        {
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.UsuarioId == userId);
+            var profissional = await _context.Profissionais.FirstOrDefaultAsync(e => e.UsuarioId == userId);
+            var candidatura = new Candidatura();
+
+            candidatura.ProfissionalId = profissional.ProfissionalId; 
+            candidatura.VagaId = vagaId;
+            candidatura.Status = Status.Enviada;
+
+            if (ModelState.IsValid)
+            {
+                _context.Candidaturas.Add(candidatura);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("VagasDisponiveis");
+            }
+
+            return View();
+        }
+
+        [Authorize(Roles = "Empresa")]
+        public async Task<IActionResult> Candidaturas()
+        {
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var empresa = await _context.Empresas.FirstOrDefaultAsync(e => e.UsuarioId == userId);
+
+            if (empresa != null)
+            {
+                // Obter as IDs das vagas associadas à empresa
+                var idsVagasDaEmpresa = await _context.Vagas
+                    .Where(v => v.EmpresaId == empresa.EmpresaId)
+                    .Select(v => v.Id)
+                    .ToListAsync();
+
+                // Obter as candidaturas relacionadas às vagas da empresa
+                var candidaturasDaEmpresa = await _context.Candidaturas
+                    .Where(c => idsVagasDaEmpresa.Contains(c.VagaId))
+                    .ToListAsync();
+
+                // Obter os IDs dos profissionais associados às candidaturas
+                var idsProfissionais = candidaturasDaEmpresa.Select(c => c.ProfissionalId).ToList();
+
+                // Obter informações sobre os profissionais
+                var profissionais = await _context.Profissionais
+                    .Where(p => idsProfissionais.Contains(p.ProfissionalId))
+                    .ToListAsync();
+
+                ViewBag.Candidaturas = candidaturasDaEmpresa;
+                ViewBag.Profissionais = profissionais;
+
+                return View();
+            }
+
+            // A empresa não foi encontrada, você pode tratar isso de acordo com sua lógica
+            return View(new { Candidaturas = new List<Candidatura>(), Profissionais = new List<Profissional>() });
         }
     }
 }

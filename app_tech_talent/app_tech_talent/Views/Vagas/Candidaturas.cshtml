@@ -1,0 +1,38 @@
+﻿@{
+    var candidaturas = ViewBag.Candidaturas as List<Candidatura>;
+    var profissionais = ViewBag.Profissionais as List<Profissional>;
+}
+
+@if (candidaturas != null && candidaturas.Count > 0)
+{
+    <table class="table table-bordered border-primary">
+        <thead>
+            <tr>
+                <th>Candidatura ID</th>
+                <th>Status</th>
+                <th>Profissional ID</th>
+                <th>Nome do Profissional</th>
+                <th>Idade</th>
+                <th>CPF</th>
+            </tr>
+        </thead>0
+        <tbody>
+            @foreach (var candidatura in candidaturas)
+            {
+                var profissional = profissionais.FirstOrDefault(p => p.ProfissionalId == candidatura.ProfissionalId);
+                <tr>
+                    <td>@candidatura.CandidaturaId</td>
+                    <td>@candidatura.Status</td>
+                    <td>@candidatura.ProfissionalId</td>
+                    <td>@(profissional != null ? profissional.Nome : "N/A")</td>
+                    <td>@(profissional != null ? profissional.Idade.ToString() : "N/A")</td>
+                    <td>@(profissional != null ? profissional.CPF : "N/A")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Nenhuma candidatura encontrada.</p>
+}

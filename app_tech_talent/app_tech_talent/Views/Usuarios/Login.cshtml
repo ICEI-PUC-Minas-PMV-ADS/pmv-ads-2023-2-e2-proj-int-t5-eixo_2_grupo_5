@@ -2,36 +2,44 @@
 
 @{
     ViewData["Title"] = "Login";
+    Layout = null; 
 }
 
-<h1>Acesse sua conta</h1>
-
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Login">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label">E-mail</label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Senha" class="control-label">Senha</label>
-                <input asp-for="Senha" class="form-control" />
-                <span asp-validation-for="Senha" class="text-danger"></span>
-            </div>
-            <div class="form-group mt-3">
-                <input type="submit" value="Entrar" class="btn btn-success" />
-                <a class="btn btn-warning" asp-area="" asp-controller="Usuarios" asp-action="Recover">Recuperar Senha</a>
-            </div>
-        </form>
-        <h3>@ViewBag.Message</h3>
-    </div>
-</div>
-
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/css/login.css"> 
+</head>
+<body>
+    <div class="login-container">
+        <div class="form-image">
+            <img src="~/imagens/logo_tech (1).png" alt="Logo da Aplicação">
+        </div>
+        <div class="form-login">
+            <h1>Faça Login ou Cadastre-se</h1>
+            <form asp-action="Login" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Email">Email</label>
+                    <input asp-for="Email" class="form-control" required />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Senha">Senha</label>
+                    <input asp-for="Senha" type="password" class="form-control" required />
+                    <span asp-validation-for="Senha" class="text-danger"></span>
+                </div>
+                <div class="btn-container">
+                    <a asp-action="Index" id="voltar-btn">Voltar</a>
+                    <input type="submit" value="Entrar" id="entrar-btn" />
+                </div>
+                <a id="redefinir-senha" asp-area="" asp-controller="Usuarios" asp-action="Recover">Recuperar Senha</a>
+                <p>
+                    Não possui cadastro? <a href="@Url.Action("Create", "Usuarios")" id="cadastre-se-link"> Cadastre-se</a>
+                </p>
+            </form>
+        </div>
+</body>
+</html>

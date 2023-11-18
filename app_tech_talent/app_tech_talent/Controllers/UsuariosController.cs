@@ -44,7 +44,8 @@ namespace app_tech_talent.Controllers
 
 
         [AllowAnonymous]
-        public IActionResult Alter(string Email) {
+        public IActionResult Alter(string Email)
+        {
             ViewData["Email"] = Email;
             return View();
         }
@@ -63,8 +64,10 @@ namespace app_tech_talent.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Recover(Usuario usuario) {
-            string GenerateRandomKey(int length) {
+        public async Task<IActionResult> Recover(Usuario usuario)
+        {
+            string GenerateRandomKey(int length)
+            {
                 const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
                 Random random = new Random();
                 return new string(Enumerable.Repeat(chars, length)
@@ -72,14 +75,17 @@ namespace app_tech_talent.Controllers
             }
             var dados = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == usuario.Email);
 
-            if (dados != null) {
-                try {
+            if (dados != null)
+            {
+                try
+                {
                     string recoveryKey = GenerateRandomKey(8);
 
                     dados.RecoveryKey = recoveryKey;
                     await _context.SaveChangesAsync();
 
-                    using (SmtpClient client = new SmtpClient("smtp-relay.brevo.com")) {
+                    using (SmtpClient client = new SmtpClient("smtp-relay.brevo.com"))
+                    {
                         client.Port = 587;
                         client.Credentials = new NetworkCredential("techtalent702@gmail.com", "2ktcNxHYgZAd4bza");
                         client.EnableSsl = true;
@@ -94,10 +100,14 @@ namespace app_tech_talent.Controllers
 
                         return RedirectToAction("Alter", new { Email = usuario.Email });
                     }
-                } catch (Exception ex) {
+                }
+                catch (Exception ex)
+                {
                     ViewBag.Message = "Falha em enviar e-mail: " + ex.Message;
                 }
-            } else {
+            }
+            else
+            {
                 ViewBag.Message = "E-mail inválido!";
             }
 
@@ -106,16 +116,18 @@ namespace app_tech_talent.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Alter(Usuario usuario) {
+        public async Task<IActionResult> Alter(Usuario usuario)
+        {
             var dados = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == usuario.Email);
 
-            if (dados != null && dados.RecoveryKey == usuario.RecoveryKey) {
+            if (dados != null && dados.RecoveryKey == usuario.RecoveryKey)
+            {
 
                 usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 dados.Senha = usuario.Senha;
                 dados.RecoveryKey = null;
                 usuario.RecoveryKey = null;
-                usuario.TipoUsuario= dados.TipoUsuario;
+                usuario.TipoUsuario = dados.TipoUsuario;
                 _context.Update(dados);
                 await _context.SaveChangesAsync();
 
@@ -127,61 +139,6 @@ namespace app_tech_talent.Controllers
                 };
 
                 var usuarioIdentity = new ClaimsIdentity(claims, "Alter");
-                ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
-
-                var props = new AuthenticationProperties {
-                    AllowRefresh = true,
-                    ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
-                    IsPersistent = true,
-                };
-
-                await HttpContext.SignInAsync(principal, props);
-
-                if (dados.TipoUsuario == TipoUsuario.Profissional) {
-                    var profissionalExistente = await _context.Profissionais.FirstOrDefaultAsync(p => p.UsuarioId == dados.UsuarioId);
-
-                    if (profissionalExistente != null) {
-                        return Redirect("/");
-                    }
-                    else {
-                        return RedirectToAction("Create", "Profissionais");
-                    }
-                } else if (dados.TipoUsuario == TipoUsuario.Empresa) {
-                    var empresaExistente = await _context.Empresas.FirstOrDefaultAsync(e => e.UsuarioId == dados.UsuarioId);
-
-                    if (empresaExistente != null) {
-                        return Redirect("/");
-                    } else {
-                        return RedirectToAction("Create", "Empresas");
-                    }
-                }
-            } else {
-                ViewBag.Message = "Senha ou Recovery Key inválidos!";
-                ViewBag.Email = usuario.Email;
-            }
-
-            return View();
-        }
-
-
-        [HttpPost]
-        [AllowAnonymous]
-        public async Task<IActionResult> Login(Usuario usuario)
-        {
-
-            var dados = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == usuario.Email);
-
-            if (dados != null && BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha))
-            {
-                var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.Email, dados.Email),
-                    new Claim(ClaimTypes.Name, dados.Email),
-                    new Claim(ClaimTypes.NameIdentifier, dados.UsuarioId.ToString()),
-                    new Claim(ClaimTypes.Role, dados.TipoUsuario.ToString()),
-                };
-
-                var usuarioIdentity = new ClaimsIdentity(claims, "Login");
                 ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
 
                 var props = new AuthenticationProperties
@@ -213,6 +170,71 @@ namespace app_tech_talent.Controllers
                     if (empresaExistente != null)
                     {
                         return Redirect("/");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Create", "Empresas");
+                    }
+                }
+            }
+            else
+            {
+                ViewBag.Message = "Senha ou Recovery Key inválidos!";
+                ViewBag.Email = usuario.Email;
+            }
+
+            return View();
+        }
+
+
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> Login(Usuario usuario)
+        {
+            var dados = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == usuario.Email);
+
+            if (dados != null && BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha))
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Email, dados.Email),
+                    new Claim(ClaimTypes.Name, dados.Email),
+                    new Claim(ClaimTypes.NameIdentifier, dados.UsuarioId.ToString()),
+                    new Claim(ClaimTypes.Role, dados.TipoUsuario.ToString()),
+                };
+
+                var usuarioIdentity = new ClaimsIdentity(claims, "Login");
+                ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
+
+                var props = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
+                    IsPersistent = true,
+                };
+
+                await HttpContext.SignInAsync(principal, props);
+
+                if (dados.TipoUsuario == TipoUsuario.Profissional)
+                {
+                    var profissionalExistente = await _context.Profissionais.FirstOrDefaultAsync(p => p.UsuarioId == dados.UsuarioId);
+
+                    if (profissionalExistente != null)
+                    {
+                        return RedirectToAction("VagasDisponiveis", "Vagas");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Create", "Profissionais");
+                    }
+                }
+                else if (dados.TipoUsuario == TipoUsuario.Empresa)
+                {
+                    var empresaExistente = await _context.Empresas.FirstOrDefaultAsync(e => e.UsuarioId == dados.UsuarioId);
+
+                    if (empresaExistente != null)
+                    {
+                        return RedirectToAction("Index", "Vagas");
                     }
                     else
                     {

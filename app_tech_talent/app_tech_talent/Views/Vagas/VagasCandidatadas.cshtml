@@ -1,0 +1,39 @@
+﻿@model IEnumerable<app_tech_talent.Models.Vaga>
+
+@{
+    ViewData["Title"] = "Vagas Candidatadas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background-color: #C0C0C0;
+    }
+</style>
+
+<div class="container mt-4">
+    <h1>Vagas Candidatadas</h1>
+
+    <div class="row">
+        @foreach (var vaga in Model)
+        {
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@vaga.Titulo</h5>
+                        <p class="card-text">@vaga.Descricao</p>
+                        <p class="card-text"><strong>Localização:</strong> @vaga.Localizacao</p>
+                        <p class="card-text"><strong>Formação:</strong> @vaga.formacao</p>
+                        <p class="card-text"><strong>Experiência Profissional:</strong> @vaga.ExperienciaProficional</p>
+                        <p class="card-text"><strong>Habilidades:</strong> @vaga.Habilidades</p>
+                        <p class="card-text"><strong>Salário:</strong> @vaga.salario.ToString("C")</p>
+                        <p class="card-text"><strong>Status:</strong> @vaga.status</p>
+                        <p class="card-text"><strong>Data de Abertura:</strong> @vaga.dateAbertura.ToShortDateString()</p>
+                        <p class="card-text"><strong>Data de Fechamento:</strong> @vaga.dataFechamento.ToShortDateString()</p>
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -4,12 +4,12 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Experiência profissional</h1>
+<h1 class="text-center">Experiência profissional</h1>
 
 <p>
-    <a asp-action="Create">Criar experiência profissional</a>
+    <a asp-action="Create" class="btn btn-success">Criar experiência profissional</a>
 </p>
-<table class="table">
+<table class="table table-bordered border-primary">
     <thead>
         <tr>
            
@@ -51,9 +51,9 @@
                 @Html.DisplayFor(modelItem => item.ResumoDaAtuacao)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdExperienciaProfissional" class="btn btn-info">Editar</a> |
-                    <a asp-action="Details" asp-route-id="@item.IdExperienciaProfissional" class="btn btn-primary">Visualizar</a> |
-                    <a asp-action="Delete" asp-route-id="@item.IdExperienciaProfissional" class="btn btn-danger">Deletar</a>
+                <a asp-action="Edit" asp-route-id="@item.IdExperienciaProfissional" class="btn btn-warning">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdExperienciaProfissional" class="btn btn-primary">Visualizar</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdExperienciaProfissional" class="btn btn-danger">Deletar</a>
             </td>
         </tr>
         }

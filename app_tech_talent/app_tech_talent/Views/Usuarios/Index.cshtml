@@ -6,13 +6,11 @@
 
 <h1>Editar sua senha e/ou e-mail</h1>
 
-<div class="table-responsive">
-    <table class="table table-bordered">
+    <table class ="table table-bordered border-primary">
         <thead class="thead-dark">
             <tr>
                 <th>Email</th>
                 <th>Senha</th>
-                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -22,10 +20,10 @@
                     <td>@Html.DisplayFor(modelItem => item.Email)</td>
                     <td>@Html.DisplayFor(modelItem => item.Senha)</td>
                     <td>
-                        <a asp-action="Edit" asp-route-id="@item.UsuarioId" class="btn btn-primary btn-sm">Editar</a>
+                        <a asp-action="Edit" asp-route-id="@item.UsuarioId" class="btn btn-warning btn-sm">Editar</a>
                     </td>
                 </tr>
             }
         </tbody>
     </table>
-</div>
+

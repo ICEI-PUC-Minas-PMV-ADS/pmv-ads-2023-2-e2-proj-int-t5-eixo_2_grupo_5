@@ -4,69 +4,70 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1 class="text-center">Editar Vaga</h1>
 
-<h4>Vaga</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 offset-md-3 text-center">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <label asp-for="Titulo" class="control-label"></label>
                 <input asp-for="Titulo" class="form-control" />
                 <span asp-validation-for="Titulo" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <label asp-for="Descricao" class="control-label"></label>
                 <input asp-for="Descricao" class="form-control" />
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <label asp-for="Localizacao" class="control-label"></label>
                 <input asp-for="Localizacao" class="form-control" />
                 <span asp-validation-for="Localizacao" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <label asp-for="formacao" class="control-label"></label>
                 <input asp-for="formacao" class="form-control" />
                 <span asp-validation-for="formacao" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <label asp-for="ExperienciaProficional" class="control-label"></label>
                 <input asp-for="ExperienciaProficional" class="form-control" />
                 <span asp-validation-for="ExperienciaProficional" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-2">
+                <label asp-for="Habilidades" class="control-label"></label>
+                <input asp-for="Habilidades" class="form-control" />
+                <span asp-validation-for="Habilidades" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-2">
                 <label asp-for="salario" class="control-label"></label>
                 <input asp-for="salario" class="form-control" />
                 <span asp-validation-for="salario" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
+            <div class="form-group mb-2">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="status" /> @Html.DisplayNameFor(model => model.status)
                 </label>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <label asp-for="dateAbertura" class="control-label"></label>
                 <input asp-for="dateAbertura" class="form-control" />
                 <span asp-validation-for="dateAbertura" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <label asp-for="dataFechamento" class="control-label"></label>
                 <input asp-for="dataFechamento" class="form-control" />
                 <span asp-validation-for="dataFechamento" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="mt-4 mb-4 d-flex justify-content-center">
+                <a asp-action="Index" class="btn btn-primary">Voltar</a>
+                <input type="submit" value="Salvar" class="btn btn-warning" />
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

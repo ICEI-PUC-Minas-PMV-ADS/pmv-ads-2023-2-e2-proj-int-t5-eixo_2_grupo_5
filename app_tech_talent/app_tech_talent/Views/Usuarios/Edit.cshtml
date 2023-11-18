@@ -4,27 +4,26 @@
     ViewData["Title"] = "Edit";
 }
 
-<h4>Realize a alteração desejada de senha e/ou e-mail</h4>
+<h1 class="text-center">Realize a alteração desejada de senha e/ou e-mail</h1>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 offset-md-3 text-center">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="UsuarioId" />
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <label asp-for="Email" class="control-label"></label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <label asp-for="Senha" class="control-label"></label>
                 <input asp-for="Senha" class="form-control" />
                 <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
-
-            <div class="form-group mt-3">
+            <div class="mt-4 mb-4 d-flex justify-content-center">
                 <a asp-action="Index" class="btn btn-primary">Voltar</a>
-                <input type="submit" value="Save" class="btn btn-warning" />
+                <input type="submit" value="Save" class="btn btn-success" />
             </div>
         </form>
     </div>

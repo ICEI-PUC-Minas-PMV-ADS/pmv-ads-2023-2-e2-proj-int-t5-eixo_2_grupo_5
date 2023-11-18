@@ -1,7 +1,69 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Home";
+    Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Tech Talent</h1>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vagas de Emprego</title>
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="~/imagens/logo_tech (1).png" alt="Logo da Aplicação">
+        </div>
+        <div class="nav-bar">
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar...">
+            </div>
+            <div class="login-button">
+                <a href="@Url.Action("Login", "Usuarios")">Login</a>
+            </div>
+        </div>
+    </header>
+    <div class="texto-inicial">
+        <h1>TechTalent</h1>
+        <h4>Uma plataforma que aproxima empresas e candidatos em busca de oportunidades profissionais no setor da Tecnologia da Informação e Comunicação.</h4>
+    </div>
+    <div class="connect-section">
+        <div class="connect-box">
+            <h2>Conecte-se conosco</h2>
+        </div>
+        <div class="button-container">
+            <a href="@Url.Action("Create", "Usuarios")">
+                <button type="button">Cadastre-se</button>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Sobre</h3>
+                    <p>TechTalent a solução que agiliza e simplifica o processo de recrutamento e seleção de profissionais de TI.</p>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contato</h3>
+                    <p>Email: tech01talent@gmail.com>
+                </div>
+                <div class="footer-section form">
+                    <h3>Fale Conosco</h3>
+                    <form action="#" method="POST">
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                        <input type="email" name="email" placeholder="Seu email" required>
+                        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2023 Todos os direitos reservados ao grupo 5.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

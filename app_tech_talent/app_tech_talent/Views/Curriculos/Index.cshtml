@@ -5,9 +5,7 @@
 }
 
 <h1>Resumo profissional</h1>
-
-
-<table class="table">
+<table class="table table-bordered border-primary">
     <thead>
         <tr>
             <th>
@@ -27,13 +25,10 @@
                 <a asp-action="Details" asp-route-id="@item.IdCurriculo" class="btn btn-primary">Visualizar</a> 
             </td>
         </tr>
-
-          
 }
        
     </tbody>
 </table>
-
 
 <div>
     @await Html.PartialAsync("_ExperienciaProfissionalDetails", ViewData["ExperienciaProfissionalDetails"])
@@ -46,5 +41,5 @@
 
 <p>
     <a href="/FormacaoAcademica" class="btn btn-primary">Ir para a Próxima Página</a>
+</p>
 
-    </p>

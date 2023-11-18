@@ -4,12 +4,12 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Editar</h1>
+<h1 class="text-center">Editar</h1>
 
 
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <   <div class="col-md-6 offset-md-3 text-center">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="IdFormacaoAcademica" />
@@ -38,7 +38,7 @@
                 <input type="submit" value="Salvar" class="btn btn-primary" />
             </div>
         </form>
-    </div>
+    </>
 </div>
 
 
