@@ -27,10 +27,29 @@
                             <li class="nav-item">
                                 <div class="dropdown">
                                     <a class="nav-link text-dark dropdown-toggle" href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Vagas
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="profileDropdown">
+
+
+
+                                        @if (User.IsInRole("Empresa"))
+                                        {
+                                            <a class="dropdown-item" asp-area="" asp-controller="Vagas" asp-action="Index">Vagas criadas</a>
+                                        }
+                                    </div>
+                                </div>
+                            </li>
+                        }
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link text-dark dropdown-toggle" href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Meu Perfil
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="profileDropdown">
-                                        
+
                                         <a class="dropdown-item" asp-area="" asp-controller="Usuarios" asp-action="Index">Alterar Senha</a>
 
                                         @if (User.IsInRole("Profissional"))

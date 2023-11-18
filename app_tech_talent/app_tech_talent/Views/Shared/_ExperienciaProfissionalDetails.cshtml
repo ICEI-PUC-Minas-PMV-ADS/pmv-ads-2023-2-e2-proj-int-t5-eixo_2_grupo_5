@@ -1,0 +1,42 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<app_tech_talent.Models.ExperienciaProfissional>
+
+
+    @if (Model != null && Model.Any())
+    {
+        <div>
+            <h4>Detalhes da Experiência Profissional e Formação Acadêmica</h4>
+            <hr />
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Empresa</th>
+                        <th>Cargo</th>
+                        <th>Data de início</th>
+                        <th>Data de término</th>
+                        <th>Resumo da atuação</th>
+
+                        <!-- Adicione outras colunas conforme necessário -->
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.Empresa)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Cargo)</td>
+                            <td>@Html.DisplayFor(modelItem => item.DataDeInicio)</td>
+                            <td>@Html.DisplayFor(modelItem => item.DataDeTermino)</td>
+                            <td>@Html.DisplayFor(modelItem => item.ResumoDaAtuacao)</td>
+                            <!-- Adicione outras colunas conforme necessário -->
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+   
+

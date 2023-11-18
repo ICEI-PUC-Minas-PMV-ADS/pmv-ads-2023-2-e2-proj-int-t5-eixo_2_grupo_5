@@ -1,13 +1,13 @@
-﻿@model IEnumerable<app_tech_talent.Models.Vagas>
+﻿@model IEnumerable<app_tech_talent.Models.Vaga>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Lista de Vagas</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+	<a asp-action="Create" class="btn btn-success" >Criar nova vaga</a>
 </p>
 <table class="table">
     <thead>
@@ -28,7 +28,7 @@
                 @Html.DisplayNameFor(model => model.ExperienciaProficional)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdHabilidades)
+                @Html.DisplayNameFor(model => model.Habilidades)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.salario)
@@ -37,13 +37,10 @@
                 @Html.DisplayNameFor(model => model.status)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.dateTime)
+                @Html.DisplayNameFor(model => model.dateAbertura)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.dataFechamento)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Usuario)
             </th>
             <th></th>
         </tr>
@@ -67,7 +64,7 @@
                 @Html.DisplayFor(modelItem => item.ExperienciaProficional)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdHabilidades)
+                @Html.DisplayFor(modelItem => item.Habilidades)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.salario)
@@ -76,18 +73,15 @@
                 @Html.DisplayFor(modelItem => item.status)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.dateTime)
+                @Html.DisplayFor(modelItem => item.dateAbertura)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.dataFechamento)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Usuario.Email)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdVagas">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdVagas">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdVagas">Delete</a>
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

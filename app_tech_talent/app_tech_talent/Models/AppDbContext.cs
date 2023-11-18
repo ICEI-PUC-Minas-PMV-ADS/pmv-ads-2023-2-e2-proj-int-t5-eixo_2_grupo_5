@@ -13,6 +13,6 @@ namespace app_tech_talent.Models
         public DbSet<Curriculo> Curriculo { get; set; }
         public DbSet<FormacaoAcademica> FormacaoAcademica { get; set; }
         public DbSet<ExperienciaProfissional> ExperienciaProfissional { get; set; }
-        public DbSet<Vagas> Vagas { get; set; }
+        public DbSet<Vaga> Vagas { get; set; }
     }
 }

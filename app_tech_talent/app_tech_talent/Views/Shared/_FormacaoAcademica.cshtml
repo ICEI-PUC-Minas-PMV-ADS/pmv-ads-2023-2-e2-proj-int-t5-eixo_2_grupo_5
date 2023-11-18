@@ -1,0 +1,48 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<app_tech_talent.Models.FormacaoAcademica>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Instituição de Ensino
+                </th>
+                <th>
+                    Grau Obtido
+                </th>
+                <th>
+                    Ano de Conclusão
+                </th>
+                <th>
+                    Área de Estudo
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InstituicaoDeEnsino)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.grauObtido)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AnoDeConclusao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AreaDeEstudo)
+                    </td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -257,23 +257,26 @@ namespace app_tech_talent.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("app_tech_talent.Models.Vagas", b =>
+            modelBuilder.Entity("app_tech_talent.Models.Vaga", b =>
                 {
-                    b.Property<int>("IdVagas")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdVagas"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Descricao")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("EmpresaId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ExperienciaProficional")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("IdHabilidades")
-                        .HasColumnType("int");
+                    b.Property<string>("Habilidades")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Localizacao")
                         .IsRequired()
@@ -283,13 +286,10 @@ namespace app_tech_talent.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("dataFechamento")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("dateTime")
+                    b.Property<DateTime>("dateAbertura")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("formacao")
@@ -301,9 +301,7 @@ namespace app_tech_talent.Migrations
                     b.Property<bool>("status")
                         .HasColumnType("bit");
 
-                    b.HasKey("IdVagas");
-
-                    b.HasIndex("UsuarioId");
+                    b.HasKey("Id");
 
                     b.ToTable("Vagas");
                 });
