@@ -14,7 +14,6 @@ A seguir, exibimos os resultados dos testes, destacando tanto os aspectos positi
 
 
 | Caso de Teste            | Avaliação |
-
 |--------------------------|-----------|
 | CT-01 – Gerenciamento de perfil | A solução atende parcialmente ao requisito de gerenciamento de perfil. Após o login, o usuário pode editar seus dados cadastrais, sendo empresa ou profissional, mas o usuário encontra erros ao tentar modificar a senha. Dito isso, uma alternativa a se considerar será a revisão do código para a resolução do problema. |
 
