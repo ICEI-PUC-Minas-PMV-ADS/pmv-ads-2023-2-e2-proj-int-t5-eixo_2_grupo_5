@@ -78,7 +78,6 @@ namespace app_tech_talent.Controllers
             }
             else
             {
-
                 return NotFound();
             }
         }
@@ -139,6 +138,7 @@ namespace app_tech_talent.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ProfissionalId,Nome,UsuarioId,CPF,Idade")] Profissional profissional)
         {
+
             if (id != profissional.ProfissionalId)
             {
                 return NotFound();
@@ -148,6 +148,8 @@ namespace app_tech_talent.Controllers
             {
                 try
                 {
+
+                    profissional.UsuarioId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
                     _context.Update(profissional);
                     await _context.SaveChangesAsync();
                 }
