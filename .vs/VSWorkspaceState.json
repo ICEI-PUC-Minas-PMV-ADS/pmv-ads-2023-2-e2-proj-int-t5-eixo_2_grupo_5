@@ -2,12 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\app_tech_talent",
-    "\\app_tech_talent\\app_tech_talent",
-    "\\app_tech_talent\\app_tech_talent\\Controllers",
-    "\\app_tech_talent\\app_tech_talent\\Views",
-    "\\app_tech_talent\\app_tech_talent\\Views\\ExperienciaProfissional",
-    "\\app_tech_talent\\app_tech_talent\\Views\\Shared"
+    "\\app_tech_talent\\app_tech_talent"
   ],
-  "SelectedNode": "\\app_tech_talent\\app_tech_talent\\Views\\Shared\\_ExperienciaProfissionalDetails.cshtml",
+  "SelectedNode": "\\app_tech_talent\\app_tech_talent.sln",
   "PreviewInSolutionExplorer": false
 }
