@@ -4,9 +4,10 @@ A seguir, apresentamos o registro das evidências dos testes realizados na aplic
 
 | Caso de Teste            | Evidência |
 |--------------------------|-----------|
-| CT-01- Gerenciamento de pefil | - [Gerenciamento de pefil Profissional](https://youtu.be/oZBRNcfHrPA) - [Gerenciamento de pefil Empresa](https://youtu.be/YaWCPWE-9tM) |
+| CT-01 - Gerenciamento de pefil | - [Gerenciamento de pefil Profissional](https://youtu.be/oZBRNcfHrPA) - [Gerenciamento de pefil Empresa](https://youtu.be/YaWCPWE-9tM) |
 | CT-11 - Login, Cadastro  | - [Cadastro e Login Profissional](https://www.youtube.com/embed/8Hyh923iCoQ?si=7ELGPodV6Gs24zMi) - [Cadastro e Login Empresa](https://www.youtube.com/embed/cAc-FRB0LT8?si=pOKAe8takrv2sF1r) |
-| CT-13 -  Cadastro de Currículo | - [Cadastro de currículo Profissional](https://youtu.be/ieDeD6ODWoQ)  |
+| CT-13 - Cadastro de Currículo | - [Cadastro de currículo Profissional](https://youtu.be/ieDeD6ODWoQ)  |
+| CT-03 - Candidatura a vagas | - [Candidatura a vagas de emprego ](https://youtu.be/5N9EPc--MJg)  
 
 ## Avaliação
 
@@ -25,3 +26,6 @@ A seguir, exibimos os resultados dos testes, destacando tanto os aspectos positi
 |--------------------------|-----------|
 | CT-013– Cadastro de currículo | A solução atende ao requisito como esperado, o profissional consegue cadastrar e gerenciar seu currículo. A funcionalidade permite que o usuário cadastre seu resumo profissional e, após isso, cadastre sua formação acadêmica e experiência profissional que podem ser visualizadas na página de resumo profissional. Alguns desafios encontrados foram, a formatação dos campos (Data e hora onde é necessário apenas data) e a visualização das informações inseridas pelo usuário na página de resumo profissional. Dito isso, uma alternativa a ser considerada é a mudança na formatação dos campos e um atalho que facilite ao usuário o retorno para a página com todas as informações. Além disso, outro desafio encontrado foi que o usuário não consegue cadastrar seu cargo atual na experiência profissional e uma formação em andamento na formação acadêmica. Isso posto, uma alternativa a ser considerada é uma opção disponível para o usuário escolher se as informações que ele está digitando é sobre seu cargo atual/ formação acadêmica em andamento ou criar um novo campo. |
 
+| Caso de teste            | Avaliação | 
+|--------------------------|-----------|
+| CT-003 - Candidatura a vagas  | A solução atende plenamente aos requisitos estabelecidos, proporcionando ao usuário (profissional) a capacidade de visualizar oportunidades de emprego, candidatar-se a elas e revisar facilmente as vagas às quais se candidatou. A navegação entre as páginas opera de maneira eficaz, garantindo uma experiência fluida e intuitiva. |
