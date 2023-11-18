@@ -118,6 +118,16 @@ namespace app_tech_talent.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdFormacaoAcademica,IdCurriculo,InstituicaoDeEnsino,grauObtido,AnoDeConclusao,AreaDeEstudo")] FormacaoAcademica formacaoAcademica)
         {
+            var userId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.UsuarioId == userId);
+
+            var profissional = await _context.Profissionais.FirstOrDefaultAsync(p => p.UsuarioId == userId);
+
+            var curriculo = _context.Curriculo.FirstOrDefault(c => c.CPF == profissional.CPF);
+
+            formacaoAcademica.IdCurriculo = curriculo.IdCurriculo;
+
             if (id != formacaoAcademica.IdFormacaoAcademica)
             {
                 return NotFound();
