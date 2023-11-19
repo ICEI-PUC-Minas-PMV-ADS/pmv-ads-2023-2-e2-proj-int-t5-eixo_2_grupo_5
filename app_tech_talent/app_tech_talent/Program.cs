@@ -1,7 +1,12 @@
 using app_tech_talent.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using System;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Configuration;
+using Npgsql;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +15,16 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING")));
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    var connectionString = builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING");
+    var npgsqlBuilder = new NpgsqlConnectionStringBuilder(connectionString)
+    {
+        SslMode = SslMode.Require,
+        TrustServerCertificate = true
+    };
+    options.UseNpgsql(npgsqlBuilder.ConnectionString);
+});
 
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {
