@@ -234,3 +234,16 @@ machine-learning/tutorials/**/MovieRecommenderModel.zip
 /app_tech_talent/.vs
 /app_tech_talent/.vs/
 /app_tech_talent/.vs/*
+
+app_tech_talent/app_tech_talent/bin
+app_tech_talent/app_tech_talent/obj
+app_tech_talent/app_tech_talent/bin/
+app_tech_talent/app_tech_talent/obj/
+app_tech_talent/app_tech_talent/bin/*
+app_tech_talent/app_tech_talent/obj/*
+.vs
+.vs/
+.vs/*
+app_tech_talent/.vs
+app_tech_talent/.vs/
+app_tech_talent/.vs/*
