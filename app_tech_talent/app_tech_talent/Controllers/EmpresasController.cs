@@ -4,6 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using app_tech_talent.Models;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
+using System.Threading.Tasks;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 
 namespace app_tech_talent.Controllers
 {
