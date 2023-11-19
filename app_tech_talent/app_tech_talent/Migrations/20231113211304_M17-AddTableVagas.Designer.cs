@@ -111,10 +111,10 @@ namespace app_tech_talent.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.Property<DateTime>("DataDeInicio")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp");
 
                     b.Property<DateTime>("DataDeTermino")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp");
 
                     b.Property<string>("Empresa")
                         .HasMaxLength(100)
@@ -141,7 +141,7 @@ namespace app_tech_talent.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdFormacaoAcademica"), 1L, 1);
 
                     b.Property<DateTime>("AnoDeConclusao")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp");
 
                     b.Property<string>("AreaDeEstudo")
                         .HasMaxLength(200)
@@ -289,10 +289,10 @@ namespace app_tech_talent.Migrations
                         .HasColumnType("varchar");
 
                     b.Property<DateTime>("dataFechamento")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp");
 
                     b.Property<DateTime>("dateAbertura")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp");
 
                     b.Property<string>("formacao")
                         .HasColumnType("varchar");

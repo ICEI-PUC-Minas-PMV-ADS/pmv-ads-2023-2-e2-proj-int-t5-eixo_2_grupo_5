@@ -18,7 +18,7 @@ namespace app_tech_talent.Migrations
                     IdCurriculo = table.Column<int>(type: "int", nullable: false),
                     InstituicaoDeEnsino = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true),
                     grauObtido = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true),
-                    AnoDeConclusao = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    AnoDeConclusao = table.Column<DateTime>(type: "timestamp", nullable: false),
                     AreaDeEstudo = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: true)
                 },
                 constraints: table =>

@@ -107,7 +107,7 @@ namespace app_tech_talent.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdFormacaoAcademica"), 1L, 1);
 
                     b.Property<DateTime>("AnoDeConclusao")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp");
 
                     b.Property<string>("AreaDeEstudo")
                         .HasMaxLength(200)
