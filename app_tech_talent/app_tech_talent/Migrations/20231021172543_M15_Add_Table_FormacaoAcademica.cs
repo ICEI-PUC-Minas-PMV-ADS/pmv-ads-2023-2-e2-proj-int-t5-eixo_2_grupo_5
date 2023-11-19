@@ -13,8 +13,7 @@ namespace app_tech_talent.Migrations
                 name: "FormacaoAcademica",
                 columns: table => new
                 {
-                    IdFormacaoAcademica = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IdFormacaoAcademica = table.Column<int>(type: "serial", nullable: false),
                     IdCurriculo = table.Column<int>(type: "int", nullable: false),
                     InstituicaoDeEnsino = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true),
                     grauObtido = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true),

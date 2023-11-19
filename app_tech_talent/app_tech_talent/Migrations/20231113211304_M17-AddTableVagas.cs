@@ -13,8 +13,7 @@ namespace app_tech_talent.Migrations
                 name: "Vagas",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(type: "serial", nullable: false),
                     Titulo = table.Column<string>(type: "varchar", nullable: false),
                     Descricao = table.Column<string>(type: "varchar", nullable: false),
                     Localizacao = table.Column<string>(type: "varchar", nullable: false),

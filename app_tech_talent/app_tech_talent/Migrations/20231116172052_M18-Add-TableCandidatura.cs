@@ -12,8 +12,7 @@ namespace app_tech_talent.Migrations
                 name: "Candidaturas",
                 columns: table => new
                 {
-                    CandidaturaId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CandidaturaId = table.Column<int>(type: "serial", nullable: false),
                     ProfissionalId = table.Column<int>(type: "int", nullable: false),
                     VagaId = table.Column<int>(type: "int", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false)

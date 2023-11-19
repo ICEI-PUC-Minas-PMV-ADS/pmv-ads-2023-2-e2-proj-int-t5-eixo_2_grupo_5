@@ -11,10 +11,9 @@ namespace app_tech_talent.Migrations
             migrationBuilder.AddColumn<int>(
                 name: "IdHabilidades",
                 table: "Habilidades",
-                type: "int",
+                type: "serial",
                 nullable: false,
-                defaultValue: 0)
-                .Annotation("SqlServer:Identity", "1, 1");
+                defaultValue: 0);
 
             migrationBuilder.AddColumn<string>(
                 name: "CPF",

@@ -26,9 +26,7 @@ namespace app_tech_talent.Migrations
                 {
                     b.Property<int>("CandidaturaId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CandidaturaId"), 1L, 1);
+                        .HasColumnType("serial");
 
                     b.Property<int>("ProfissionalId")
                         .HasColumnType("int");
@@ -48,9 +46,7 @@ namespace app_tech_talent.Migrations
                 {
                     b.Property<int>("IdCurriculo")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCurriculo"), 1L, 1);
+                        .HasColumnType("serial");
 
                     b.Property<string>("CPF")
                         .HasColumnType("varchar");
@@ -68,9 +64,7 @@ namespace app_tech_talent.Migrations
                 {
                     b.Property<int>("EmpresaId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmpresaId"), 1L, 1);
+                        .HasColumnType("serial");
 
                     b.Property<string>("Bairro")
                         .HasMaxLength(100)
@@ -122,9 +116,7 @@ namespace app_tech_talent.Migrations
                 {
                     b.Property<int>("IdExperienciaProfissional")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdExperienciaProfissional"), 1L, 1);
+                        .HasColumnType("serial");
 
                     b.Property<string>("Cargo")
                         .HasMaxLength(100)
@@ -156,9 +148,7 @@ namespace app_tech_talent.Migrations
                 {
                     b.Property<int>("IdFormacaoAcademica")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdFormacaoAcademica"), 1L, 1);
+                        .HasColumnType("serial");
 
                     b.Property<DateTime>("AnoDeConclusao")
                         .HasColumnType("timestamp");
@@ -187,9 +177,7 @@ namespace app_tech_talent.Migrations
                 {
                     b.Property<int>("IdHabilidades")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdHabilidades"), 1L, 1);
+                        .HasColumnType("serial");
 
                     b.Property<bool>("AnaliseDeDados")
                         .HasColumnType("bit");
@@ -227,9 +215,7 @@ namespace app_tech_talent.Migrations
                 {
                     b.Property<int>("ProfissionalId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProfissionalId"), 1L, 1);
+                        .HasColumnType("serial");
 
                     b.Property<string>("CPF")
                         .IsRequired()
@@ -256,9 +242,7 @@ namespace app_tech_talent.Migrations
                 {
                     b.Property<int>("UsuarioId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UsuarioId"), 1L, 1);
+                        .HasColumnType("serial");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -283,9 +267,7 @@ namespace app_tech_talent.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                        .HasColumnType("serial");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
