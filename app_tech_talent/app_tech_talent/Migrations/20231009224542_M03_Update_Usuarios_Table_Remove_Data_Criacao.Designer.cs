@@ -33,7 +33,7 @@ namespace app_tech_talent.Migrations
 
                     b.Property<string>("RazaoSocial")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(max)");
 
                     b.Property<int>("UsuarioId")
                         .HasColumnType("int");
@@ -55,7 +55,7 @@ namespace app_tech_talent.Migrations
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(max)");
 
                     b.Property<int>("UsuarioId")
                         .HasColumnType("int");
@@ -77,11 +77,11 @@ namespace app_tech_talent.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(max)");
 
                     b.Property<string>("Senha")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(max)");
 
                     b.Property<int>("TipoPerfil")
                         .HasColumnType("int");

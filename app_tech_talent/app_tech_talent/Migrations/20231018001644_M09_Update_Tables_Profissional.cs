@@ -11,7 +11,7 @@ namespace app_tech_talent.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "CPF",
                 table: "Profissionais",
-                type: "nvarchar(max)",
+                type: "varchar(max)",
                 nullable: false,
                 defaultValue: "");
 

@@ -14,8 +14,8 @@ namespace app_tech_talent.Migrations
                 {
                     IdCurriculo = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CPF = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ResumoProfissional = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true)
+                    CPF = table.Column<string>(type: "varchar(max)", nullable: true),
+                    ResumoProfissional = table.Column<string>(type: "varchar(500)", maxLength: 500, nullable: true)
                 },
                 constraints: table =>
                 {

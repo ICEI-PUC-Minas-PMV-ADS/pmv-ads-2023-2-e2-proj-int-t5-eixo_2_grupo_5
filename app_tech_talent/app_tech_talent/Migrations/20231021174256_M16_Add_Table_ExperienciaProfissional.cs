@@ -16,11 +16,11 @@ namespace app_tech_talent.Migrations
                     IdExperienciaProfissional = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IdCurriculo = table.Column<int>(type: "int", nullable: false),
-                    Empresa = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    Cargo = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    Empresa = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true),
+                    Cargo = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true),
                     DataDeInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DataDeTermino = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    ResumoDaAtuacao = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true)
+                    ResumoDaAtuacao = table.Column<string>(type: "varchar(500)", maxLength: 500, nullable: true)
                 },
                 constraints: table =>
                 {

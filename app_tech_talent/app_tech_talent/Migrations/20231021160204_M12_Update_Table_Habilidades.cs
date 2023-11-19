@@ -19,7 +19,7 @@ namespace app_tech_talent.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "CPF",
                 table: "Habilidades",
-                type: "nvarchar(max)",
+                type: "varchar(max)",
                 nullable: true);
 
             migrationBuilder.AddPrimaryKey(
