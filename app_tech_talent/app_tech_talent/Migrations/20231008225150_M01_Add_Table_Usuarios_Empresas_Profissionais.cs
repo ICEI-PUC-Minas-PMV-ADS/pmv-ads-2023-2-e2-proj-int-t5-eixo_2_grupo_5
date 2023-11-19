@@ -14,8 +14,8 @@ namespace app_tech_talent.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Email = table.Column<string>(type: "varchar(max)", nullable: false),
-                    Senha = table.Column<string>(type: "varchar(max)", nullable: false)
+                    Email = table.Column<string>(type: "varchar", nullable: false),
+                    Senha = table.Column<string>(type: "varchar", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -28,7 +28,7 @@ namespace app_tech_talent.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    RazaoSocial = table.Column<string>(type: "varchar(max)", nullable: false),
+                    RazaoSocial = table.Column<string>(type: "varchar", nullable: false),
                     UsuarioId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -48,7 +48,7 @@ namespace app_tech_talent.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "varchar(max)", nullable: false),
+                    Nome = table.Column<string>(type: "varchar", nullable: false),
                     UsuarioId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

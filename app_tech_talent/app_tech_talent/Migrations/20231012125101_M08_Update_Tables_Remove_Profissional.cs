@@ -21,7 +21,7 @@ namespace app_tech_talent.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UsuarioId = table.Column<int>(type: "int", nullable: false),
-                    RazaoSocial = table.Column<string>(type: "varchar(max)", nullable: false)
+                    RazaoSocial = table.Column<string>(type: "varchar", nullable: false)
                 },
                 constraints: table =>
                 {

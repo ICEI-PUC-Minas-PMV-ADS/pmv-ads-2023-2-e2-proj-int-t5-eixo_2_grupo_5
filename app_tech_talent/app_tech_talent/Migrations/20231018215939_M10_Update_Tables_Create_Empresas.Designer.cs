@@ -41,7 +41,7 @@ namespace app_tech_talent.Migrations
 
                     b.Property<string>("CNPJ")
                         .IsRequired()
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<string>("Cidade")
                         .HasMaxLength(100)
@@ -68,7 +68,7 @@ namespace app_tech_talent.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WebSite")
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.HasKey("EmpresaId");
 
@@ -87,14 +87,14 @@ namespace app_tech_talent.Migrations
 
                     b.Property<string>("CPF")
                         .IsRequired()
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<int>("Idade")
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<int>("UsuarioId")
                         .HasColumnType("int");
@@ -116,11 +116,11 @@ namespace app_tech_talent.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<string>("Senha")
                         .IsRequired()
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<int>("TipoUsuario")
                         .HasColumnType("int");

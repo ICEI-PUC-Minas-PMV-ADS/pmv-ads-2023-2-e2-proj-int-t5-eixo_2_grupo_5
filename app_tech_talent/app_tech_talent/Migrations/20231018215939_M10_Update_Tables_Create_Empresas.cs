@@ -15,13 +15,13 @@ namespace app_tech_talent.Migrations
                     EmpresaId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     RazaoSocial = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false),
-                    CNPJ = table.Column<string>(type: "varchar(max)", nullable: false),
+                    CNPJ = table.Column<string>(type: "varchar", nullable: false),
                     Logradouro = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true),
                     UF = table.Column<string>(type: "varchar(2)", maxLength: 2, nullable: true),
                     CEP = table.Column<string>(type: "varchar(8)", maxLength: 8, nullable: true),
                     Bairro = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true),
                     Cidade = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true),
-                    WebSite = table.Column<string>(type: "varchar(max)", nullable: true),
+                    WebSite = table.Column<string>(type: "varchar", nullable: true),
                     Descricao = table.Column<string>(type: "varchar(500)", maxLength: 500, nullable: true),
                     UsuarioId = table.Column<int>(type: "int", nullable: false)
                 },

@@ -11,7 +11,7 @@ namespace app_tech_talent.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "RecoveryKey",
                 table: "Usuarios",
-                type: "varchar(max)",
+                type: "varchar",
                 nullable: true);
         }
 

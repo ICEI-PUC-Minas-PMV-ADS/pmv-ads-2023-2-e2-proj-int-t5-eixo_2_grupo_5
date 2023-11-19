@@ -33,7 +33,7 @@ namespace app_tech_talent.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCurriculo"), 1L, 1);
 
                     b.Property<string>("CPF")
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<string>("ResumoProfissional")
                         .HasMaxLength(500)
@@ -62,7 +62,7 @@ namespace app_tech_talent.Migrations
 
                     b.Property<string>("CNPJ")
                         .IsRequired()
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<string>("Cidade")
                         .HasMaxLength(100)
@@ -89,7 +89,7 @@ namespace app_tech_talent.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WebSite")
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.HasKey("EmpresaId");
 
@@ -178,7 +178,7 @@ namespace app_tech_talent.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("CPF")
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<bool>("DesignDeExperienciaDeUsuario")
                         .HasColumnType("bit");
@@ -213,14 +213,14 @@ namespace app_tech_talent.Migrations
 
                     b.Property<string>("CPF")
                         .IsRequired()
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<int>("Idade")
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<int>("UsuarioId")
                         .HasColumnType("int");
@@ -242,14 +242,14 @@ namespace app_tech_talent.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<string>("RecoveryKey")
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<string>("Senha")
                         .IsRequired()
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<int>("TipoUsuario")
                         .HasColumnType("int");
@@ -269,24 +269,24 @@ namespace app_tech_talent.Migrations
 
                     b.Property<string>("Descricao")
                         .IsRequired()
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<int>("EmpresaId")
                         .HasColumnType("int");
 
                     b.Property<string>("ExperienciaProficional")
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<string>("Habilidades")
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<string>("Localizacao")
                         .IsRequired()
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<string>("Titulo")
                         .IsRequired()
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<DateTime>("dataFechamento")
                         .HasColumnType("datetime2");
@@ -295,7 +295,7 @@ namespace app_tech_talent.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("formacao")
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("varchar");
 
                     b.Property<double>("salario")
                         .HasColumnType("float");
