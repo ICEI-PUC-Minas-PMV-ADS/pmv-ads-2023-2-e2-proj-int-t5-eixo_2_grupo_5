@@ -50,8 +50,6 @@ namespace app_tech_talent.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-BuilderExtensions.UseIdentityColumn(b.Property<int>("IdCurriculo"), 1L, 1);
-
                     b.Property<string>("CPF")
                         .HasColumnType("varchar");
 
