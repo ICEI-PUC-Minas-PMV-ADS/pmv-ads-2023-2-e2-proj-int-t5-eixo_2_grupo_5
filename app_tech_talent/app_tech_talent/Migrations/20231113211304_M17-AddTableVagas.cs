@@ -21,7 +21,7 @@ namespace app_tech_talent.Migrations
                     ExperienciaProficional = table.Column<string>(type: "varchar", nullable: true),
                     Habilidades = table.Column<string>(type: "varchar", nullable: true),
                     salario = table.Column<double>(type: "float", nullable: false),
-                    status = table.Column<bool>(type: "bit", nullable: false),
+                    status = table.Column<bool>(type: "boolean", nullable: false),
                     dateAbertura = table.Column<DateTime>(type: "timestamptz", nullable: false),
                     dataFechamento = table.Column<DateTime>(type: "timestamptz", nullable: false),
                     EmpresaId = table.Column<int>(type: "int", nullable: false)

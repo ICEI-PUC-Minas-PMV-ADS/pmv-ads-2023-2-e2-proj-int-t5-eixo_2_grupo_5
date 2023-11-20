@@ -303,7 +303,7 @@ namespace app_tech_talent.Migrations
                         .HasColumnType("float");
 
                     b.Property<bool>("status")
-                        .HasColumnType("bit");
+                        .HasColumnType("boolean");
 
                     b.HasKey("Id");
 
