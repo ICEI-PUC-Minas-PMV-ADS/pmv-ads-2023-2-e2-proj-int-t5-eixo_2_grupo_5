@@ -17,8 +17,8 @@ namespace app_tech_talent.Migrations
                     IdCurriculo = table.Column<int>(type: "int", nullable: false),
                     Empresa = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true),
                     Cargo = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true),
-                    DataDeInicio = table.Column<DateTime>(type: "timestamp", nullable: false),
-                    DataDeTermino = table.Column<DateTime>(type: "timestamp", nullable: false),
+                    DataDeInicio = table.Column<DateTime>(type: "timestamptz", nullable: false),
+                    DataDeTermino = table.Column<DateTime>(type: "timestamptz", nullable: false),
                     ResumoDaAtuacao = table.Column<string>(type: "varchar(500)", maxLength: 500, nullable: true)
                 },
                 constraints: table =>

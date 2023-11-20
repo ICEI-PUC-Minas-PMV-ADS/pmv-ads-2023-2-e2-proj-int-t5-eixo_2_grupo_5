@@ -105,10 +105,10 @@ namespace app_tech_talent.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.Property<DateTime>("DataDeInicio")
-                        .HasColumnType("timestamp");
+                        .HasColumnType("timestamptz");
 
                     b.Property<DateTime>("DataDeTermino")
-                        .HasColumnType("timestamp");
+                        .HasColumnType("timestamptz");
 
                     b.Property<string>("Empresa")
                         .HasMaxLength(100)
@@ -133,7 +133,7 @@ namespace app_tech_talent.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("AnoDeConclusao")
-                        .HasColumnType("timestamp");
+                        .HasColumnType("timestamptz");
 
                     b.Property<string>("AreaDeEstudo")
                         .HasMaxLength(200)
@@ -277,10 +277,10 @@ namespace app_tech_talent.Migrations
                         .HasColumnType("varchar");
 
                     b.Property<DateTime>("dataFechamento")
-                        .HasColumnType("timestamp");
+                        .HasColumnType("timestamptz");
 
                     b.Property<DateTime>("dateAbertura")
-                        .HasColumnType("timestamp");
+                        .HasColumnType("timestamptz");
 
                     b.Property<string>("formacao")
                         .HasColumnType("varchar");

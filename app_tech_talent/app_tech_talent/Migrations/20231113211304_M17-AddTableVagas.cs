@@ -22,8 +22,8 @@ namespace app_tech_talent.Migrations
                     Habilidades = table.Column<string>(type: "varchar", nullable: true),
                     salario = table.Column<double>(type: "float", nullable: false),
                     status = table.Column<bool>(type: "bit", nullable: false),
-                    dateAbertura = table.Column<DateTime>(type: "timestamp", nullable: false),
-                    dataFechamento = table.Column<DateTime>(type: "timestamp", nullable: false),
+                    dateAbertura = table.Column<DateTime>(type: "timestamptz", nullable: false),
+                    dataFechamento = table.Column<DateTime>(type: "timestamptz", nullable: false),
                     EmpresaId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
