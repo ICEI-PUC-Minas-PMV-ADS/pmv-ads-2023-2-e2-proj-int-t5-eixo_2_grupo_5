@@ -12,8 +12,7 @@ namespace app_tech_talent.Migrations
                 name: "IdHabilidades",
                 table: "Habilidades",
                 type: "serial",
-                nullable: false,
-                defaultValue: 0);
+                nullable: false);
 
             migrationBuilder.AddColumn<string>(
                 name: "CPF",

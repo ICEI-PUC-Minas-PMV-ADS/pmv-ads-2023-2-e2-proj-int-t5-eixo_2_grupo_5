@@ -21,7 +21,7 @@ namespace app_tech_talent.Migrations
                 .HasAnnotation("ProductVersion", "6.0.22")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
 
             modelBuilder.Entity("app_tech_talent.Models.Empresa", b =>
                 {
@@ -29,7 +29,7 @@ namespace app_tech_talent.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
 
                     b.Property<string>("RazaoSocial")
                         .IsRequired()
@@ -51,7 +51,7 @@ namespace app_tech_talent.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProfissionalId"), 1L, 1);
+
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -73,8 +73,6 @@ namespace app_tech_talent.Migrations
                     b.Property<int>("UsuarioId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UsuarioId"), 1L, 1);
 
                     b.Property<string>("Email")
                         .IsRequired()

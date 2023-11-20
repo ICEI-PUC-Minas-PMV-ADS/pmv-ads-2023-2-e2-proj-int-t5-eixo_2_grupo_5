@@ -20,7 +20,7 @@ namespace app_tech_talent.Migrations
                 .HasAnnotation("ProductVersion", "6.0.23")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
 
             modelBuilder.Entity("app_tech_talent.Models.Candidatura", b =>
                 {
