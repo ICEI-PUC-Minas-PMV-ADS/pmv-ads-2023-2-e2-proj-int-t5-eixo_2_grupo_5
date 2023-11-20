@@ -54,6 +54,8 @@ namespace app_tech_talent.Controllers
 
             if (ModelState.IsValid)
             {
+                vaga.dateAbertura = DateTime.SpecifyKind(vaga.dateAbertura, DateTimeKind.Utc);
+                vaga.dataFechamento = DateTime.SpecifyKind(vaga.dataFechamento, DateTimeKind.Utc);
                 _context.Vagas.Add(vaga);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
