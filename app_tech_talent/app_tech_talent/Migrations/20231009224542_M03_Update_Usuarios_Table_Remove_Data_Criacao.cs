@@ -21,7 +21,7 @@ namespace app_tech_talent.Migrations
                 table: "Usuarios",
                 type: "timestamp",
                 nullable: false,
-                defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
+                defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc));
         }
     }
 }
