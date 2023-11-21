@@ -88,6 +88,7 @@ namespace app_tech_talent.Controllers
 
                 if (ModelState.IsValid) 
                 {
+                    formacaoAcademica.AnoDeConclusao = DateTime.SpecifyKind(formacaoAcademica.AnoDeConclusao, DateTimeKind.Utc);
                     _context.Add(formacaoAcademica);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
@@ -137,6 +138,7 @@ namespace app_tech_talent.Controllers
             {
                 try
                 {
+                    formacaoAcademica.AnoDeConclusao = DateTime.SpecifyKind(formacaoAcademica.AnoDeConclusao, DateTimeKind.Utc);
                     _context.Update(formacaoAcademica);
                     await _context.SaveChangesAsync();
                 }

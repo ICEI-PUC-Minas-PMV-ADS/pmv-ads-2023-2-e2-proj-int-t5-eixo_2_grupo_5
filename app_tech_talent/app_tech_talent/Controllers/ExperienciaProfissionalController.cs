@@ -88,6 +88,8 @@ namespace app_tech_talent.Controllers
 
             if (ModelState.IsValid)
             {
+                experienciaProfissional.DataDeInicio = DateTime.SpecifyKind(experienciaProfissional.DataDeInicio, DateTimeKind.Utc);
+                experienciaProfissional.DataDeTermino = DateTime.SpecifyKind(experienciaProfissional.DataDeTermino, DateTimeKind.Utc);
                 _context.Add(experienciaProfissional);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -137,6 +139,8 @@ namespace app_tech_talent.Controllers
             {
                 try
                 {
+                    experienciaProfissional.DataDeInicio = DateTime.SpecifyKind(experienciaProfissional.DataDeInicio, DateTimeKind.Utc);
+                    experienciaProfissional.DataDeTermino = DateTime.SpecifyKind(experienciaProfissional.DataDeTermino, DateTimeKind.Utc);
                     _context.Update(experienciaProfissional);
                     await _context.SaveChangesAsync();
                 }
