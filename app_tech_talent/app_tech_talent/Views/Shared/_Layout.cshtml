@@ -30,7 +30,6 @@
                                         <div class="dropdown-menu" aria-labelledby="vagasDropdown">
                                             @if (User.IsInRole("Profissional"))
                                             {
-                                                <a asp-area="" asp-controller="Vagas" asp-action="Index" class="dropdown-item">Vagas criadas</a>
                                                 <a asp-area="" asp-controller="Vagas" asp-action="VagasDisponiveis" class="dropdown-item">Vagas Disponíveis</a>
                                                 <a asp-area="" asp-controller="Vagas" asp-action="VagasCandidatadas" class="dropdown-item">Vagas Candidatadas</a>
                                             }
