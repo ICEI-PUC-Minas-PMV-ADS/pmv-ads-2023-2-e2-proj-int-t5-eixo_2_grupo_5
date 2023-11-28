@@ -49,7 +49,7 @@ dotnet ef database update # para rodar as migrations
 dotnet run
 ```
 
-Acesse a aplicação no endereço fornecido no console.
+Acesse a aplicação no endereço: https://techtalent.azurewebsites.net/
 
 # Documentação
 
