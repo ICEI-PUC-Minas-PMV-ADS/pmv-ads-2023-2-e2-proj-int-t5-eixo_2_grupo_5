@@ -95,6 +95,16 @@ namespace app_tech_talent.Controllers
 
                 profissional.UsuarioId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
 
+                var cpfExistente = await _context.Profissionais
+                    .FirstOrDefaultAsync(p => p.CPF == profissional.CPF);
+
+                if (cpfExistente != null)
+                {
+                    ModelState.AddModelError("CPF", "Este CPF já está em uso.");
+                    ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "UsuarioId", "Email", profissional.UsuarioId);
+                    return View(profissional);
+                }
+
                 _context.Add(profissional);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -148,6 +158,16 @@ namespace app_tech_talent.Controllers
             {
                 try
                 {
+                    // Verifica se o CPF já está em uso, excluindo o profissional atual da busca
+                    var cpfExistente = await _context.Profissionais
+                        .FirstOrDefaultAsync(p => p.CPF == profissional.CPF && p.ProfissionalId != profissional.ProfissionalId);
+
+                    if (cpfExistente != null)
+                    {
+                        ModelState.AddModelError("CPF", "Este CPF já está em uso.");
+                        ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "UsuarioId", "Email", profissional.UsuarioId);
+                        return View(profissional);
+                    }
 
                     profissional.UsuarioId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
                     _context.Update(profissional);

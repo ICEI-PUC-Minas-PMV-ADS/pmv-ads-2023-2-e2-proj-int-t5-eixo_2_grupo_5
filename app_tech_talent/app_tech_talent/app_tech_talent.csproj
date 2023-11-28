@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Curriculos\**" />
+    <Content Remove="Curriculos\**" />
+    <EmbeddedResource Remove="Curriculos\**" />
+    <None Remove="Curriculos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Views\Vagas\VagasCandidatadas.cs" />
   </ItemGroup>
 
@@ -25,12 +32,13 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.1" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.8" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Curriculos\" />
     <Folder Include="wwwroot\imagens\" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="https://json.schemastore.org/asconfig-schema.json" /></VisualStudio></ProjectExtensions>
 
 </Project>
