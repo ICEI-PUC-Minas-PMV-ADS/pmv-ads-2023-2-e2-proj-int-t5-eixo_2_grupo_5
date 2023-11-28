@@ -51,6 +51,41 @@ dotnet run
 
 Acesse a aplicação no endereço: https://techtalent.azurewebsites.net/
 
+
+### Configurações para rodar a aplicação localmente
+
+Esta aplicação utiliza o PostgreSQL. Para rodar a aplicação localmente, siga estas etapas:
+
+1. Instale o PostgreSQL na sua máquina. Acesse [https://www.postgresql.org/download/](https://www.postgresql.org/download/).
+
+2. **Não altere as configurações padrão de propriedades.**
+
+3. Altere a `ConnectionStrings` para apontar para o PostgreSQL local.
+
+   Exemplo de `ConnectionStrings` no formato JSON:
+
+   ```json
+   {
+     "Logging": {
+       "LogLevel": {
+         "Default": "Information",
+         "Microsoft.AspNetCore": "Warning"
+       }
+     },
+     "AllowedHosts": "*",
+     "ConnectionStrings": {
+       "DefaultConnection": "Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=123456;SSL Mode=Prefer;"
+     }
+   }
+
+### Observações:
+
+- As propriedades `Host`, `Port` e `Database` devem ser alteradas de acordo com a sua configuração local do PostgreSQL.
+
+- A propriedade `Username` e `Password` devem ser alteradas para as credenciais do seu usuário do PostgreSQL.
+
+- A propriedade `SSL Mode` pode ser alterada para `Require` ou `VerifyCa` para usar o SSL.
+
 # Documentação
 
 <ol>
