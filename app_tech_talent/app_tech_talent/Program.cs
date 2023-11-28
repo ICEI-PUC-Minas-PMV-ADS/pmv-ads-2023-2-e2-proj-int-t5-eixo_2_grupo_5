@@ -12,10 +12,10 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    var connectionString = builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING");
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
     var npgsqlBuilder = new NpgsqlConnectionStringBuilder(connectionString)
     {
-        SslMode = SslMode.Require,
+        SslMode = SslMode.Disable,
         TrustServerCertificate = true
     };
     options.UseNpgsql(npgsqlBuilder.ConnectionString);
@@ -36,12 +36,25 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 var app = builder.Build();
 
+Console.WriteLine("Iniciando a aplicação...");
+
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     var context = services.GetRequiredService<AppDbContext>();
-    context.Database.Migrate();
+
+    try
+    {
+        context.Database.Migrate();
+        Console.WriteLine("Migrações aplicadas com sucesso.");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Erro ao aplicar migrações: {ex.Message}");
+    }
 }
+
+Console.WriteLine("Aplicação iniciada com sucesso.");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
