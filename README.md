@@ -60,7 +60,7 @@ Esta aplicação utiliza o PostgreSQL. Para rodar a aplicação localmente, siga
 
 2. **Não altere as configurações padrão de propriedades.**
 
-3. Altere a `ConnectionStrings` para apontar para o PostgreSQL local.
+3. Altere a `ConnectionStrings` no arquivo `appsettings.Development` do projeto para apontar para o PostgreSQL local.
 
    Exemplo de `ConnectionStrings` no formato JSON:
 
