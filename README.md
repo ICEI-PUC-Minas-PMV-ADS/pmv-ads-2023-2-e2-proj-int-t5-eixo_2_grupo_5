@@ -78,6 +78,16 @@ Esta aplicação utiliza o PostgreSQL. Para rodar a aplicação localmente, siga
      }
    }
 
+4. No arquivo Program, altere a referência da connectionString
+
+   ```json
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    var npgsqlBuilder = new NpgsqlConnectionStringBuilder(connectionString)
+    {
+        SslMode = SslMode.Disable,
+        TrustServerCertificate = true
+    };
+
 ### Observações:
 
 - As propriedades `Host`, `Port` e `Database` devem ser alteradas de acordo com a sua configuração local do PostgreSQL.
