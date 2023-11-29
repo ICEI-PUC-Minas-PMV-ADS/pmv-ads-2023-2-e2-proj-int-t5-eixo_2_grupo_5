@@ -12,10 +12,10 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    var connectionString = builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING");
     var npgsqlBuilder = new NpgsqlConnectionStringBuilder(connectionString)
     {
-        SslMode = SslMode.Disable,
+        SslMode = SslMode.Require,
         TrustServerCertificate = true
     };
     options.UseNpgsql(npgsqlBuilder.ConnectionString);
