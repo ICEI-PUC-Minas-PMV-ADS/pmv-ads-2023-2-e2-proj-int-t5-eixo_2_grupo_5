@@ -1,25 +1,28 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title:
+title: Tech Talent
 authors:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - name-suffix: Professor XXXX
+  - family-names: Boa
+    given-names: Daniel
+  - family-names: Lemos
+    given-names: Frederico
+  - family-names: Horta 
+    given-names: Lafayete
+  - family-names: Vilarim
+    given-names: Letícia
+  - family-names: Salomao
+    given-names: Maria Fernanda
+ - family-names: Silva
+    given-names: Weglesson
+  - name-suffix: Professor
     affiliation: PUC Minas
-    family-names:
-    given-names:
+    family-names: De Nardin
+    given-names Luciana
 keywords:
-  -
-  -
-repository-code:
+  - Usuário
+  - Profissional
+  - Empresa
+repository-code: https: //github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5.git
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2023-06-30
+date-released: 2023-12-06
