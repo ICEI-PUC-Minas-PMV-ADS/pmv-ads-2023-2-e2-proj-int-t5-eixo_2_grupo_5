@@ -256,3 +256,4 @@ machine-learning/tutorials/**/MovieRecommenderModel.zip
 /app_tech_talent/app_tech_talent/obj/project.nuget.cache
 /app_tech_talent/.vs/app_tech_talent/config/applicationhost.config
 /app_tech_talent/app_tech_talent/obj/Debug/net6.0/app_tech_talent.genruntimeconfig.cache
+/.vs/slnx.sqlite
