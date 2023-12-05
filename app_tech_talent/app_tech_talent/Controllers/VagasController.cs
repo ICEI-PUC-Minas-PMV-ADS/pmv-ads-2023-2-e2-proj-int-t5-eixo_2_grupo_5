@@ -254,5 +254,64 @@ namespace app_tech_talent.Controllers
             // A empresa não foi encontrada, você pode tratar isso de acordo com sua lógica
             return View(new { Candidaturas = new List<Candidatura>(), Profissionais = new List<Profissional>() });
         }
+
+        public async Task<IActionResult> BuscaGeral(string termoPesquisa)
+        {
+            // Busca por empresas
+            var empresas = await _context.Empresas
+                .Where(e => e.RazaoSocial.Contains(termoPesquisa) || e.Descricao.Contains(termoPesquisa))
+                .ToListAsync();
+
+            // Busca por profissionais
+            var profissionais = await _context.Profissionais
+                .Where(p => p.Nome.Contains(termoPesquisa))
+                .ToListAsync();
+
+            // Busca por vagas
+            var vagas = await _context.Vagas
+                .Where(v =>
+                    v.Titulo.Contains(termoPesquisa) ||
+                    v.Descricao.Contains(termoPesquisa) ||
+                    v.Localizacao.Contains(termoPesquisa) ||
+                    v.formacao.Contains(termoPesquisa) ||
+                    v.ExperienciaProficional.Contains(termoPesquisa) ||
+                    v.Habilidades.Contains(termoPesquisa)
+                // Adicione outros campos relevantes aqui
+                )
+                .ToListAsync();
+
+            var resultados = new List<object>();
+            resultados.AddRange(empresas);
+            resultados.AddRange(profissionais);
+            resultados.AddRange(vagas);
+
+            ViewBag.Context = _context; // Adiciona o contexto à ViewBag
+
+            // Verificar candidaturas existentes para as vagas (filtrar apenas vagas)
+            if (User.Identity.IsAuthenticated && User.IsInRole("Profissional"))
+            {
+                var userIdClaim = User.FindFirst("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier");
+                var userId = userIdClaim != null ? Convert.ToInt32(userIdClaim.Value) : 0;
+                var profissional = await _context.Profissionais.FirstOrDefaultAsync(p => p.UsuarioId == userId);
+
+                ViewBag.Profissional = profissional;
+
+                if (profissional != null)
+                {
+                    // Obter as IDs das vagas às quais o profissional já se candidatou
+                    var idsVagasCandidatadas = await _context.Candidaturas
+                        .Where(c => c.ProfissionalId == profissional.ProfissionalId)
+                        .Select(c => c.VagaId)
+                        .ToListAsync();
+                }
+            }
+
+            return View(resultados);
+        }
     }
-}
+
+    }
+
+
+    
+
