@@ -245,14 +245,21 @@ namespace app_tech_talent.Controllers
                     .Where(p => idsProfissionais.Contains(p.ProfissionalId))
                     .ToListAsync();
 
+                var cpfs = profissionais.Select(p => p.CPF).ToList();
+
+                var curriculos = await _context.Curriculo
+                    .Where(c => cpfs.Contains(c.CPF))
+                    .ToListAsync();
+
                 ViewBag.Candidaturas = candidaturasDaEmpresa;
                 ViewBag.Profissionais = profissionais;
+                ViewBag.Curriculos = curriculos;
 
                 return View();
             }
 
             // A empresa não foi encontrada, você pode tratar isso de acordo com sua lógica
-            return View(new { Candidaturas = new List<Candidatura>(), Profissionais = new List<Profissional>() });
+            return View(new { Candidaturas = new List<Candidatura>(), Profissionais = new List<Profissional>(), Curriculos = new List<Curriculo>() });
         }
 
         public async Task<IActionResult> BuscaGeral(string termoPesquisa)
