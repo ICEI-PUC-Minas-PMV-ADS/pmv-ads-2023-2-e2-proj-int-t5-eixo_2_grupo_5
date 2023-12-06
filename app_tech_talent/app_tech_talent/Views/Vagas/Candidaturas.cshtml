@@ -33,7 +33,7 @@
                     <td>@(profissional != null ? profissional.Idade.ToString() : "N/A")</td>
                     <td>@(profissional != null ? profissional.CPF : "N/A")</td>
                     <td>
-                        <a asp-page="/Curriculos/Details" asp-route-id="@idCurriculo">
+                        <a href="/Curriculos/Details/@idCurriculo">
                             Currículo
                         </a>
                     </td>
