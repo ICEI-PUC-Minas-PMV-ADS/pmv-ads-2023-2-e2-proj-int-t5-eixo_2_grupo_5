@@ -19,9 +19,10 @@ authors:
     family-names: De Nardin
     given-names Luciana
 keywords:
-  - Usuário
-  - Profissional
-  - Empresa
+  - Recrutamento
+  - Vagas de emprego
+  - Candidatura
+  - Profissionais de tecnologia
 repository-code: https: //github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5.git
 license: CC-BY-4.0
 version: 1.0.0

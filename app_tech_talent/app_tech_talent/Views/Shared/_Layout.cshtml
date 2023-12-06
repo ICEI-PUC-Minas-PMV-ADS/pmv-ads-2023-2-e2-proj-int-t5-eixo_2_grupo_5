@@ -10,87 +10,93 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-                <div class="container-fluid">
-                    <a class="navbar-brand" asp-area="" asp-controller="" asp-action="">Tech Talent</a>
-                    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse">
-                        <ul class="navbar-nav">
-                            @if (User.Identity.IsAuthenticated)
-                            {
-                                <li class="nav-item">
-                                    <div class="dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" id="vagasDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Vagas
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="vagasDropdown">
-                                            @if (User.IsInRole("Profissional"))
-                                            {
-                                                <a asp-area="" asp-controller="Vagas" asp-action="VagasDisponiveis" class="dropdown-item">Vagas Disponíveis</a>
-                                                <a asp-area="" asp-controller="Vagas" asp-action="VagasCandidatadas" class="dropdown-item">Vagas Candidatadas</a>
-                                            }
-
-                                            @if (User.IsInRole("Empresa"))
-                                            {
-                                                <a asp-area="" asp-controller="Vagas" asp-action="Create" class="dropdown-item">Criar vagas</a>
-                                                <a asp-area="" asp-controller="Vagas" asp-action="Index" class="dropdown-item">Vagas criadas</a>
-                                                <a asp-area="" asp-controller="Vagas" asp-action="Candidaturas" class="dropdown-item">Lista de candidatos</a>
-                                            }
-                                        </div>
-                                    </div>
-                                </li>
-                            }
-
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" alt="Tech Talent - Página Inicial">
+                    Tech Talent
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        @if (User.Identity.IsAuthenticated)
+                        {
                             <li class="nav-item">
                                 <div class="dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Meu Perfil
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" id="vagasDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Vagas
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="profileDropdown">
-                                        <a asp-area="" asp-controller="Usuarios" asp-action="Index" class="dropdown-item">Alterar Senha</a>
+                                    <div class="dropdown-menu" aria-labelledby="vagasDropdown">
                                         @if (User.IsInRole("Profissional"))
                                         {
-                                            <a asp-area="" asp-controller="Profissionais" asp-action="Index" class="dropdown-item">Dados Cadastrais</a>
+                                            <a asp-area="" asp-controller="Vagas" asp-action="VagasDisponiveis" class="dropdown-item">Vagas Disponíveis</a>
+                                            <a asp-area="" asp-controller="Vagas" asp-action="VagasCandidatadas" class="dropdown-item">Vagas Candidatadas</a>
                                         }
                                         @if (User.IsInRole("Empresa"))
                                         {
-                                            <a asp-area="" asp-controller="Empresas" asp-action="Index" class="dropdown-item">Dados Cadastrais</a>
-                                        }
-                                        @if (User.Identity.IsAuthenticated && User.IsInRole("Profissional"))
-                                        {
-                                            <a asp-area="" asp-controller="Curriculos" asp-action="Index" class="dropdown-item">Currículo</a>
+                                            <a asp-area="" asp-controller="Vagas" asp-action="Create" class="dropdown-item">Criar vagas</a>
+                                            <a asp-area="" asp-controller="Vagas" asp-action="Index" class="dropdown-item">Vagas criadas</a>
+                                            <a asp-area="" asp-controller="Vagas" asp-action="Candidaturas" class="dropdown-item">Lista de candidatos</a>
                                         }
                                     </div>
                                 </div>
                             </li>
-                            @if (!User.Identity.IsAuthenticated)
-                            {
-                                <li class="nav-item">
-                                    <a asp-area="" asp-controller="Usuarios" asp-action="Create" class="nav-link">Cadastre-se</a>
-                                </li>
-                            }
-                             </ul>
-                            <div class="login-button">
-                            @if (User.Identity.IsAuthenticated)
-                            {
-                                <div class="nav-welcome">
-                                    <span class="nav-welcome-message">Olá, @User.Identity.Name</span>
-                                    <a asp-area="" asp-controller="Usuarios" asp-action="Logout" class="nav-link btn-logout">Sair</a>
+                        }
+
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Meu Perfil
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                                    <a asp-area="" asp-controller="Usuarios" asp-action="Index" class="dropdown-item">Alterar Senha</a>
+                                    @if (User.IsInRole("Profissional"))
+                                    {
+                                        <a asp-area="" asp-controller="Profissionais" asp-action="Index" class="dropdown-item">Dados Cadastrais</a>
+                                    }
+                                    @if (User.IsInRole("Empresa"))
+                                    {
+                                        <a asp-area="" asp-controller="Empresas" asp-action="Index" class="dropdown-item">Dados Cadastrais</a>
+                                    }
+                                    @if (User.Identity.IsAuthenticated && User.IsInRole("Profissional"))
+                                    {
+                                        <a asp-area="" asp-controller="Curriculos" asp-action="Index" class="dropdown-item">Currículo</a>
+                                    }
                                 </div>
-                            }
-                            else
-                            {
-                                <a asp-area="" asp-controller="Usuarios" asp-action="Login" class="nav-link">Login</a>
-                            }
-                        </div>
+                            </div>
+                        </li>
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a asp-area="" asp-controller="Usuarios" asp-action="Create" class="nav-link">Cadastre-se</a>
+                            </li>
+                        }
+                    </ul>
+
+                    <form class="d-flex" asp-controller="Vagas" asp-action="BuscaGeral" method="get">
+                        <input class="form-control me-2" type="search" name="termoPesquisa" placeholder="Pesquisar..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+
+
+                    <div class="login-button">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <div class="nav-welcome">
+                                <span class="nav-welcome-message">Olá, @User.Identity.Name</span>
+                                <a asp-area="" asp-controller="Usuarios" asp-action="Logout" class="nav-link btn-logout">Sair</a>
+                            </div>
+                        }
+                        else
+                        {
+                            <a asp-area="" asp-controller="Usuarios" asp-action="Login" class="nav-link">Login</a>
+                        }
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+
     </header>
 
     <div class="container">
@@ -100,32 +106,31 @@
     </div>
 
     <footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h3>Sobre</h3>
-                <p>TechTalent a solução que agiliza e simplifica o processo de recrutamento e seleção de profissionais de TI.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Sobre</h3>
+                    <p>TechTalent a solução que agiliza e simplifica o processo de recrutamento e seleção de profissionais de TI.</p>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contato</h3>
+                    <p>Email: tech01talent@gmail.com>
+                </div>
+                <div class="footer-section form">
+                    <h3>Fale Conosco</h3>
+                    <form action="#" method="POST">
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                        <input type="email" name="email" placeholder="Seu email" required>
+                            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
             </div>
-            <div class="footer-section contact">
-                <h3>Contato</h3>
-                <p>Email: tech01talent@gmail.com>
-            </div>
-            <div class="footer-section form">
-                <h3>Fale Conosco</h3>
-                <form action="#" method="POST">
-                    <input type="text" name="nome" placeholder="Seu nome" required>
-                    <input type="email" name="email" placeholder="Seu email" required>
-                    <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
+            <div class="footer-bottom">
+                &copy; 2023 Todos os direitos reservados ao grupo 5.
             </div>
         </div>
-        <div class="footer-bottom">
-            &copy; 2023 Todos os direitos reservados ao grupo 5.
-        </div>
-    </div>
     </footer>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

@@ -1,0 +1,63 @@
+﻿@using app_tech_talent.Models
+@inject app_tech_talent.Models.AppDbContext _context
+@model List<object>
+
+@{
+    var userIdClaim = User.FindFirst("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier");
+    var userId = userIdClaim != null ? Convert.ToInt32(userIdClaim.Value) : 0;
+    var profissional = ViewBag.Profissional as Profissional;
+}
+
+<link rel="stylesheet" href="~/css/busca-geral.css" />
+
+<h2>Resultados da Busca</h2>
+
+@if (Model != null && Model.Count > 0)
+{
+    <ul class="resultados">
+        @foreach (var resultado in Model.OfType<Empresa>())
+        {
+            var empresa = (Empresa)resultado;
+            <li>@empresa.RazaoSocial - @empresa.Descricao</li>
+        }
+    </ul>
+
+    <ul class="resultados">
+        @foreach (var resultado in Model.OfType<Profissional>())
+        {
+            var profissionalEncontrado = (Profissional)resultado;
+            <li>@profissionalEncontrado.Nome</li>
+        }
+    </ul>
+
+    <ul class="resultados">
+        @foreach (var resultado in Model.OfType<Vaga>())
+        {
+            var vaga = (Vaga)resultado;
+            <li>
+                @vaga.Titulo - @vaga.Descricao - @vaga.Localizacao @vaga.formacao - @vaga.ExperienciaProficional - @vaga.Habilidades
+                @if (User.Identity.IsAuthenticated && User.IsInRole("Profissional"))
+                {
+                    var jaCandidatada = _context.Candidaturas
+                    .Any(c => c.VagaId == vaga.Id && c.ProfissionalId == profissional.ProfissionalId);
+
+                    if (!jaCandidatada)
+                    {
+                        <form method="post" asp-action="Candidatar">
+                            <input type="hidden" name="vagaId" value="@vaga.Id" />
+                            <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">Candidatar</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <span>Você já se candidatou</span>
+                    }
+                }
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>Nenhum resultado encontrado.</p>
+}

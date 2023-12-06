@@ -11,32 +11,67 @@ A seguir, apresentamos o registro das evidências dos testes realizados na aplic
 | CT-13 - Cadastro de Currículo | - [Cadastro de currículo Profissional](https://youtu.be/ieDeD6ODWoQ)  |
  
 
-## Avaliação
+## Relatório de Testes de Software
 
-A seguir, exibimos os resultados dos testes, destacando tanto os aspectos positivos quanto os desafios identificados na solução. Também discutiremos como planejamos abordar esses desafios nas próximas iterações, incluindo as falhas detectadas e as melhorias decorrentes dos resultados dos testes.
+O objetivo deste relatório é indicar se a aplicação TechTalent atende aos requisitos previamente propostos e sugerir possíveis pontos de correção.
 
-
-| Caso de Teste            | Avaliação |
+| 1 | Gerenciar Perfil |
 |--------------------------|-----------|
-| CT-01 – Gerenciamento de perfil | A solução atende parcialmente ao requisito de gerenciamento de perfil. Após o login, o usuário pode editar seus dados cadastrais, sendo empresa ou profissional, mas o usuário encontra erros ao tentar modificar a senha. Dito isso, uma alternativa a se considerar será a revisão do código para a resolução do problema. |
+| Requisito | RF - 001 - 	A aplicação deve permitir que tanto empresas quanto profissionais criem e gerenciem seus perfis na plataforma. Isso inclui a capacidade de preencher informações relevantes, como nome, informações de contato, descrição da empresa e quaisquer outras informações relevantes. Os perfis devem ser personalizáveis e editáveis a qualquer momento. | 
+| Observação | A solução atende parcialmente ao requisito de gerenciamento de perfil. Após o login, o usuário pode editar seus dados cadastrais, sendo empresa ou profissional, mas o usuário encontra erros ao tentar modificar a senha. Dito isso, uma alternativa a se considerar será a revisão do código para a resolução do problema. |
 
 
-| Caso de Teste            | Avaliação |
+| 2 | Gerenciar Vagas |
 |--------------------------|-----------|
-| CT-02 – Gerenciamento de vagas | A solução atende ao requisito proposto, permitindo que o usuário, definido como empresa, crie e gerencie suas vagas, fazendo com que usuários, definidos como profissionais, se candidatem com êxito nas vagas criadas. Durante o processo de desenvolvimento, enfrentei inúmeras situações desafiadoras, como erros relacionados ao banco de dados e à formatação do código. Esses desafios me levaram a compreender a extrema importância de manter o código organizado e limpo para facilitar sua compreensão. Pretendo aplicar esses ensinamentos na próxima etapa, visando um desenvolvimento mais eficiente e evitando possíveis erros futuros. Além disso, é de extrema importância trabalhar em melhorias relacionadas à formatação dos campos, possibilitando que os usuários tenham mais facilidade ao cadastrar seus dados. |
+| Requisito | RF - 002 - A aplicação deve ter a capacidade de permitir que uma empresa crie e gerencie vagas de trabalho disponíveis na plataforma. As empresas devem ser capazes de fornecer detalhes sobre a vaga, como título, descrição, localização, requisitos, benefícios e prazos para candidatura. Além disso, as empresas devem ter a opção de marcar vagas como abertas ou fechadas, dependendo do status da vaga. | 
+| Observação |  A solução atende ao requisito proposto, permitindo que o usuário, definido como empresa, crie e gerencie suas vagas, fazendo com que usuários, definidos como profissionais, se candidatem com êxito nas vagas criadas.  é de extrema importância trabalhar em melhorias relacionadas à formatação dos campos, possibilitando que os usuários tenham mais facilidade ao cadastrar seus dados. |
 
 
-
-| Caso de teste            | Avaliação | 
+| 3 | Candidatar a vagas |
 |--------------------------|-----------|
-| CT-003 - Candidatura a vagas  | A solução atende plenamente aos requisitos estabelecidos, proporcionando ao usuário (profissional) a capacidade de visualizar oportunidades de emprego, candidatar-se a elas e revisar facilmente as vagas às quais se candidatou. A navegação entre as páginas opera de maneira eficaz, garantindo uma experiência fluida e intuitiva. |
+| Requisito | RF - 003 - A aplicação deve oferecer aos profissionais a capacidade de se candidatarem a vagas de trabalho que estão listadas na plataforma. Isso deve incluir a opção de enviar um currículo, carta de apresentação e outras informações relevantes conforme exigido pela empresa. | 
+| Observação | A solução atende plenamente aos requisitos estabelecidos, proporcionando ao usuário (profissional) a capacidade de visualizar oportunidades de emprego, candidatar-se a elas e revisar facilmente as vagas às quais se candidatou. A navegação entre as páginas opera de maneira eficaz, garantindo uma experiência fluida e intuitiva. |
 
 
-| Caso de Teste            | Avaliação |
+| 4 | Mecanismo de Pesquisa |
 |--------------------------|-----------|
-| CT-11 - Login, Cadastro  | A solução atende ao requisito conforme o esperado, permitindo que os usuários realizem o processo de cadastro e login, seja como empresa ou como profissional. As validações dos campos nos formulários de cadastro e login, como o tamanho da senha e a verificação se o e-mail já está sendo utilizado, funcionam corretamente. A navegação e as permissões entre as páginas funcionam adequadamente, com a opção de cadastro e perfil de usuário aparecendo somente após o login. Além disso, a performance de navegação não apresenta problemas. O principal desafio será consolidar o perfil do usuário, tanto como empresa quanto como profissional. Uma alternativa em consideração é ocultar a aba de usuário para ambos e adicionar o e-mail no perfil de profissional e empresa com base no usuário. Se o usuário excluir o perfil, implementaremos um fluxo de saída e será necessário um novo cadastro, sem a capacidade de recuperação de dados. Além disso, é de extrema importância trabalhar no requisito de recuperação de senha. |
+| Requisito | RF - 004 - A aplicação deve disponibilizar um mecanismo de pesquisa avançado que permita aos profissionais procurar vagas de trabalho com base em critérios específicos, como palavras-chave, localização, setor da indústria, tipo de contrato e nível de experiência. Os resultados da pesquisa devem ser precisos e relevantes. | 
+| Observação | Ao utilizar o mecanismo de pesquisa, os profissionais podem encontrar resultados precisos e relevantes, obtendo informações sobre oportunidades que atendam exatamente às suas necessidades. A pesquisa abrange diversos elementos, incluindo título da vaga, descrição, localização, formação, experiência profissional e habilidades exigidas. Essa abordagem abrangente garante que os resultados sejam alinhados com as expectativas e objetivos dos usuários, proporcionando uma experiência de busca de emprego mais eficiente e satisfatória. |
 
-| Caso de Teste            | Avaliação |
+
+| 5 | Compartilhamento em redes sociais |
 |--------------------------|-----------|
-| CT-013– Cadastro de currículo | A solução atende ao requisito como esperado, o profissional consegue cadastrar e gerenciar seu currículo. A funcionalidade permite que o usuário cadastre seu resumo profissional e, após isso, cadastre sua formação acadêmica e experiência profissional que podem ser visualizadas na página de resumo profissional. Alguns desafios encontrados foram, a formatação dos campos (Data e hora onde é necessário apenas data) e a visualização das informações inseridas pelo usuário na página de resumo profissional. Dito isso, uma alternativa a ser considerada é a mudança na formatação dos campos e um atalho que facilite ao usuário o retorno para a página com todas as informações. Além disso, outro desafio encontrado foi que o usuário não consegue cadastrar seu cargo atual na experiência profissional e uma formação em andamento na formação acadêmica. Isso posto, uma alternativa a ser considerada é uma opção disponível para o usuário escolher se as informações que ele está digitando é sobre seu cargo atual/ formação acadêmica em andamento ou criar um novo campo. |
+| Requisito | RF - 010 - A aplicação deve permitir que os usuários compartilhem vagas de trabalho por meio de redes sociais, como Facebook, Twitter, LinkedIn, etc. Isso aumentará a visibilidade das vagas e permitirá que os usuários ajudem a divulgar oportunidades para sua rede de contatos. | 
+| Observação | A aplicação oferece um excelente fluxo para o compartilhamento de vagas de trabalho, permitindo que os usuários compartilhem facilmente oportunidades por meio de redes sociais, como Facebook e Twitter. Essa funcionalidade amplia a visibilidade das vagas, possibilitando que os usuários contribuam para a divulgação de oportunidades dentro de suas redes de contatos. O processo é intuitivo e eficaz, permitindo uma maior disseminação de informações sobre as vagas disponíveis. Apesar de, atualmente, a aplicação suportar o compartilhamento apenas com Facebook e Twitter, a experiência proporcionada é eficiente e promove uma divulgação abrangente das oportunidades de trabalho. |
+
+
+| 6 | Cadastrar Perfil  |
+|--------------------------|-----------|
+| Requisito | RF - 011 - A aplicação deve fornecer um mecanismo de login e registro para as empresas e os profissionais. O login e o registro devem ser separados para cada tipo de usuário (empresas e profissionais) permitindo que eles acessem funcionalidades específicas. As empresas devem ter a opção de se registrar na plataforma, fornecendo informação como nome da empresa, endereço de email, número de telefone, CNPJ, senha e confirmar senha. Os profissionais devem ter a opção de se registrar na plataforma fornecendo informações como nome completo, endereço de email, senha e confirmar senha. Após o registro, as empresas e os profissionais devem ter a opção de fazer login na plataforma usando suas credenciais (por exemplo, e-mail e senha). | 
+| Observação | A solução atende ao requisito conforme o esperado. Os usuários podem realizar o processo de cadastro como empresa ou profissional. As validações nos campos do formulário, como o tamanho da senha e a verificação de e-mail em uso, funcionam corretamente no processo de cadastro. |
+
+
+| 7 | Efetuar login |
+|--------------------------|-----------|
+| Requisito | RF - 011 - A aplicação deve fornecer um mecanismo de login e registro para as empresas e os profissionais. O login e o registro devem ser separados para cada tipo de usuário (empresas e profissionais) permitindo que eles acessem funcionalidades específicas. As empresas devem ter a opção de se registrar na plataforma, fornecendo informação como nome da empresa, endereço de email, número de telefone, CNPJ, senha e confirmar senha. Os profissionais devem ter a opção de se registrar na plataforma fornecendo informações como nome completo, endereço de email, senha e confirmar senha. Após o registro, as empresas e os profissionais devem ter a opção de fazer login na plataforma usando suas credenciais (por exemplo, e-mail e senha). | 
+| Observação | A solução permite que os usuários realizem o processo de login, seja como empresa ou profissional. As validações nos campos, como o tamanho da senha e a verificação de e-mail em uso, funcionam corretamente no processo de login. A navegação e as permissões entre as páginas ocorrem adequadamente, com a opção de cadastro e perfil de usuário aparecendo somente após o login. Além disso, a performance de navegação não apresenta problemas. |
+
+
+| 8 | Recuperação de senha |
+|--------------------------|-----------|
+| Requisito | RF - 012 - A aplicação deve fornecer um mecanismo de recuperação de senha para permitir que os usuários redefinam suas senhas em caso de esquecimento. | 
+| Observação | A solução proporciona um bom fluxo para o currículo, permitindo que o profissional cadastre e gerencie suas informações de maneira eficaz. O usuário pode cadastrar seu resumo profissional, formação acadêmica e experiência profissional, as quais são visualizadas na página de resumo profissional.  |
+
+
+| 9 | Cadastrar currículo |
+|--------------------------|-----------|
+| Requisito | RF - 013 - A aplicação deve permitir que o profissional cadastre seu currículo. Isso inclui a capacidade de preencher campos com informações acadêmicas e experiência profissional. | 
+| Observação | A solução proporciona um bom fluxo para o currículo, permitindo que o profissional cadastre e gerencie suas informações de maneira eficaz. O usuário pode cadastrar seu resumo profissional, formação acadêmica e experiência profissional, as quais são visualizadas na página de resumo profissional.  |
+
+
+Possíveis pontos de correção
+
+Como possíveis pontos de correção, sugerimos as seguintes ações:
+
+
 
