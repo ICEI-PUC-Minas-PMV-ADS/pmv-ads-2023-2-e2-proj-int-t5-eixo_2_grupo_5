@@ -7,10 +7,8 @@
 <h1>Visualizar dados</h1>
 
 <div>
-    
     <hr />
     <dl class="row">
-     
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.ResumoProfissional)
         </dt>
@@ -20,6 +18,15 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Index" class="btn btn-primary">Voltar</a> 
- 
+    @if (User.IsInRole("Profissional"))
+    {
+        <a asp-action="Index" class="btn btn-primary">Voltar</a>
+    }
+
+    @if (User.IsInRole("Empresa"))
+    {
+        <a href="/Vagas/Candidaturas/">
+            Voltar
+        </a>
+    }
 </div>
