@@ -11,10 +11,13 @@ A seguir, apresentamos o registro das evidências dos testes realizados na aplic
 | CT-13 - Cadastro de Currículo | - [Cadastro de currículo Profissional](https://youtu.be/ieDeD6ODWoQ)  |
  
 
-## Avaliação
+## Relatório de Testes de Software
 
-A seguir, exibimos os resultados dos testes, destacando tanto os aspectos positivos quanto os desafios identificados na solução. Também discutiremos como planejamos abordar esses desafios nas próximas iterações, incluindo as falhas detectadas e as melhorias decorrentes dos resultados dos testes.
+O objetivo deste relatório é indicar se a aplicação TechTalent atende aos requisitos previamente propostos e sugerir possíveis pontos de correção.
 
+1 | Gerenciar Perfil |
+Requisito | RF - 001 - 	A aplicação deve permitir que tanto empresas quanto profissionais criem e gerenciem seus perfis na plataforma. Isso inclui a capacidade de preencher informações relevantes, como nome, informações de contato, descrição da empresa e quaisquer outras informações relevantes. Os perfis devem ser personalizáveis e editáveis a qualquer momento. | 
+Observação |  A solução atende parcialmente ao requisito de gerenciamento de perfil. Após o login, o usuário pode editar seus dados cadastrais, sendo empresa ou profissional, mas o usuário encontra erros ao tentar modificar a senha. Dito isso, uma alternativa a se considerar será a revisão do código para a resolução do problema. |
 
 | Caso de Teste            | Avaliação |
 |--------------------------|-----------|
