@@ -124,8 +124,9 @@ Apesar de todos os usuários terem obtido resultados positivos e uma boa métric
 
 **7-	Gerenciamento do curriculo pelo profissional**
 
+O gerenciamento do currículo obteve bom resultado nos testes, alcançando métricas favoráveis, mas, apesar disso, nota-se que não existe uma opção para o profissional cadastrar uma experiência profissional ou formação acadêmica como atual.
 
-**Sugestão**: 
+**Sugestão**: Opção para o profissional cadastrar uma experiência profissional como atual e opção para o profissional cadastrar formação acadêmica em andamento.
 
 **8-	Candidatura a vagas**
 
