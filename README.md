@@ -34,7 +34,7 @@ Comando de instalação:
 
 ``dotnet tool install --global dotnet-ef``
 
-#### Database: SQL Server Express - LocalDB
+#### Database: PostgreSQL
 
 Localização da connection line:
 [./app_tech_talent/appsettings.Development.json](./app_tech_talent/app_tech_talent/appsettings.Development.json)
