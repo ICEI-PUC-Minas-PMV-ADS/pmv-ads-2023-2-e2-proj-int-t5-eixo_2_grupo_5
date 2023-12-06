@@ -6,7 +6,9 @@ A seguir, apresentamos o registro das evidências dos testes realizados na aplic
 |--------------------------|-----------|
 | CT-01 - Gerenciamento de pefil | - [Gerenciamento de pefil Profissional](https://youtu.be/oZBRNcfHrPA) - [Gerenciamento de pefil Empresa](https://youtu.be/YaWCPWE-9tM) |
 | CT-02 - Gerenciamento de vagas | - [criar e gerenciar vagas](https://youtu.be/EVeq6dI3mtQ) 
-| CT-03 - Candidatura a vagas | - [Candidatura a vagas de emprego ](https://youtu.be/5N9EPc--MJg) 
+| CT-03 - Candidatura a vagas | - [Candidatura a vagas de emprego ](https://youtu.be/5N9EPc--MJg) |
+| CT-04 - Mecanismo de pesquisa avançada | - [Mecanismo de pesquisa ](https://youtu.be/G0zF5eHRTHI) |
+| CT-10 - Compartilhamento em redes sociais | - [Compartilhammento em redes sociais](https://youtu.be/YWhSP5p4isE)  |
 | CT-11 - Login, Cadastro  | - [Cadastro e Login Profissional](https://www.youtube.com/embed/8Hyh923iCoQ?si=7ELGPodV6Gs24zMi) - [Cadastro e Login Empresa](https://www.youtube.com/embed/cAc-FRB0LT8?si=pOKAe8takrv2sF1r) |
 | CT-13 - Cadastro de Currículo | - [Cadastro de currículo Profissional](https://youtu.be/ieDeD6ODWoQ)  |
  
