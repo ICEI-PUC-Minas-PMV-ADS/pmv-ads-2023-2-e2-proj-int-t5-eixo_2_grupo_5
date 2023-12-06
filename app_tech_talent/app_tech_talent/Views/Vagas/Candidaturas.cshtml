@@ -1,6 +1,7 @@
 ﻿@{
     var candidaturas = ViewBag.Candidaturas as List<Candidatura>;
     var profissionais = ViewBag.Profissionais as List<Profissional>;
+    var curriculos = ViewBag.Curriculos as List<Curriculo>;
 }
 
 @if (candidaturas != null && candidaturas.Count > 0)
@@ -14,12 +15,16 @@
                 <th>Nome do Profissional</th>
                 <th>Idade</th>
                 <th>CPF</th>
+                <th></th>
             </tr>
         </thead>0
         <tbody>
             @foreach (var candidatura in candidaturas)
             {
                 var profissional = profissionais.FirstOrDefault(p => p.ProfissionalId == candidatura.ProfissionalId);
+                int idCurriculo = 0;
+
+                idCurriculo = curriculos.FirstOrDefault(c => c.CPF == profissional.CPF)?.IdCurriculo ?? 0;
                 <tr>
                     <td>@candidatura.CandidaturaId</td>
                     <td>@candidatura.Status</td>
@@ -27,6 +32,11 @@
                     <td>@(profissional != null ? profissional.Nome : "N/A")</td>
                     <td>@(profissional != null ? profissional.Idade.ToString() : "N/A")</td>
                     <td>@(profissional != null ? profissional.CPF : "N/A")</td>
+                    <td>
+                        <a asp-page="/Curriculos/Details" asp-route-id="@idCurriculo">
+                            Currículo
+                        </a>
+                    </td>
                 </tr>
             }
         </tbody>
