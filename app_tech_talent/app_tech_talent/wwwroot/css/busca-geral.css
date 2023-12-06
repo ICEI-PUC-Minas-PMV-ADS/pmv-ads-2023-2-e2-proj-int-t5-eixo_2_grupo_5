@@ -1,0 +1,24 @@
+﻿    /* Estilos para a lista de resultados */
+        .resultados {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Estilos para cada item da lista */
+        .resultados li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        /* Estilos para o link de candidatura */
+        .resultados li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Estilos para a mensagem "Você já se candidatou" */
+        .resultados li span {
+            color: #ff6a00;
+        }
