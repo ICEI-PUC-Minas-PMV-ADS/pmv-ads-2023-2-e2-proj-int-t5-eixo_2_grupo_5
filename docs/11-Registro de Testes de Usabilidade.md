@@ -92,8 +92,9 @@ Aqui estão os resultados obtidos:
 
 **1-	Cadastro e Login**
 
+Apesar de todos os usuários terem obtido resultados positivos e uma boa métrica no teste, uma questão relacionada à formatação de valores foi identificada como um problema específico durante a avaliação.
 
-**Sugestão**: 
+**Sugestão**: Mudar a formatação do campo (CPF) para que se torne mais intuitivo e fácil para o usuário.
 
 **2-	Busca de vagas**
 
@@ -137,16 +138,15 @@ Embora todos os usuários tenham obtido sucesso nos testes, alcançando métrica
 **Problemas de usabilidade** 
 
 Os problemas de usabilidade em uma aplicação podem representar obstáculos que impedem os usuários de concluir uma determinada tarefa com sucesso. Os principais problemas de usabilidade identificados nos testes foram:
-- 
-- 
+- Problemas com formatação
+- Problemas do usuário com a interface
 
 **Plano de correção:**
 
 Foram planejadas ações e algumas já foram implementadas para corrigir os problemas de usabilidade identificados. Estas são:
-- 
-- 
-- 
-- 
+- Correção ma formatação dos campos para se tornar mais fácil e intuitivo para o usuário
+- Melhorar a responsividade da aplicação (a ser implementado)
+- Aumentar o tempo de resposta do aviso para o usuário ao candidatar-se a uma vaga
 - Realizar testes de acessibilidade com usuários portadores de deficiência visual para avaliar a usabilidade.
 
 **Conclusão**
