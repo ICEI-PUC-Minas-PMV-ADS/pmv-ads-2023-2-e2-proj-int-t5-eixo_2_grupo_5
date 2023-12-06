@@ -66,6 +66,9 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Index" class="btn btn-primary">Voltar</a> |
-    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Editar</a> 
+    <a asp-action="Index" class="btn btn-primary">Voltar</a>
+    @if (User.IsInRole("Empresa"))
+    {
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Editar</a>
+    }
 </div>
