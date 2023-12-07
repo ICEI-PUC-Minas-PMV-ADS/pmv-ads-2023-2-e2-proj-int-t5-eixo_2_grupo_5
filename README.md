@@ -117,7 +117,3 @@ Esta aplicação utiliza o PostgreSQL. Para rodar a aplicação localmente, siga
 # Código
 
 <li><a href="./app_tech_talent/app_tech_talent/"> Código Fonte</a></li>
-
-# Apresentação
-
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
