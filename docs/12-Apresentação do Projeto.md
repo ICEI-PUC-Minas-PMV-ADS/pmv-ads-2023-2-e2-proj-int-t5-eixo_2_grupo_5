@@ -5,12 +5,10 @@
 Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do projeto contemplando todos os itens trabalhados nos demais artefatos.
 
 ## Conjunto de Slides
-[Apresentamos nossa aplicação, clique aqui](<img src="pmv-ads-2023-2-e2-proj-int-t5-eixo_2_grupo_5/docs/img
-/tech_talent.pdf
-">)
+[Apresentamos nossa aplicação, clique aqui](docs/img/tech_talent.pdf)
 
 ## Video
-[Saiba mais sobre nossa solução. Clique aqui.](https://youtu.be/b2M2AEHyUng)
+[Saiba mais sobre nossa solução. Clique aqui.](https://youtu.be/b2M2AEHyUng))
 
 
 
