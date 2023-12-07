@@ -96,40 +96,19 @@ Apesar de todos os usuários terem obtido resultados positivos e uma boa métric
 
 **Sugestão**: Mudar a formatação do campo (CPF) para que se torne mais intuitivo e fácil para o usuário.
 
-**2-	Busca de vagas**
-
-
-**Sugestão**: 
-
-**3-	Criação de vagas**
+**2- Criação de vagas**
 
 Apesar de todos os usuários terem obtido resultados positivos e uma boa métrica no teste, uma questão relacionada à formatação de valores foi identificada como um problema específico durante a avaliação.
 
 **Sugestão**: Definir um modelo no campo "Salário" para que seja possível utilizar carácteres especiais.
-
-**4-	Autoavaliação de habilidades**
-
-
-
-**Sugestão**:
-
-**5-	Acompanhamento de candidaturas**
-
-
-**Sugestão**: 
-
-**6-	Compartilhamento em redes sociais**
-
-
-**Sugestão**: 
-
-**7-	Gerenciamento do curriculo pelo profissional**
+ 
+**3-	Gerenciamento do curriculo pelo profissional**
 
 O gerenciamento do currículo obteve bom resultado nos testes, alcançando métricas favoráveis, mas, apesar disso, nota-se que informações de campos com data não estão sendo salvos, sendo necessário inserir novamente os dados.
 
 **Sugestão**: Revisão do código para garantir que o usuário edite apenas os campos necessários.
 
-**8-	Candidatura a vagas**
+**4-	Candidatura a vagas**
 
 Embora todos os usuários tenham obtido sucesso nos testes, alcançando métricas favoráveis, houve um destaque significativo levantado pelos usuários: a observação de que a mensagem de sucesso ao cadastrar-se em uma vaga desaparece rapidamente.
 
@@ -144,7 +123,7 @@ Os problemas de usabilidade em uma aplicação podem representar obstáculos que
 **Plano de correção:**
 
 Foram planejadas ações e algumas já foram implementadas para corrigir os problemas de usabilidade identificados. Estas são:
-- Correção ma formatação dos campos para se tornar mais fácil e intuitivo para o usuário
+- Correção na formatação dos campos para se tornar mais fácil e intuitivo para o usuário
 - Melhorar a responsividade da aplicação (a ser implementado)
 - Aumentar o tempo de resposta do aviso para o usuário ao candidatar-se a uma vaga
 - Realizar testes de acessibilidade com usuários portadores de deficiência visual para avaliar a usabilidade.
