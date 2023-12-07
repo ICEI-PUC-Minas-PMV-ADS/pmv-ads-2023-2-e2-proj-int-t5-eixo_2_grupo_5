@@ -8,7 +8,8 @@ Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do proje
 [Apresentamos nossa aplicação, clique aqui](docs/img/tech_talent.pdf)
 
 ## Video
-[Saiba mais sobre nossa solução. Clique aqui.](https://youtu.be/b2M2AEHyUng))
+[Saiba mais sobre nossa solução. Clique aqui.](https://youtu.be/b2M2AEHyUng)
+
 
 
 
